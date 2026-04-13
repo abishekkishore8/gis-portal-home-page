@@ -82,7 +82,7 @@ export function HomePage() {
               <Globe className="w-5 h-5 text-blue-700" />
             </div>
             <div>
-              <h1 className="text-[18px] text-gray-800">GIS Microplan Portal</h1>
+              <h1 className="text-[18px] text-gray-800">Digital Village Microplan Portal</h1>
               <p className="text-[11px] text-gray-500">Ganga River Basin Village Assessment</p>
             </div>
           </div>
@@ -345,7 +345,7 @@ export function HomePage() {
             ))}
           </div>
           <div className="flex flex-col md:flex-row items-center justify-between gap-2 text-[12px] text-blue-100">
-            <span>GIS Microplan Portal - Ganga River Basin Village Assessment</span>
+            <span>Digital Village Microplan Portal - Ganga River Basin Village Assessment</span>
             <span>
               {statesSet.size} States &middot; {villages.length} Villages &middot; 9 Categories
             </span>

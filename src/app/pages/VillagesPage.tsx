@@ -55,7 +55,7 @@ export function VillagesPage() {
               <Globe className="w-5 h-5" />
             </div>
             <div>
-              <h1 className="text-[18px] text-white">GIS Microplan Portal</h1>
+              <h1 className="text-[18px] text-white">Digital Village Microplan Portal</h1>
               <p className="text-[11px] text-blue-200">Ganga River Basin Village Assessment</p>
             </div>
           </div>
