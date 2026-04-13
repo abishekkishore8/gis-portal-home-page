@@ -1,0 +1,54 @@
+Category	Sub Category	Score	category (individual category per hundread unit)	Maximum Individual Score	Individual Score	Formula	Output	Model village 1 on scale 5
+Community Awareness	Awareness on species found in an area	15	Awareness on Terrestrial Species found in an area	100		0	Low	0
+								
+								
+								
+	Awareness on wetlands found in an area	10	Awareness on Wetland found in an area	100		0		
+								
+								
+								
+								
+	Awareness on species found in Ganga river	15	Awareness of Aquatic Species found in a Ganga river	100		0		
+								
+	Awareness on threats to Ganga river such as overexploitation of resources, over fishing etc.	15	Awareness on Over exploitation of River	100		0		
+								
+	Awareness on waste segregation and waste management	15	Waste segregation awareness	100		0		
+								
+	Awareness on impact of using chemical fertilizers and pesticides on river health and human health	15	Awareness on human health	100		0		
+	Awareness on roles and responsibilities in conservation of Ganga river	15	Awareness on Role	100		0		
+Community based institution	Frequency of meetings Scale	50	Meeting schduled implemented scale	100		0	Low	0
+								
+	Representation of women and marginal Community 	50	Scheme implemented scale(Participation)	100		0		
+Liveliood and skill development	scale. of Scheme Implementation	30	Percentge of scheme implementated	100		0	Low	0
+	after training from center % people employed/self emplyed	40	Selfemployed	60		0		
+			Employement	40				
+	female distribution (getting benefit from centeres)	30	No. of female participation	100		0		
+Hygeine and sanitation	construction and use of toilet	40	constructed toilet %	40		0	Low	0
+			toilet in use %	40				
+			if relevant community toilet ()	20				
+	Mean access of dustbin installed by panchayat	30	accessed by household village level	70		0		
+			if presence ghat? installed dustbin :: sufficient	30				
+	waste management scale	30	Collection of waste	25		0		
+			Seggregation	20				
+			Dumping	15				
+			management	40				
+Renewable energy	Non Dependence on fuel wood	50	% of household non dependent on fuel wood	100		0	Low	0
+								
+	Accessiblity to renewable energy	50	Implementation of Scheme related to renewable energy	50		0		
+			scale of household benefitted	50				
+Biodiversity conservation  plan	activities for biodiversity conservation plan scale	70	aforestation, soil conservation, rain water harvesting, wetland management, Related Schemes	100		0	Low	0
+								
+								
+	benefit from bmc scale	30	Meeting schduled implemented scale	40		0		
+			participation	20				
+			Conservation Activity scale	40				
+Agriculture	scale on ganga ecosystem for organic farming	40	land percent under organic farming	60		0	Low	0
+			percent of used insecticides, fertilised, pesticides	40				
+	scale on ganga ecosystem for riverbed farming	60	land percent under inorganic farming	40		0		
+			percent of non used insecticides, fertilised, pesticides, 	30				
+			Change in traditional crops	30				
+Animal husbandary	Scale of Conservation of species habitat	100	consrevation firendly Source of fodder 	60		0	Low	0
+			high productivity breed used	40				
+Fishery	Scale of Sustainable fishing	100	scale of proper Fishing gear	40		0	Low	0
+			non dependence on fishing	50				
+			use of pisiculture fishfarming	10				
