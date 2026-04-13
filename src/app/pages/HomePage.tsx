@@ -132,11 +132,11 @@ export function HomePage() {
                 Namami Gange Programme
               </span>
               <h2 className="text-white text-[32px]" style={{ lineHeight: 1.2 }}>
-                Village Microplan Assessment
+                Village Microplaning
               </h2>
               <p className="text-blue-100 text-[14px] mt-3 leading-relaxed">
-                Comprehensive GIS-based assessment of 20 villages along the Ganga River basin,
-                covering 9 key development categories across 4 states from Uttarakhand to Bihar.
+                Comprehensive assessment of 38 villages along the Ganga River basin, covering 9
+                key development categories across 11 states.
               </p>
               <div className="flex gap-3 mt-5">
                 <button
