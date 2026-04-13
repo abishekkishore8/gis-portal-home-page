@@ -210,10 +210,10 @@ export function MapView({ selectedVillageId, onVillageClick }: MapViewProps) {
   };
 
   const layerOptions = [
-    { key: "osm", label: "OSM", icon: "🗺️" },
     { key: "satellite", label: "Satellite", icon: "🛰️" },
-    { key: "terrain", label: "Terrain", icon: "⛰️" },
     { key: "topography", label: "Topo", icon: "🏔️" },
+    { key: "terrain", label: "Terrain", icon: "⛰️" },
+    { key: "osm", label: "OSM", icon: "🗺️" },
   ];
 
   return (
