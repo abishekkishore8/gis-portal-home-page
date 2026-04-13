@@ -327,7 +327,7 @@ export function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-gray-200 bg-gray-100/95 text-gray-700 py-6 backdrop-blur-sm">
+      <footer className="border-t border-gray-300 bg-gray-200/95 text-gray-700 py-6 backdrop-blur-sm">
         <div className="max-w-screen-2xl mx-auto px-6 space-y-4">
           <div className="flex flex-wrap items-center justify-center gap-5">
             {partnerLogos.map((logo) => (
