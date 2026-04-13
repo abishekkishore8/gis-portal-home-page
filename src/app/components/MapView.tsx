@@ -27,7 +27,7 @@ export function MapView({ selectedVillageId, onVillageClick }: MapViewProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [leafletLoaded, setLeafletLoaded] = useState(!!window.L);
   const isDestroyedRef = useRef(false);
-  const [activeLayer, setActiveLayer] = useState<string>("osm");
+  const [activeLayer, setActiveLayer] = useState<string>("satellite");
   const layerRef = useRef<any>(null);
 
   // Load Leaflet from CDN
@@ -65,14 +65,17 @@ export function MapView({ selectedVillageId, onVillageClick }: MapViewProps) {
       zoomAnimation: false,
     }).setView([27.5, 82.0], 6);
 
-    // Default OSM layer
-    const osmLayer = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-      maxZoom: 18,
-    });
+    // Default satellite layer
+    const satelliteLayer = L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+      {
+        attribution: "&copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics",
+        maxZoom: 18,
+      }
+    );
 
-    osmLayer.addTo(map);
-    layerRef.current = osmLayer;
+    satelliteLayer.addTo(map);
+    layerRef.current = satelliteLayer;
 
     mapRef.current = map;
 
