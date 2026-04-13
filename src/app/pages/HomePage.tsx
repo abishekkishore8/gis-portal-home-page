@@ -3,6 +3,10 @@ import { useNavigate } from "react-router";
 import { MapView } from "../components/MapView";
 import { Village, villages } from "../data/villages";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import ministryLogo from "../../../Ministry_of_Jal_Shakti.png";
+import wiiLogo from "../../../WII-LogoMaroon (1).png";
+import nmcgLogo from "../../../nmcgGif.gif";
+import arthGangaLogo from "../../../Arth Ganga eng logo.png";
 import {
   Map,
   List,
@@ -52,6 +56,13 @@ const totalHH = villages.reduce((s, v) => s + v.households, 0);
 const statesSet = new Set(villages.map((v) => v.state));
 const avgScore = (villages.reduce((s, v) => s + v.overallScore, 0) / villages.length).toFixed(1);
 
+const partnerLogos = [
+  { src: ministryLogo, alt: "Ministry of Jal Shakti logo" },
+  { src: wiiLogo, alt: "WII logo" },
+  { src: nmcgLogo, alt: "NMCG logo" },
+  { src: arthGangaLogo, alt: "Arth Ganga logo" },
+];
+
 export function HomePage() {
   const navigate = useNavigate();
   const [selectedVillageId, setSelectedVillageId] = useState<string | null>(null);
@@ -88,6 +99,21 @@ export function HomePage() {
               All Villages
             </button>
           </nav>
+          <div className="flex items-center gap-2 ml-4 pl-4 border-l border-white/15">
+            {partnerLogos.map((logo) => (
+              <div
+                key={logo.alt}
+                className="w-12 h-12 md:w-14 md:h-14 rounded-lg bg-white/90 shadow-sm flex items-center justify-center overflow-hidden"
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="w-full h-full object-contain p-1.5"
+                  loading="eager"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </header>
 
@@ -301,10 +327,29 @@ export function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-blue-800 text-blue-200 py-5">
-        <div className="max-w-screen-2xl mx-auto px-6 flex items-center justify-between text-[12px]">
-          <span>GIS Microplan Portal - Ganga River Basin Village Assessment</span>
-          <span>{statesSet.size} States &middot; {villages.length} Villages &middot; 9 Categories</span>
+      <footer className="bg-blue-800 text-blue-200 py-6">
+        <div className="max-w-screen-2xl mx-auto px-6 space-y-4">
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            {partnerLogos.map((logo) => (
+              <div
+                key={logo.alt}
+                className="h-14 w-32 rounded-xl bg-white/95 shadow-sm border border-white/10 flex items-center justify-center px-3"
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="max-h-10 w-full object-contain"
+                  loading="eager"
+                />
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-2 text-[12px] text-blue-100">
+            <span>GIS Microplan Portal - Ganga River Basin Village Assessment</span>
+            <span>
+              {statesSet.size} States &middot; {villages.length} Villages &middot; 9 Categories
+            </span>
+          </div>
         </div>
       </footer>
     </div>
