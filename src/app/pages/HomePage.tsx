@@ -75,40 +75,40 @@ export function HomePage() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       {/* Top Nav */}
-      <header className="bg-gradient-to-r from-blue-800 to-blue-700 text-white shadow-lg z-10 sticky top-0">
-        <div className="max-w-screen-2xl mx-auto flex items-center justify-between px-6 py-3">
+      <header className="sticky top-0 z-10 border-b border-gray-200 bg-gray-100/95 text-gray-800 shadow-sm backdrop-blur-sm">
+        <div className="max-w-screen-2xl mx-auto flex items-center justify-between gap-4 px-6 py-3">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 bg-white/20 rounded-lg flex items-center justify-center">
-              <Globe className="w-5 h-5" />
+            <div className="w-9 h-9 rounded-lg bg-white flex items-center justify-center border border-gray-200 shadow-sm">
+              <Globe className="w-5 h-5 text-blue-700" />
             </div>
             <div>
-              <h1 className="text-[18px] text-white">GIS Microplan Portal</h1>
-              <p className="text-[11px] text-blue-200">Ganga River Basin Village Assessment</p>
+              <h1 className="text-[18px] text-gray-800">GIS Microplan Portal</h1>
+              <p className="text-[11px] text-gray-500">Ganga River Basin Village Assessment</p>
             </div>
           </div>
-          <nav className="flex items-center gap-1">
-            <button className="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white/20 text-white text-[13px]">
+          <nav className="flex items-center gap-1 rounded-full bg-white/70 p-1 border border-gray-200 shadow-sm">
+            <button className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-blue-600 text-white text-[13px] shadow-sm">
               <Map className="w-4 h-4" />
               Home
             </button>
             <button
-              className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-blue-200 hover:bg-white/10 text-[13px] transition-colors"
+              className="flex items-center gap-1.5 px-4 py-2 rounded-full text-gray-700 hover:bg-gray-100 text-[13px] transition-colors"
               onClick={() => navigate("/villages")}
             >
               <List className="w-4 h-4" />
               All Villages
             </button>
           </nav>
-          <div className="flex items-center gap-2 ml-4 pl-4 border-l border-white/15">
+          <div className="flex items-center gap-3 ml-2 shrink-0">
             {partnerLogos.map((logo) => (
               <div
                 key={logo.alt}
-                className="w-12 h-12 md:w-14 md:h-14 rounded-lg bg-white/90 shadow-sm flex items-center justify-center overflow-hidden"
+                className="h-11 w-20 md:w-24 rounded-md bg-transparent flex items-center justify-center overflow-hidden"
               >
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="w-full h-full object-contain p-1.5"
+                  className="max-h-10 w-full object-contain opacity-95 mix-blend-multiply"
                   loading="eager"
                 />
               </div>
