@@ -327,24 +327,24 @@ export function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-blue-800 text-blue-200 py-6">
+      <footer className="border-t border-gray-200 bg-gray-100/95 text-gray-700 py-6 backdrop-blur-sm">
         <div className="max-w-screen-2xl mx-auto px-6 space-y-4">
-          <div className="flex flex-wrap items-center justify-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-5">
             {partnerLogos.map((logo) => (
               <div
                 key={logo.alt}
-                className="h-14 w-32 rounded-xl bg-white/95 shadow-sm border border-white/10 flex items-center justify-center px-3"
+                className="h-12 w-28 md:w-32 rounded-md bg-transparent flex items-center justify-center px-2"
               >
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="max-h-10 w-full object-contain"
+                  className="max-h-10 w-full object-contain opacity-90 mix-blend-multiply"
                   loading="eager"
                 />
               </div>
             ))}
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-2 text-[12px] text-blue-100">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-2 text-[12px] text-gray-600">
             <span>Digital Village Microplan Portal - Ganga River Basin Village Assessment</span>
             <span>
               {statesSet.size} States &middot; {villages.length} Villages &middot; 9 Categories
