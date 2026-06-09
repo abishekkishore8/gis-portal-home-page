@@ -308,9 +308,11 @@ export function VillageDetail({ village, siteContent, onBack, onShowImages }: Vi
                             </span>
                           </div>
                           <div className="mt-2 flex flex-wrap items-center gap-2 text-[12px] text-gray-500">
-                            <span className="bg-white border border-gray-200 rounded px-2 py-1">
-                              Formula Value: {formatScore(sub.formulaValue)}
-                            </span>
+                            {sub.formulaValue !== undefined && (
+                              <span className="bg-white border border-gray-200 rounded px-2 py-1">
+                                Formula Value: {formatScore(sub.formulaValue)}
+                              </span>
+                            )}
                             {sub.formulaExpression && (
                               <span className="bg-white border border-gray-200 rounded px-2 py-1">
                                 {sub.formulaExpression}

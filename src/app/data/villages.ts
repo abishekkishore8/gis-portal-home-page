@@ -10,7 +10,8 @@ const generateVillageScores = (seed: number): CategoryScore[] => {
     {
       category: "Community Awareness",
       output: ["Low", "Medium", "Low", "High"][rng(0, 3)],
-      scoreOnScale5: rng(0, 5),
+      scoreOnScale10: rng(0, 10),
+      formulaTotal: rng(0, 100),
       subCategories: [
         {
           subCategory: "Awareness on species found in an area",
@@ -80,7 +81,8 @@ const generateVillageScores = (seed: number): CategoryScore[] => {
     {
       category: "Community Based Institution",
       output: ["Low", "Medium", "Low", "High"][rng(0, 3)],
-      scoreOnScale5: rng(0, 5),
+      scoreOnScale10: rng(0, 10),
+      formulaTotal: rng(0, 100),
       subCategories: [
         {
           subCategory: "Frequency of meetings Scale",
@@ -105,7 +107,8 @@ const generateVillageScores = (seed: number): CategoryScore[] => {
     {
       category: "Livelihood and Skill Development",
       output: ["Low", "Medium", "Low", "High"][rng(0, 3)],
-      scoreOnScale5: rng(0, 5),
+      scoreOnScale10: rng(0, 10),
+      formulaTotal: rng(0, 100),
       subCategories: [
         {
           subCategory: "Scale of Scheme Implementation",
@@ -140,7 +143,8 @@ const generateVillageScores = (seed: number): CategoryScore[] => {
     {
       category: "Hygiene and Sanitation",
       output: ["Low", "Medium", "Low", "High"][rng(0, 3)],
-      scoreOnScale5: rng(0, 5),
+      scoreOnScale10: rng(0, 10),
+      formulaTotal: rng(0, 100),
       subCategories: [
         {
           subCategory: "Construction and use of toilet",
@@ -180,7 +184,8 @@ const generateVillageScores = (seed: number): CategoryScore[] => {
     {
       category: "Renewable Energy",
       output: ["Low", "Medium", "Low", "High"][rng(0, 3)],
-      scoreOnScale5: rng(0, 5),
+      scoreOnScale10: rng(0, 10),
+      formulaTotal: rng(0, 100),
       subCategories: [
         {
           subCategory: "Non Dependence on fuel wood",
@@ -206,7 +211,8 @@ const generateVillageScores = (seed: number): CategoryScore[] => {
     {
       category: "Biodiversity Conservation Plan",
       output: ["Low", "Medium", "Low", "High"][rng(0, 3)],
-      scoreOnScale5: rng(0, 5),
+      scoreOnScale10: rng(0, 10),
+      formulaTotal: rng(0, 100),
       subCategories: [
         {
           subCategory: "Activities for biodiversity conservation plan scale",
@@ -233,7 +239,8 @@ const generateVillageScores = (seed: number): CategoryScore[] => {
     {
       category: "Agriculture",
       output: ["Low", "Medium", "Low", "High"][rng(0, 3)],
-      scoreOnScale5: rng(0, 5),
+      scoreOnScale10: rng(0, 10),
+      formulaTotal: rng(0, 100),
       subCategories: [
         {
           subCategory: "Scale on ganga ecosystem for organic farming",
@@ -261,7 +268,8 @@ const generateVillageScores = (seed: number): CategoryScore[] => {
     {
       category: "Animal Husbandry",
       output: ["Low", "Medium", "Low", "High"][rng(0, 3)],
-      scoreOnScale5: rng(0, 5),
+      scoreOnScale10: rng(0, 10),
+      formulaTotal: rng(0, 100),
       subCategories: [
         {
           subCategory: "Scale of Conservation of species habitat",
@@ -278,7 +286,8 @@ const generateVillageScores = (seed: number): CategoryScore[] => {
     {
       category: "Fishery",
       output: ["Low", "Medium", "Low", "High"][rng(0, 3)],
-      scoreOnScale5: rng(0, 5),
+      scoreOnScale10: rng(0, 10),
+      formulaTotal: rng(0, 100),
       subCategories: [
         {
           subCategory: "Scale of Sustainable fishing",

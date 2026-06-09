@@ -26,7 +26,7 @@ export interface SubCategoryScore {
   score: number;
   maxScore: number;
   individualScore: number;
-  formulaValue: number;
+  formulaValue?: number;
   formulaExpression?: string;
   indicators: IndicatorScore[];
 }

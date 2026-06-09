@@ -236,7 +236,7 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
               fill: false,
               fillOpacity: 0
             },
-            onEachFeature: (feature, layer) => {
+            onEachFeature: (feature: any, layer: any) => {
               const props = feature.properties;
               const popupContent = Object.entries(props || {})
                 .map(([k, v]) => `<strong>${k}:</strong> ${v}`)
