@@ -1,7 +1,11 @@
+"use client";
+
 import { useState } from "react";
 import { createPortal } from "react-dom";
-import { Village, CategoryScore } from "../data/villages";
-import { getSolutionsForCategory, getSolutionLevel } from "../data/solutions";
+import { formatIndianWholeNumber } from "../data/number-format";
+import type { Village, CategoryScore } from "../data/village-types";
+import type { SiteContent } from "../data/site-content";
+import { getSolutionsForCategory, getSolutionLevel } from "../data/site-content-helpers";
 import {
   ArrowLeft,
   MapPin,
@@ -19,6 +23,7 @@ import {
 
 interface VillageDetailProps {
   village: Village;
+  siteContent: SiteContent;
   onBack: () => void;
   onShowImages?: () => void;
 }
@@ -44,6 +49,12 @@ const getScoreBg = (score: number, max: number) => {
   return "bg-green-500";
 };
 
+const formatScore = (value: number, maxFractionDigits = 2) =>
+  new Intl.NumberFormat("en-IN", {
+    minimumFractionDigits: Math.min(2, maxFractionDigits),
+    maximumFractionDigits: maxFractionDigits,
+  }).format(value);
+
 const getCategoryIcon = (category: string) => {
   const icons: Record<string, string> = {
     "Community Awareness": "🌿",
@@ -61,16 +72,18 @@ const getCategoryIcon = (category: string) => {
 
 function SolutionsModal({
   category,
-  scoreOnScale5,
+  siteContent,
+  scoreOnScale10,
   onClose,
 }: {
   category: CategoryScore;
-  scoreOnScale5: number;
+  siteContent: SiteContent;
+  scoreOnScale10: number;
   onClose: () => void;
 }) {
-  const solutionEntries = getSolutionsForCategory(category.category, scoreOnScale5);
-  const level = getSolutionLevel(scoreOnScale5);
-  const levelLabel = level === "low" ? "Low (1-2)" : level === "medium" ? "Medium (3-4)" : "High (5-6)";
+  const solutionEntries = getSolutionsForCategory(siteContent, category.category);
+  const level = getSolutionLevel(scoreOnScale10);
+  const levelLabel = level === "low" ? "Low (0-4)" : level === "medium" ? "Medium (4.01-7)" : "High (7.01-10)";
   const levelColor =
     level === "low"
       ? "text-red-600 bg-red-50"
@@ -89,7 +102,7 @@ function SolutionsModal({
               Solutions - {category.category}
             </h3>
             <div className="flex items-center gap-2 mt-1.5">
-              <span className="text-[13px] text-gray-500">Village Score: {scoreOnScale5}/5</span>
+              <span className="text-[13px] text-gray-500">Village Score: {formatScore(scoreOnScale10)}/10</span>
               <span className={`px-2 py-0.5 rounded-full text-[11px] ${levelColor}`}>
                 Level: {levelLabel}
               </span>
@@ -160,44 +173,56 @@ function SolutionsModal({
   );
 }
 
-export function VillageDetail({ village, onBack, onShowImages }: VillageDetailProps) {
+export function VillageDetail({ village, siteContent, onBack, onShowImages }: VillageDetailProps) {
   const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
   const [solutionsCategory, setSolutionsCategory] = useState<CategoryScore | null>(null);
 
   return (
     <div className="flex flex-col h-full bg-gray-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-blue-700 to-blue-600 text-white p-5">
+      <div className="bg-gradient-to-r from-blue-700 to-blue-600 text-white px-4 py-5 sm:px-5 sm:py-6">
         <button
           onClick={onBack}
-          className="flex items-center gap-1.5 text-blue-200 hover:text-white mb-3 text-[13px] transition-colors"
+          className="inline-flex items-center gap-2 text-blue-100 hover:text-white mb-4 text-[13px] transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Villages
         </button>
-        <h2 className="text-white">{village.name}</h2>
-        <p className="text-blue-200 text-[13px] mt-1 flex items-center gap-1.5">
-          <MapPin className="w-3.5 h-3.5" />
-          {village.district}, {village.state}
-        </p>
-        <div className="flex items-center gap-4 mt-3">
-          <span className="flex items-center gap-1.5 text-[13px] text-blue-100">
-            <Users className="w-3.5 h-3.5" />
-            Pop: {village.population.toLocaleString()}
-          </span>
-          <span className="flex items-center gap-1.5 text-[13px] text-blue-100">
-            <Home className="w-3.5 h-3.5" />
-            {village.households} Households
-          </span>
-          <span className="bg-white/20 px-3 py-1 rounded-full text-[13px]">
-            Overall: {village.overallScore}/5
-          </span>
+        <div className="min-w-0">
+          <h2 className="text-white text-4xl leading-tight tracking-[-0.02em] sm:text-5xl">
+            {village.name}
+          </h2>
+          <p className="text-blue-100 text-sm sm:text-base mt-2 flex items-center gap-2 min-w-0">
+            <MapPin className="w-4 h-4 shrink-0" />
+            <span className="truncate">{village.district}, {village.state}</span>
+          </p>
+        </div>
+
+        <div className="mt-5 flex flex-wrap items-center gap-3 sm:gap-4">
+          <div className="inline-flex items-center gap-2 rounded-full bg-white/12 px-3 py-2 text-sm text-blue-50">
+            <Users className="w-4 h-4 shrink-0" />
+            <span className="text-blue-100">Population:</span>
+            <span className="text-white">{formatIndianWholeNumber(village.population)}</span>
+          </div>
+
+          <div className="inline-flex items-center gap-2 rounded-full bg-white/12 px-3 py-2 text-sm text-blue-50">
+            <Home className="w-4 h-4 shrink-0" />
+            <span className="text-blue-100">Households:</span>
+            <span className="text-white">{formatIndianWholeNumber(village.households)}</span>
+          </div>
+
+          <div className="inline-flex items-center gap-2 rounded-full bg-white/16 px-3 py-2 text-sm text-blue-50">
+            <TrendingUp className="w-4 h-4 shrink-0" />
+            <span className="text-blue-100">Overall:</span>
+            <span className="text-white">{formatScore(village.overallScore)}/10</span>
+          </div>
+
           {onShowImages && (
             <button
               onClick={onShowImages}
-              className="flex items-center gap-1.5 px-3 py-1 rounded-full text-[13px] bg-white/20 hover:bg-white/30 transition-colors ml-auto"
+              className="group inline-flex items-center gap-2 rounded-full bg-[#E8D9C8] px-4 py-2 text-sm text-[#5C4632] shadow-[0_8px_20px_rgba(92,70,50,0.12)] hover:bg-[#E2D0BC] hover:-translate-y-0.5 hover:shadow-[0_12px_24px_rgba(92,70,50,0.18)] active:translate-y-0 active:shadow-[0_6px_14px_rgba(92,70,50,0.14)] transition-all duration-200"
             >
-              <Images className="w-3.5 h-3.5" />
+              <Images className="w-4 h-4 shrink-0 transition-transform duration-200 group-hover:scale-110" />
               Show Images
             </button>
           )}
@@ -210,17 +235,6 @@ export function VillageDetail({ village, onBack, onShowImages }: VillageDetailPr
           <TrendingUp className="w-4 h-4 text-blue-600" />
           Village Assessment Details
         </h3>
-
-        {/* Overall Table Header */}
-        <div className="hidden md:grid grid-cols-12 gap-2 px-4 py-2 bg-gray-200 rounded-t-lg text-[12px] text-gray-600">
-          <div className="col-span-3">Category</div>
-          <div className="col-span-3">Sub Category</div>
-          <div className="col-span-1 text-center">Score</div>
-          <div className="col-span-2">Indicator</div>
-          <div className="col-span-1 text-center">Max</div>
-          <div className="col-span-1 text-center">Output</div>
-          <div className="col-span-1 text-center">Action</div>
-        </div>
 
         <div className="space-y-1">
           {village.scores.map((catScore) => {
@@ -237,10 +251,10 @@ export function VillageDetail({ village, onBack, onShowImages }: VillageDetailPr
                     setExpandedCategory(isExpanded ? null : catScore.category)
                   }
                 >
-                  <span className="text-xl">{getCategoryIcon(catScore.category)}</span>
-                  <div className="flex-1">
-                    <h4 className="text-[14px] text-gray-800">{catScore.category}</h4>
-                    <div className="flex items-center gap-3 mt-1">
+                  <span className="text-xl shrink-0">{getCategoryIcon(catScore.category)}</span>
+                  <div className="flex-1 min-w-0">
+                    <h4 className="text-[14px] text-gray-800 leading-snug">{catScore.category}</h4>
+                    <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1">
                       <span
                         className={`px-2 py-0.5 rounded-full text-[11px] border ${getOutputBadge(
                           catScore.output
@@ -248,20 +262,19 @@ export function VillageDetail({ village, onBack, onShowImages }: VillageDetailPr
                       >
                         {catScore.output}
                       </span>
-                      <span className="text-[12px] text-gray-500">
-                        Score: {catScore.scoreOnScale5}/5
+                      <span className="text-[12px] text-gray-500 whitespace-nowrap">
+                        Score: {formatScore(catScore.scoreOnScale10)}/10
                       </span>
-                      {/* Mini progress bar */}
-                      <div className="w-16 h-1.5 bg-gray-200 rounded-full overflow-hidden">
+                      <div className="w-16 h-1.5 bg-gray-200 rounded-full overflow-hidden shrink-0">
                         <div
-                          className={`h-full rounded-full ${getScoreBg(catScore.scoreOnScale5, 5)}`}
-                          style={{ width: `${(catScore.scoreOnScale5 / 5) * 100}%` }}
+                          className={`h-full rounded-full ${getScoreBg(catScore.scoreOnScale10, 10)}`}
+                          style={{ width: `${(catScore.scoreOnScale10 / 10) * 100}%` }}
                         />
                       </div>
                     </div>
                   </div>
                   <button
-                    className="px-3 py-1.5 text-[12px] bg-amber-50 text-amber-700 border border-amber-200 rounded-lg hover:bg-amber-100 transition-colors flex items-center gap-1"
+                    className="px-3 py-1.5 text-[12px] bg-amber-50 text-amber-700 border border-amber-200 rounded-lg hover:bg-amber-100 transition-colors flex items-center gap-1 shrink-0"
                     onClick={(e) => {
                       e.stopPropagation();
                       setSolutionsCategory(catScore);
@@ -270,11 +283,13 @@ export function VillageDetail({ village, onBack, onShowImages }: VillageDetailPr
                     <Lightbulb className="w-3.5 h-3.5" />
                     Solutions
                   </button>
-                  {isExpanded ? (
-                    <ChevronDown className="w-4 h-4 text-gray-400" />
-                  ) : (
-                    <ChevronRight className="w-4 h-4 text-gray-400" />
-                  )}
+                  <div className="shrink-0 text-gray-400">
+                    {isExpanded ? (
+                      <ChevronDown className="w-4 h-4" />
+                    ) : (
+                      <ChevronRight className="w-4 h-4" />
+                    )}
+                  </div>
                 </div>
 
                 {/* Expanded Details */}
@@ -291,6 +306,16 @@ export function VillageDetail({ village, onBack, onShowImages }: VillageDetailPr
                             <span className="text-[12px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">
                               Weight: {sub.score}
                             </span>
+                          </div>
+                          <div className="mt-2 flex flex-wrap items-center gap-2 text-[12px] text-gray-500">
+                            <span className="bg-white border border-gray-200 rounded px-2 py-1">
+                              Formula Value: {formatScore(sub.formulaValue)}
+                            </span>
+                            {sub.formulaExpression && (
+                              <span className="bg-white border border-gray-200 rounded px-2 py-1">
+                                {sub.formulaExpression}
+                              </span>
+                            )}
                           </div>
                           {/* Indicators table */}
                           <div className="mt-2 bg-white rounded-lg border border-gray-200 overflow-hidden">
@@ -325,7 +350,7 @@ export function VillageDetail({ village, onBack, onShowImages }: VillageDetailPr
                                         }}
                                       />
                                     </div>
-                                    <span className="text-gray-700">{ind.individualScore}</span>
+                                    <span className="text-gray-700">{formatScore(ind.individualScore)}</span>
                                   </div>
                                 </div>
                               </div>
@@ -347,7 +372,8 @@ export function VillageDetail({ village, onBack, onShowImages }: VillageDetailPr
         createPortal(
           <SolutionsModal
             category={solutionsCategory}
-            scoreOnScale5={solutionsCategory.scoreOnScale5}
+            siteContent={siteContent}
+            scoreOnScale10={solutionsCategory.scoreOnScale10}
             onClose={() => setSolutionsCategory(null)}
           />,
           document.body

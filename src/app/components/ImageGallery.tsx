@@ -1,5 +1,7 @@
+"use client";
+
 import { useState } from "react";
-import { Village } from "../data/villages";
+import type { Village } from "../data/village-types";
 import { X, ChevronLeft, ChevronRight, Images, MapPin } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 

@@ -1,8 +1,12 @@
+"use client";
+
 import { useState, useMemo } from "react";
-import { villages, Village } from "../data/villages";
+import type { Village } from "../data/village-types";
+import { formatIndianWholeNumber } from "../data/number-format";
 import { MapPin, Search, Users, Home, ChevronRight, Eye, Image } from "lucide-react";
 
 interface VillageListProps {
+  villages: Village[];
   selectedVillageId: string | null;
   onSelectVillage: (village: Village) => void;
   onViewDetails: (village: Village) => void;
@@ -10,22 +14,24 @@ interface VillageListProps {
 }
 
 const getScoreColor = (score: number) => {
-  if (score <= 1) return "bg-red-100 text-red-700 border-red-200";
-  if (score <= 2) return "bg-orange-100 text-orange-700 border-orange-200";
-  if (score <= 3) return "bg-yellow-100 text-yellow-700 border-yellow-200";
-  if (score <= 4) return "bg-green-100 text-green-700 border-green-200";
+  if (score <= 4) return "bg-red-100 text-red-700 border-red-200";
+  if (score <= 7) return "bg-yellow-100 text-yellow-700 border-yellow-200";
   return "bg-emerald-100 text-emerald-700 border-emerald-200";
 };
 
 const getScoreLabel = (score: number) => {
-  if (score <= 1) return "Very Low";
-  if (score <= 2) return "Low";
-  if (score <= 3) return "Medium";
-  if (score <= 4) return "Good";
-  return "Excellent";
+  if (score <= 4) return "Needs Attention";
+  if (score <= 7) return "Improvement Needed";
+  return "Well Performing";
 };
 
-export function VillageList({ selectedVillageId, onSelectVillage, onViewDetails, onShowImages }: VillageListProps) {
+const formatScore = (score: number) =>
+  new Intl.NumberFormat("en-IN", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(score);
+
+export function VillageList({ villages, selectedVillageId, onSelectVillage, onViewDetails, onShowImages }: VillageListProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [filterState, setFilterState] = useState("all");
 
@@ -90,7 +96,7 @@ export function VillageList({ selectedVillageId, onSelectVillage, onViewDetails,
           {filteredVillages.length} village{filteredVillages.length !== 1 ? "s" : ""} found
         </span>
         <span className="text-[12px] text-blue-500">
-          Total Population: {filteredVillages.reduce((s, v) => s + v.population, 0).toLocaleString()}
+          Total Population: {formatIndianWholeNumber(filteredVillages.reduce((s, v) => s + v.population, 0))}
         </span>
       </div>
 
@@ -130,18 +136,18 @@ export function VillageList({ selectedVillageId, onSelectVillage, onViewDetails,
                       village.overallScore
                     )}`}
                   >
-                    {getScoreLabel(village.overallScore)} ({village.overallScore}/5)
+                    {getScoreLabel(village.overallScore)} ({formatScore(village.overallScore)}/10)
                   </span>
                 </div>
 
                 <div className="flex items-center gap-4 text-[12px] text-gray-500 mt-1">
                   <span className="flex items-center gap-1">
                     <Users className="w-3.5 h-3.5" />
-                    {village.population.toLocaleString()}
+                    {formatIndianWholeNumber(village.population)}
                   </span>
                   <span className="flex items-center gap-1">
                     <Home className="w-3.5 h-3.5" />
-                    {village.households} HH
+                    {formatIndianWholeNumber(village.households)} HH
                   </span>
                 </div>
 

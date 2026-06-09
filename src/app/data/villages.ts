@@ -1,37 +1,4 @@
-export interface Village {
-  id: string;
-  name: string;
-  district: string;
-  state: string;
-  lat: number;
-  lng: number;
-  population: number;
-  households: number;
-  overallScore: number; // 1-5 scale
-  scores: CategoryScore[];
-  images: string[];
-}
-
-export interface CategoryScore {
-  category: string;
-  output: string; // "Low", "Medium", "High"
-  scoreOnScale5: number;
-  subCategories: SubCategoryScore[];
-}
-
-export interface SubCategoryScore {
-  subCategory: string;
-  score: number;
-  maxScore: number;
-  individualScore: number;
-  indicators: IndicatorScore[];
-}
-
-export interface IndicatorScore {
-  name: string;
-  maxIndividualScore: number;
-  individualScore: number;
-}
+import type { CategoryScore, Village } from './village-types';
 
 const generateVillageScores = (seed: number): CategoryScore[] => {
   const rng = (min: number, max: number) => {

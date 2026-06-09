@@ -1,19 +1,30 @@
+"use client";
+
 import { useEffect, useRef, useState } from "react";
-import { villages, Village } from "../data/villages";
+import type { Village } from "../data/village-types";
 
 interface MapViewProps {
+  villages: Village[];
   selectedVillageId?: string | null;
   onVillageClick: (village: Village) => void;
 }
 
 const getMarkerColor = (score: number, isSelected: boolean) => {
   if (isSelected) return "#f59e0b";
-  if (score <= 1) return "#ef4444";
-  if (score <= 2) return "#f97316";
-  if (score <= 3) return "#eab308";
-  if (score <= 4) return "#22c55e";
+  if (score <= 4) return "#ef4444";
+  if (score <= 7) return "#eab308";
   return "#10b981";
 };
+
+const formatScore = (score: number) =>
+  new Intl.NumberFormat("en-IN", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(score);
+
+const DEFAULT_CENTER: [number, number] = [27.5, 82.0];
+const DEFAULT_ZOOM = 6;
+const SELECTED_VILLAGE_ZOOM = 9;
 
 declare global {
   interface Window {
@@ -21,14 +32,60 @@ declare global {
   }
 }
 
-export function MapView({ selectedVillageId, onVillageClick }: MapViewProps) {
+export function MapView({ villages, selectedVillageId, onVillageClick }: MapViewProps) {
   const mapRef = useRef<any>(null);
   const markersRef = useRef<any[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [leafletLoaded, setLeafletLoaded] = useState(!!window.L);
+  const [leafletLoaded, setLeafletLoaded] = useState(false);
   const isDestroyedRef = useRef(false);
   const [activeLayer, setActiveLayer] = useState<string>("satellite");
   const layerRef = useRef<any>(null);
+  const geoJsonLayersRef = useRef<Record<string, any>>({});
+  const [visibleGeoJsonLayers, setVisibleGeoJsonLayers] = useState<Record<string, boolean>>({
+    "ganga-tributaries": true,
+    "ganga-basin": true,
+    "india-states": false,
+  });
+
+  const recenterMap = () => {
+    if (!mapRef.current || !window.L || villages.length === 0 || isDestroyedRef.current) return;
+
+    const selectedVillage = selectedVillageId
+      ? villages.find((village) => village.id === selectedVillageId)
+      : null;
+
+    if (selectedVillage) {
+      mapRef.current.setView([selectedVillage.lat, selectedVillage.lng], SELECTED_VILLAGE_ZOOM, {
+        animate: true,
+      });
+      return;
+    }
+
+    if (villages.length === 1) {
+      mapRef.current.setView([villages[0].lat, villages[0].lng], DEFAULT_ZOOM, { animate: true });
+      return;
+    }
+
+    const bounds = window.L.latLngBounds(villages.map((village) => [village.lat, village.lng]));
+    mapRef.current.fitBounds(bounds, {
+      padding: [40, 40],
+      animate: true,
+      maxZoom: DEFAULT_ZOOM,
+    });
+  };
+
+  const toggleGeoJsonLayer = (layerKey: string) => {
+    if (!mapRef.current || !window.L || isDestroyedRef.current) return;
+
+    const newState = !visibleGeoJsonLayers[layerKey];
+    setVisibleGeoJsonLayers(prev => ({ ...prev, [layerKey]: newState }));
+
+    if (newState && geoJsonLayersRef.current[layerKey]) {
+      mapRef.current.addLayer(geoJsonLayersRef.current[layerKey]);
+    } else if (!newState && geoJsonLayersRef.current[layerKey]) {
+      mapRef.current.removeLayer(geoJsonLayersRef.current[layerKey]);
+    }
+  };
 
   // Load Leaflet from CDN
   useEffect(() => {
@@ -63,9 +120,8 @@ export function MapView({ selectedVillageId, onVillageClick }: MapViewProps) {
       scrollWheelZoom: true,
       fadeAnimation: false,
       zoomAnimation: false,
-    }).setView([27.5, 82.0], 6);
+    }).setView(DEFAULT_CENTER, DEFAULT_ZOOM);
 
-    // Default satellite layer
     const satelliteLayer = L.tileLayer(
       "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
       {
@@ -105,7 +161,7 @@ export function MapView({ selectedVillageId, onVillageClick }: MapViewProps) {
           `<div style="padding:4px 8px;">
             <strong>${village.name}</strong><br/>
             <span style="color:#666">${village.district}, ${village.state}</span><br/>
-            <span>Score: ${village.overallScore}/5</span>
+            <span>Score: ${formatScore(village.overallScore)}/10</span>
           </div>`,
           { direction: "top", offset: [0, -10] }
         );
@@ -113,6 +169,14 @@ export function MapView({ selectedVillageId, onVillageClick }: MapViewProps) {
       marker.on("click", () => onVillageClick(village));
       markersRef.current.push(marker);
     });
+
+    if (villages.length > 0) {
+      const bounds = L.latLngBounds(villages.map((village) => [village.lat, village.lng]));
+      map.fitBounds(bounds, {
+        padding: [40, 40],
+        maxZoom: DEFAULT_ZOOM,
+      });
+    }
 
     return () => {
       isDestroyedRef.current = true;
@@ -129,6 +193,93 @@ export function MapView({ selectedVillageId, onVillageClick }: MapViewProps) {
       }
     };
   }, [leafletLoaded]);
+
+  // Load GeoJSON layers after map is initialized
+  useEffect(() => {
+    if (!mapRef.current || !window.L || isDestroyedRef.current) return;
+
+    const L = window.L;
+    const geoJsonLayers = [
+      {
+        key: "ganga-tributaries",
+        url: "/map-layers/ganga-tributaries.geojson",
+        color: "#00d8ff",
+        weight: 3,
+        label: "Tributaries"
+      },
+      {
+        key: "ganga-basin",
+        url: "/map-layers/ganga-basin.geojson",
+        color: "#000000",
+        weight: 3,
+        label: "Ganga Basin"
+      },
+      {
+        key: "india-states",
+        url: "/map-layers/india-states.geojson",
+        color: "#f472b6",
+        weight: 2,
+        label: "States"
+      }
+    ];
+
+    geoJsonLayers.forEach(({ key, url, color, weight }) => {
+      fetch(url)
+        .then(res => res.json())
+        .then(geojson => {
+          console.log(`Loaded ${key}:`, geojson.features?.length || 0, 'features');
+          const geoJsonLayer = L.geoJSON(geojson, {
+            style: {
+              color: color,
+              weight: weight || 3,
+              opacity: 1,
+              fill: false,
+              fillOpacity: 0
+            },
+            onEachFeature: (feature, layer) => {
+              const props = feature.properties;
+              const popupContent = Object.entries(props || {})
+                .map(([k, v]) => `<strong>${k}:</strong> ${v}`)
+                .join('<br/>');
+              if (popupContent) {
+                layer.bindPopup(popupContent);
+              }
+            }
+          });
+
+          geoJsonLayersRef.current[key] = geoJsonLayer;
+
+          // Add to map if visible on initial load
+          if (visibleGeoJsonLayers[key]) {
+            geoJsonLayer.addTo(mapRef.current);
+            console.log(`Added ${key} to map`);
+          }
+        })
+        .catch(err => console.error(`Failed to load ${key}:`, err));
+    });
+  }, [leafletLoaded]);
+
+  // Handle GeoJSON layer visibility changes
+  useEffect(() => {
+    if (!mapRef.current || !window.L || isDestroyedRef.current) return;
+
+    Object.entries(visibleGeoJsonLayers).forEach(([key, isVisible]) => {
+      const layer = geoJsonLayersRef.current[key];
+      if (!layer) return;
+
+      if (isVisible) {
+        if (!mapRef.current.hasLayer(layer)) {
+          mapRef.current.addLayer(layer);
+          console.log(`Made ${key} visible`);
+        }
+      } else {
+        if (mapRef.current.hasLayer(layer)) {
+          mapRef.current.removeLayer(layer);
+          console.log(`Hid ${key}`);
+        }
+      }
+    });
+  }, [visibleGeoJsonLayers]);
 
   // Update markers on selection change
   useEffect(() => {
@@ -162,10 +313,10 @@ export function MapView({ selectedVillageId, onVillageClick }: MapViewProps) {
     if (selectedVillageId) {
       const village = villages.find((v) => v.id === selectedVillageId);
       if (village) {
-        mapRef.current.setView([village.lat, village.lng], 9, { animate: true });
+        mapRef.current.setView([village.lat, village.lng], SELECTED_VILLAGE_ZOOM, { animate: true });
       }
     }
-  }, [selectedVillageId]);
+  }, [selectedVillageId, villages]);
 
   // Switch tile layer
   const switchLayer = (layerKey: string) => {
@@ -214,8 +365,8 @@ export function MapView({ selectedVillageId, onVillageClick }: MapViewProps) {
 
   const layerOptions = [
     { key: "satellite", label: "Satellite", icon: "🛰️" },
-    { key: "topography", label: "Topo", icon: "🏔️" },
     { key: "terrain", label: "Terrain", icon: "⛰️" },
+    { key: "topography", label: "Topo", icon: "🏔️" },
     { key: "osm", label: "OSM", icon: "🗺️" },
   ];
 
@@ -243,48 +394,103 @@ export function MapView({ selectedVillageId, onVillageClick }: MapViewProps) {
       `}</style>
       {/* Layer Switcher */}
       {leafletLoaded && (
-        <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg z-[1000] overflow-hidden">
-          <p className="px-3 py-1.5 text-[11px] text-gray-500 border-b border-gray-200">Map Layers</p>
-          <div className="flex flex-col">
-            {layerOptions.map((opt) => (
-              <button
-                key={opt.key}
-                onClick={() => switchLayer(opt.key)}
-                className={`flex items-center gap-2 px-3 py-2 text-[12px] transition-colors text-left ${
-                  activeLayer === opt.key
-                    ? "bg-blue-50 text-blue-700"
-                    : "text-gray-700 hover:bg-gray-50"
-                }`}
-              >
-                <span className="text-[14px]">{opt.icon}</span>
-                <span>{opt.label}</span>
-                {activeLayer === opt.key && (
-                  <span className="ml-auto w-1.5 h-1.5 rounded-full bg-blue-500" />
-                )}
-              </button>
-            ))}
+        <div className="absolute top-4 right-4 z-[1000]">
+          <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden">
+            <p className="px-3 py-1.5 text-[11px] text-gray-500 border-b border-gray-200">Map Layers</p>
+            <div className="flex flex-col">
+              {layerOptions.map((opt) => (
+                <button
+                  key={opt.key}
+                  onClick={() => switchLayer(opt.key)}
+                  className={`flex items-center gap-2 px-3 py-2 text-[12px] transition-colors text-left ${
+                    activeLayer === opt.key
+                      ? "bg-blue-50 text-blue-700"
+                      : "text-gray-700 hover:bg-gray-50"
+                  }`}
+                >
+                  <span className="text-[14px]">{opt.icon}</span>
+                  <span>{opt.label}</span>
+                  {activeLayer === opt.key && (
+                    <span className="ml-auto w-1.5 h-1.5 rounded-full bg-blue-500" />
+                  )}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       )}
+      {leafletLoaded && (
+        <button
+          onClick={recenterMap}
+          type="button"
+          title={selectedVillageId ? "Recenter to selected village" : "Show all villages"}
+          aria-label={selectedVillageId ? "Recenter to selected village" : "Show all villages"}
+          className="absolute bottom-6 right-6 z-[1000] flex h-12 w-12 items-center justify-center rounded-full bg-[#0f766e] text-white shadow-xl transition-all hover:bg-[#115e59] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#0f766e]/40"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="h-5 w-5"
+            aria-hidden="true"
+          >
+            <path d="M12 3v3" />
+            <path d="M12 18v3" />
+            <path d="M3 12h3" />
+            <path d="M18 12h3" />
+            <circle cx="12" cy="12" r="4" />
+          </svg>
+        </button>
+      )}
       {/* Legend */}
-      <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-lg p-3 shadow-lg z-[1000]">
-        <p className="mb-2 text-[13px] text-gray-500">Score Legend</p>
-        <div className="flex flex-col gap-1.5">
-          {[
-            { color: "#ef4444", label: "Very Low (1)" },
-            { color: "#f97316", label: "Low (2)" },
-            { color: "#eab308", label: "Medium (3)" },
-            { color: "#22c55e", label: "Good (4)" },
-            { color: "#10b981", label: "Excellent (5)" },
-          ].map((item) => (
-            <div key={item.label} className="flex items-center gap-2">
-              <div
-                className="w-3 h-3 rounded-full border border-white shadow-sm"
-                style={{ background: item.color }}
-              />
-              <span className="text-[12px] text-gray-700">{item.label}</span>
-            </div>
-          ))}
+      <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-lg p-3 shadow-lg z-[1000] max-w-xs">
+        <div className="mb-3 pb-3 border-b border-gray-200">
+          <p className="mb-2 text-[13px] font-semibold text-gray-600">Score Legend</p>
+          <div className="flex flex-col gap-1.5">
+            {[
+              { color: "#ef4444", label: "Needs Attention (0-4)" },
+              { color: "#eab308", label: "Improvement Needed (4.01-7)" },
+              { color: "#10b981", label: "Well Performing (7.01-10)" },
+            ].map((item) => (
+              <div key={item.label} className="flex items-center gap-2">
+                <div
+                  className="w-3 h-3 rounded-full border border-white shadow-sm flex-shrink-0"
+                  style={{ background: item.color }}
+                />
+                <span className="text-[12px] text-gray-700">{item.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <p className="mb-2 text-[13px] font-semibold text-gray-600">Map Layers</p>
+          <div className="flex flex-col gap-2">
+            {[
+              { key: "ganga-tributaries", color: "#00d8ff", label: "Tributaries" },
+              { key: "ganga-basin", color: "#000000", label: "Ganga Basin" },
+              { key: "india-states", color: "#f472b6", label: "State Boundaries" },
+            ].map((layer) => (
+              <label key={layer.key} className="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-1.5 rounded transition-colors">
+                <input
+                  type="checkbox"
+                  checked={visibleGeoJsonLayers[layer.key] || false}
+                  onChange={() => toggleGeoJsonLayer(layer.key)}
+                  className="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer"
+                />
+                <div className="flex items-center gap-2 flex-1">
+                  <div
+                    className="w-2.5 h-2.5 border-2 flex-shrink-0"
+                    style={{ borderColor: layer.color }}
+                  />
+                  <span className="text-[12px] text-gray-700">{layer.label}</span>
+                </div>
+              </label>
+            ))}
+          </div>
         </div>
       </div>
     </div>
