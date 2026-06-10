@@ -472,7 +472,7 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
           type="button"
           title={selectedVillageId ? "Recenter to selected village" : "Show all villages"}
           aria-label={selectedVillageId ? "Recenter to selected village" : "Show all villages"}
-          className="absolute bottom-6 right-6 z-[1000] flex h-12 w-12 items-center justify-center rounded-full bg-[#0f766e] text-white shadow-xl transition-all hover:bg-[#115e59] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#0f766e]/40"
+          className="absolute bottom-4 right-4 md:bottom-6 md:right-6 z-[1000] flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-[#0f766e] text-white shadow-xl transition-all hover:bg-[#115e59] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#0f766e]/40"
         >
           <svg
             viewBox="0 0 24 24"
@@ -481,7 +481,7 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="h-5 w-5"
+            className="h-4 w-4 md:h-5 md:w-5"
             aria-hidden="true"
           >
             <path d="M12 3v3" />
@@ -493,11 +493,11 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
         </button>
       )}
       {/* Legend */}
-      <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg z-[1000] w-52 sm:w-64 md:max-w-xs md:w-auto">
+      <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg z-[1000] w-52 sm:w-64 md:max-w-xs md:w-auto">
         {/* Mobile Toggle Button */}
         <button 
           onClick={() => setIsLegendExpanded(!isLegendExpanded)}
-          className="w-full flex items-center justify-between p-2.5 md:hidden"
+          className="w-full flex items-center justify-between h-10 px-3 md:hidden"
         >
           <div className="flex items-center gap-2">
             <span className="text-[12px] font-semibold text-gray-700">Legend & Layers</span>
