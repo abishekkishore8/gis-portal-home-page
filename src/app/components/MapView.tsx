@@ -24,7 +24,12 @@ const formatScore = (score: number) =>
 
 const DEFAULT_CENTER: [number, number] = [27.5, 82.0];
 const DEFAULT_ZOOM = 6;
-const SELECTED_VILLAGE_ZOOM = 9;
+const SELECTED_VILLAGE_ZOOM = 12;
+
+const GANGA_BASIN_BOUNDS: [[number, number], [number, number]] = [
+  [21.539445, 73.383270], // SouthWest
+  [31.467233, 89.096366]  // NorthEast
+];
 
 declare global {
   interface Window {
@@ -44,7 +49,7 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
   const [visibleGeoJsonLayers, setVisibleGeoJsonLayers] = useState<Record<string, boolean>>({
     "ganga-tributaries": true,
     "ganga-basin": true,
-    "india-states": false,
+    "india-states": true,
   });
 
   const recenterMap = () => {
@@ -61,16 +66,9 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
       return;
     }
 
-    if (villages.length === 1) {
-      mapRef.current.setView([villages[0].lat, villages[0].lng], DEFAULT_ZOOM, { animate: true });
-      return;
-    }
-
-    const bounds = window.L.latLngBounds(villages.map((village) => [village.lat, village.lng]));
-    mapRef.current.fitBounds(bounds, {
+    mapRef.current.fitBounds(GANGA_BASIN_BOUNDS, {
       padding: [40, 40],
       animate: true,
-      maxZoom: DEFAULT_ZOOM,
     });
   };
 
@@ -133,6 +131,16 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
     satelliteLayer.addTo(map);
     layerRef.current = satelliteLayer;
 
+    // Create custom panes for strict layering (bottom to top)
+    map.createPane('india-states-pane');
+    map.getPane('india-states-pane').style.zIndex = 400;
+
+    map.createPane('ganga-basin-pane');
+    map.getPane('ganga-basin-pane').style.zIndex = 401;
+
+    map.createPane('ganga-tributaries-pane');
+    map.getPane('ganga-tributaries-pane').style.zIndex = 402;
+
     mapRef.current = map;
 
     villages.forEach((village) => {
@@ -170,12 +178,15 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
       markersRef.current.push(marker);
     });
 
-    if (villages.length > 0) {
-      const bounds = L.latLngBounds(villages.map((village) => [village.lat, village.lng]));
-      map.fitBounds(bounds, {
-        padding: [40, 40],
-        maxZoom: DEFAULT_ZOOM,
-      });
+    if (selectedVillageId) {
+      const village = villages.find((v) => v.id === selectedVillageId);
+      if (village) {
+        map.setView([village.lat, village.lng], SELECTED_VILLAGE_ZOOM);
+      } else {
+        map.fitBounds(GANGA_BASIN_BOUNDS, { padding: [40, 40] });
+      }
+    } else {
+      map.fitBounds(GANGA_BASIN_BOUNDS, { padding: [40, 40] });
     }
 
     return () => {
@@ -229,6 +240,7 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
         .then(geojson => {
           console.log(`Loaded ${key}:`, geojson.features?.length || 0, 'features');
           const geoJsonLayer = L.geoJSON(geojson, {
+            pane: `${key}-pane`,
             style: {
               color: color,
               weight: weight || 3,
