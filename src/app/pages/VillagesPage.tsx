@@ -71,9 +71,9 @@ export function VillagesPage({ initialVillages, siteContent }: VillagesPageProps
               <p className="text-[10px] md:text-[11px] text-blue-200 hidden sm:block">Ganga River Basin Village Assessment</p>
             </div>
           </div>
-          <nav className="flex items-center gap-1">
+          <nav className="flex items-center gap-1 shrink-0">
             <button
-              className="flex items-center gap-1.5 px-2 sm:px-3 md:px-4 py-2 rounded-lg text-blue-200 hover:bg-white/10 text-[12px] md:text-[13px] transition-colors"
+              className="flex items-center gap-1.5 px-3 md:px-4 py-2 rounded-lg text-blue-200 hover:bg-white/10 text-[12px] md:text-[13px] transition-colors"
               onClick={() => router.push("/")}
             >
               <Map className="w-4 h-4" />
@@ -81,7 +81,7 @@ export function VillagesPage({ initialVillages, siteContent }: VillagesPageProps
             </button>
             <button 
               onClick={() => setIsSidebarOpen(true)}
-              className="flex items-center gap-1.5 px-2 sm:px-3 md:px-4 py-2 rounded-lg bg-white/20 text-white text-[12px] md:text-[13px] lg:pointer-events-none"
+              className="flex items-center gap-1.5 px-3 md:px-4 py-2 rounded-lg bg-white/20 text-white text-[12px] md:text-[13px] lg:pointer-events-none"
             >
               <List className="w-4 h-4" />
               <span className="hidden sm:inline">All Villages</span>

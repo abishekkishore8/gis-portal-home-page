@@ -63,17 +63,32 @@ export function HomePage({ initialVillages, siteContent }: HomePageProps) {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <header className="sticky top-0 z-10 border-b border-gray-200 bg-gray-100/95 text-gray-800 shadow-sm backdrop-blur-sm">
-        <div className="max-w-screen-2xl mx-auto flex items-center justify-between gap-4 px-6 py-3">
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-white flex items-center justify-center border border-gray-200 shadow-sm">
-              <Globe className="w-5 h-5 text-blue-700" />
+        <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-6 py-3">
+          <div className="w-full md:w-auto flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-lg bg-white flex items-center justify-center border border-gray-200 shadow-sm">
+                <Globe className="w-5 h-5 text-blue-700" />
+              </div>
+              <div>
+                <h1 className="text-[16px] md:text-[18px] text-gray-800 leading-tight">Digital Village Microplan Portal</h1>
+                <p className="text-[10px] md:text-[11px] text-gray-500">Ganga River Basin Village Assessment</p>
+              </div>
             </div>
-            <div>
-              <h1 className="text-[18px] text-gray-800">Digital Village Microplan Portal</h1>
-              <p className="text-[11px] text-gray-500">Ganga River Basin Village Assessment</p>
-            </div>
+            
+            <nav className="flex md:hidden items-center gap-1 rounded-full bg-white/70 p-1 border border-gray-200 shadow-sm ml-2 shrink-0">
+              <button className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white shadow-sm">
+                <Map className="w-4 h-4" />
+              </button>
+              <button
+                className="flex items-center justify-center w-8 h-8 rounded-full text-gray-700 hover:bg-gray-100 transition-colors"
+                onClick={() => router.push("/villages")}
+              >
+                <List className="w-4 h-4" />
+              </button>
+            </nav>
           </div>
-          <nav className="flex items-center gap-1 rounded-full bg-white/70 p-1 border border-gray-200 shadow-sm">
+
+          <nav className="hidden md:flex items-center gap-1 rounded-full bg-white/70 p-1 border border-gray-200 shadow-sm">
             <button className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-blue-600 text-white text-[13px] shadow-sm">
               <Map className="w-4 h-4" />
               Home
@@ -86,16 +101,17 @@ export function HomePage({ initialVillages, siteContent }: HomePageProps) {
               All Villages
             </button>
           </nav>
-          <div className="flex items-center gap-3 ml-2 shrink-0">
+
+          <div className="flex items-center justify-center flex-wrap gap-2 md:gap-3 shrink-0 w-full md:w-auto">
             {siteContent.partnerLogos.map((logo) => (
               <div
                 key={logo.alt}
-                className="h-11 w-20 md:w-24 rounded-md bg-transparent flex items-center justify-center overflow-hidden"
+                className="h-8 w-16 md:h-11 md:w-24 rounded-md bg-transparent flex items-center justify-center overflow-hidden"
               >
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="max-h-10 w-full object-contain opacity-95 mix-blend-multiply"
+                  className="max-h-8 md:max-h-10 w-full object-contain opacity-95 mix-blend-multiply"
                   loading="eager"
                 />
               </div>
@@ -123,17 +139,17 @@ export function HomePage({ initialVillages, siteContent }: HomePageProps) {
               <p className="text-blue-100 text-[14px] mt-3 leading-relaxed">
                 {siteContent.heroDescription}
               </p>
-              <div className="flex gap-3 mt-5">
+              <div className="flex flex-col sm:flex-row gap-3 mt-5">
                 <button
                   onClick={() => router.push("/villages")}
-                  className="flex items-center gap-2 px-5 py-2.5 bg-white text-blue-800 rounded-lg text-[13px] hover:bg-blue-50 transition-colors"
+                  className="flex items-center justify-center gap-2 px-5 py-3 sm:py-2.5 bg-white text-blue-800 rounded-lg text-[14px] sm:text-[13px] hover:bg-blue-50 transition-colors w-full sm:w-auto"
                 >
                   Explore Villages
                   <ArrowRight className="w-4 h-4" />
                 </button>
                 <a
                   href="#map-section"
-                  className="flex items-center gap-2 px-5 py-2.5 bg-white/20 backdrop-blur-sm text-white rounded-lg text-[13px] hover:bg-white/30 transition-colors"
+                  className="flex items-center justify-center gap-2 px-5 py-3 sm:py-2.5 bg-white/20 backdrop-blur-sm text-white rounded-lg text-[14px] sm:text-[13px] hover:bg-white/30 transition-colors w-full sm:w-auto"
                 >
                   <MapPin className="w-4 h-4" />
                   View Map
