@@ -48,6 +48,7 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
   const layerRef = useRef<any>(null);
   const geoJsonLayersRef = useRef<Record<string, any>>({});
   const [isLegendExpanded, setIsLegendExpanded] = useState(false);
+  const [isTileLegendExpanded, setIsTileLegendExpanded] = useState(false);
   const [visibleGeoJsonLayers, setVisibleGeoJsonLayers] = useState<Record<string, boolean>>({
     "ganga-tributaries": true,
     "ganga-basin": true,
@@ -428,9 +429,22 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
       {/* Layer Switcher */}
       {leafletLoaded && (
         <div className="absolute top-4 right-4 z-[1000]">
-          <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden">
-            <p className="px-3 py-1.5 text-[11px] text-gray-500 border-b border-gray-200">Map Layers</p>
-            <div className="flex flex-col">
+          <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden w-36 md:w-40">
+            {/* Mobile Toggle Button */}
+            <button 
+              onClick={() => setIsTileLegendExpanded(!isTileLegendExpanded)}
+              className="w-full flex items-center justify-between px-3 py-2 border-b border-gray-200 md:hidden"
+            >
+              <div className="flex items-center gap-1.5">
+                <Layers className="w-3.5 h-3.5 text-gray-600" />
+                <span className="text-[11px] font-semibold text-gray-700">Base Map</span>
+              </div>
+              <ChevronUp className={`w-3.5 h-3.5 text-gray-500 transition-transform ${isTileLegendExpanded ? 'rotate-180' : ''}`} />
+            </button>
+            <p className="hidden md:block px-3 py-1.5 text-[11px] text-gray-500 border-b border-gray-200">Base Map</p>
+            
+            {/* Collapsible Content */}
+            <div className={`${isTileLegendExpanded ? 'block' : 'hidden'} md:block flex flex-col`}>
               {layerOptions.map((opt) => (
                 <button
                   key={opt.key}
@@ -479,15 +493,14 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
         </button>
       )}
       {/* Legend */}
-      <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg z-[1000] w-[calc(100%-48px)] md:max-w-xs md:w-auto">
+      <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg z-[1000] w-52 sm:w-64 md:max-w-xs md:w-auto">
         {/* Mobile Toggle Button */}
         <button 
           onClick={() => setIsLegendExpanded(!isLegendExpanded)}
-          className="w-full flex items-center justify-between p-3 md:hidden"
+          className="w-full flex items-center justify-between p-2.5 md:hidden"
         >
           <div className="flex items-center gap-2">
-            <Layers className="w-4 h-4 text-gray-600" />
-            <span className="text-[13px] font-semibold text-gray-700">Map Legend & Layers</span>
+            <span className="text-[12px] font-semibold text-gray-700">Legend & Layers</span>
           </div>
           <ChevronUp className={`w-4 h-4 text-gray-500 transition-transform ${isLegendExpanded ? 'rotate-180' : ''}`} />
         </button>

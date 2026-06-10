@@ -161,7 +161,7 @@ export function HomePage({ initialVillages, siteContent }: HomePageProps) {
       </section>
 
       <section className="bg-white border-b border-gray-200 shadow-sm">
-        <div className="max-w-screen-2xl mx-auto px-6 py-5 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="max-w-screen-2xl mx-auto px-6 py-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <div className="flex items-center gap-3 p-3 rounded-xl bg-blue-50">
             <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
               <MapPin className="w-5 h-5 text-blue-600" />
@@ -214,7 +214,7 @@ export function HomePage({ initialVillages, siteContent }: HomePageProps) {
         <div>
           <h3 className="text-gray-800 text-[18px] mb-3">{siteContent.focusTitle}</h3>
           <p className="text-[14px] text-gray-600 mb-4">{siteContent.focusBlurb}</p>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {siteContent.focusAreas.map((area) => {
               const Icon = focusAreaIcons[area.label as keyof typeof focusAreaIcons] ?? Target;
 

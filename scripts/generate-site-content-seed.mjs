@@ -57,8 +57,13 @@ const siteContent = {
   focusAreas: [
     { icon: 'Leaf', label: 'Community Awareness', color: 'bg-green-100 text-green-600' },
     { icon: 'Droplets', label: 'Hygiene & Sanitation', color: 'bg-blue-100 text-blue-600' },
-    { icon: 'TreePine', label: 'Biodiversity', color: 'bg-emerald-100 text-emerald-600' },
     { icon: 'Target', label: 'Renewable Energy', color: 'bg-amber-100 text-amber-600' },
+    { icon: 'TreePine', label: 'Biodiversity', color: 'bg-emerald-100 text-emerald-600' },
+    { icon: 'Wheat', label: 'Agriculture/organic farming practice', color: 'bg-yellow-100 text-yellow-600' },
+    { icon: 'Factory', label: 'Pollution reduction mechanism', color: 'bg-gray-100 text-gray-600' },
+    { icon: 'Waves', label: 'River flow/river structure', color: 'bg-cyan-100 text-cyan-600' },
+    { icon: 'Users', label: 'Community Based Institution', color: 'bg-indigo-100 text-indigo-600' },
+    { icon: 'GraduationCap', label: 'Skill development in area', color: 'bg-purple-100 text-purple-600' },
   ],
   solutions,
 };
