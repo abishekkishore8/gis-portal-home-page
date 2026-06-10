@@ -172,13 +172,15 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
 
       const marker = L.marker([village.lat, village.lng], { icon })
         .addTo(map)
-        .bindTooltip(
-          `<div style="padding:4px 8px;">
-            <strong>${village.name}</strong><br/>
-            <span style="color:#666">${village.district}, ${village.state}</span><br/>
-            <span>Score: ${formatScore(village.overallScore)}/10</span>
+        .bindPopup(
+          `<div style="padding:4px 8px; min-width:140px;">
+            <strong style="font-size: 14px; color: #1f2937;">${village.name}</strong><br/>
+            <span style="color:#6b7280; font-size: 12px;">${village.district}, ${village.state}</span><br/>
+            <div style="margin-top: 4px; padding-top: 4px; border-top: 1px solid #e5e7eb;">
+              <span style="font-size: 12px; font-weight: 500; color: #4b5563;">Score: ${formatScore(village.overallScore)}/10</span>
+            </div>
           </div>`,
-          { direction: "top", offset: [0, -10] }
+          { offset: [0, -10], closeButton: false }
         );
 
       marker.on("click", () => onVillageClick(village));
@@ -327,6 +329,16 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
       });
 
       marker.setIcon(icon);
+
+      if (isSelected) {
+        if (!marker.isPopupOpen()) {
+          marker.openPopup();
+        }
+      } else {
+        if (marker.isPopupOpen()) {
+          marker.closePopup();
+        }
+      }
     });
 
     if (selectedVillageId) {
