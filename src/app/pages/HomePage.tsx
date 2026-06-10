@@ -15,6 +15,10 @@ import {
   Target,
   TreePine,
   Users,
+  Wheat,
+  Factory,
+  Waves,
+  GraduationCap
 } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { MapView } from "../components/MapView";
@@ -30,8 +34,13 @@ type HomePageProps = {
 const focusAreaIcons = {
   "Community Awareness": Leaf,
   "Hygiene & Sanitation": Droplets,
-  Biodiversity: TreePine,
+  "Biodiversity": TreePine,
   "Renewable Energy": Target,
+  "Agriculture/organic farming practice": Wheat,
+  "Pollution reduction mechanism": Factory,
+  "River flow/river structure": Waves,
+  "Community Based Institution": Users,
+  "Skill development in area": GraduationCap,
 } as const;
 
 export function HomePage({ initialVillages, siteContent }: HomePageProps) {
@@ -176,8 +185,8 @@ export function HomePage({ initialVillages, siteContent }: HomePageProps) {
         </div>
       </section>
 
-      <section className="max-w-screen-2xl mx-auto px-6 py-8 grid md:grid-cols-2 gap-8">
-        <div>
+      <section className="max-w-screen-2xl mx-auto px-6 py-8 grid md:grid-cols-[1fr_2fr] gap-8 items-start">
+        <div className="sticky top-24">
           <h3 className="text-gray-800 text-[18px] mb-3">{siteContent.aboutTitle}</h3>
           <p className="text-[14px] text-gray-600 leading-relaxed mb-4">{siteContent.aboutBody}</p>
           <p className="text-[14px] text-gray-600 leading-relaxed">
