@@ -202,7 +202,7 @@ export function HomePage({ initialVillages, siteContent }: HomePageProps) {
       </section>
 
       <section className="max-w-screen-2xl mx-auto px-6 py-8 grid md:grid-cols-[1fr_2fr] gap-8 items-start">
-        <div className="sticky top-24">
+        <div className="md:sticky md:top-24 bg-gray-50 z-[5] pb-4 md:pb-0">
           <h3 className="text-gray-800 text-[18px] mb-3">{siteContent.aboutTitle}</h3>
           <p className="text-[14px] text-gray-600 leading-relaxed mb-4">{siteContent.aboutBody}</p>
           <p className="text-[14px] text-gray-600 leading-relaxed">
