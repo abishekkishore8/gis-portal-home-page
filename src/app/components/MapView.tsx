@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { Layers, ChevronUp } from "lucide-react";
 import type { Village } from "../data/village-types";
 
 interface MapViewProps {
@@ -46,6 +47,7 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
   const [activeLayer, setActiveLayer] = useState<string>("satellite");
   const layerRef = useRef<any>(null);
   const geoJsonLayersRef = useRef<Record<string, any>>({});
+  const [isLegendExpanded, setIsLegendExpanded] = useState(false);
   const [visibleGeoJsonLayers, setVisibleGeoJsonLayers] = useState<Record<string, boolean>>({
     "ganga-tributaries": true,
     "ganga-basin": true,
@@ -477,50 +479,65 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
         </button>
       )}
       {/* Legend */}
-      <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-lg p-3 shadow-lg z-[1000] max-w-xs">
-        <div className="mb-3 pb-3 border-b border-gray-200">
-          <p className="mb-2 text-[13px] font-semibold text-gray-600">Score Legend</p>
-          <div className="flex flex-col gap-1.5">
-            {[
-              { color: "#ef4444", label: "Needs Attention (0-4)" },
-              { color: "#eab308", label: "Improvement Needed (4.01-7)" },
-              { color: "#10b981", label: "Well Performing (7.01-10)" },
-            ].map((item) => (
-              <div key={item.label} className="flex items-center gap-2">
-                <div
-                  className="w-3 h-3 rounded-full border border-white shadow-sm flex-shrink-0"
-                  style={{ background: item.color }}
-                />
-                <span className="text-[12px] text-gray-700">{item.label}</span>
-              </div>
-            ))}
+      <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg z-[1000] w-[calc(100%-48px)] md:max-w-xs md:w-auto">
+        {/* Mobile Toggle Button */}
+        <button 
+          onClick={() => setIsLegendExpanded(!isLegendExpanded)}
+          className="w-full flex items-center justify-between p-3 md:hidden"
+        >
+          <div className="flex items-center gap-2">
+            <Layers className="w-4 h-4 text-gray-600" />
+            <span className="text-[13px] font-semibold text-gray-700">Map Legend & Layers</span>
           </div>
-        </div>
+          <ChevronUp className={`w-4 h-4 text-gray-500 transition-transform ${isLegendExpanded ? 'rotate-180' : ''}`} />
+        </button>
 
-        <div>
-          <p className="mb-2 text-[13px] font-semibold text-gray-600">Map Layers</p>
-          <div className="flex flex-col gap-2">
-            {[
-              { key: "ganga-tributaries", color: "#00d8ff", label: "Tributaries" },
-              { key: "ganga-basin", color: "#000000", label: "Ganga Basin" },
-              { key: "india-states", color: "#f472b6", label: "State Boundaries" },
-            ].map((layer) => (
-              <label key={layer.key} className="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-1.5 rounded transition-colors">
-                <input
-                  type="checkbox"
-                  checked={visibleGeoJsonLayers[layer.key] || false}
-                  onChange={() => toggleGeoJsonLayer(layer.key)}
-                  className="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer"
-                />
-                <div className="flex items-center gap-2 flex-1">
+        {/* Collapsible Content */}
+        <div className={`${isLegendExpanded ? 'block' : 'hidden'} md:block p-3 md:p-3 border-t border-gray-100 md:border-0`}>
+          <div className="mb-3 pb-3 border-b border-gray-200">
+            <p className="mb-2 text-[13px] font-semibold text-gray-600">Score Legend</p>
+            <div className="flex flex-col gap-1.5">
+              {[
+                { color: "#ef4444", label: "Needs Attention (0-4)" },
+                { color: "#eab308", label: "Improvement Needed (4.01-7)" },
+                { color: "#10b981", label: "Well Performing (7.01-10)" },
+              ].map((item) => (
+                <div key={item.label} className="flex items-center gap-2">
                   <div
-                    className="w-2.5 h-2.5 border-2 flex-shrink-0"
-                    style={{ borderColor: layer.color }}
+                    className="w-3 h-3 rounded-full border border-white shadow-sm flex-shrink-0"
+                    style={{ background: item.color }}
                   />
-                  <span className="text-[12px] text-gray-700">{layer.label}</span>
+                  <span className="text-[12px] text-gray-700">{item.label}</span>
                 </div>
-              </label>
-            ))}
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <p className="mb-2 text-[13px] font-semibold text-gray-600">Map Layers</p>
+            <div className="flex flex-col gap-2">
+              {[
+                { key: "ganga-tributaries", color: "#00d8ff", label: "Tributaries" },
+                { key: "ganga-basin", color: "#000000", label: "Ganga Basin" },
+                { key: "india-states", color: "#f472b6", label: "State Boundaries" },
+              ].map((layer) => (
+                <label key={layer.key} className="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-1.5 rounded transition-colors">
+                  <input
+                    type="checkbox"
+                    checked={visibleGeoJsonLayers[layer.key] || false}
+                    onChange={() => toggleGeoJsonLayer(layer.key)}
+                    className="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer"
+                  />
+                  <div className="flex items-center gap-2 flex-1">
+                    <div
+                      className="w-2.5 h-2.5 border-2 flex-shrink-0"
+                      style={{ borderColor: layer.color }}
+                    />
+                    <span className="text-[12px] text-gray-700">{layer.label}</span>
+                  </div>
+                </label>
+              ))}
+            </div>
           </div>
         </div>
       </div>
