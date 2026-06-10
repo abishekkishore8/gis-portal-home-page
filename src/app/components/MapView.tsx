@@ -27,8 +27,8 @@ const DEFAULT_ZOOM = 6;
 const SELECTED_VILLAGE_ZOOM = 12;
 
 const GANGA_BASIN_BOUNDS: [[number, number], [number, number]] = [
-  [21.539445, 73.383270], // SouthWest
-  [31.467233, 89.096366]  // NorthEast
+  [19.0, 70.0], // SouthWest (zoomed out more)
+  [33.5, 91.5]  // NorthEast (zoomed out more)
 ];
 
 declare global {
@@ -67,7 +67,7 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
     }
 
     mapRef.current.fitBounds(GANGA_BASIN_BOUNDS, {
-      padding: [40, 40],
+      padding: [60, 60],
       animate: true,
     });
   };
@@ -118,6 +118,13 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
       scrollWheelZoom: true,
       fadeAnimation: false,
       zoomAnimation: false,
+      attributionControl: false,
+      minZoom: 5,
+      maxBounds: [
+        [5.0, 60.0], // South West bound of India (roughly)
+        [38.0, 100.0] // North East bound of India (roughly)
+      ],
+      maxBoundsViscosity: 1.0
     }).setView(DEFAULT_CENTER, DEFAULT_ZOOM);
 
     const satelliteLayer = L.tileLayer(
@@ -183,10 +190,10 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
       if (village) {
         map.setView([village.lat, village.lng], SELECTED_VILLAGE_ZOOM);
       } else {
-        map.fitBounds(GANGA_BASIN_BOUNDS, { padding: [40, 40] });
+        map.fitBounds(GANGA_BASIN_BOUNDS, { padding: [60, 60] });
       }
     } else {
-      map.fitBounds(GANGA_BASIN_BOUNDS, { padding: [40, 40] });
+      map.fitBounds(GANGA_BASIN_BOUNDS, { padding: [60, 60] });
     }
 
     return () => {
