@@ -429,15 +429,15 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
       {/* Layer Switcher */}
       {leafletLoaded && (
         <div className="absolute top-4 right-4 z-[1000]">
-          <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-md border border-gray-200/50 overflow-hidden w-32 md:w-40 md:shadow-lg md:border-none">
+          <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden w-36 md:w-40">
             {/* Mobile Toggle Button */}
             <button 
               onClick={() => setIsTileLegendExpanded(!isTileLegendExpanded)}
-              className={`w-full flex items-center justify-between px-3 h-[38px] md:hidden ${isTileLegendExpanded ? 'border-b border-gray-200/50' : ''}`}
+              className="w-full flex items-center justify-between px-3 py-2 border-b border-gray-200 md:hidden"
             >
               <div className="flex items-center gap-1.5">
-                <Layers className="w-4 h-4 text-blue-600" />
-                <span className="text-[12px] font-semibold text-gray-700">Base Map</span>
+                <Layers className="w-3.5 h-3.5 text-gray-600" />
+                <span className="text-[11px] font-semibold text-gray-700">Base Map</span>
               </div>
               <ChevronUp className={`w-3.5 h-3.5 text-gray-500 transition-transform ${isTileLegendExpanded ? 'rotate-180' : ''}`} />
             </button>
@@ -472,7 +472,7 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
           type="button"
           title={selectedVillageId ? "Recenter to selected village" : "Show all villages"}
           aria-label={selectedVillageId ? "Recenter to selected village" : "Show all villages"}
-          className="absolute bottom-4 right-4 md:bottom-6 md:right-6 z-[1000] flex h-[44px] w-[44px] md:h-12 md:w-12 items-center justify-center rounded-xl md:rounded-full bg-blue-600 text-white shadow-md md:shadow-xl transition-all hover:bg-blue-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-600/40"
+          className="absolute bottom-6 right-6 z-[1000] flex h-12 w-12 items-center justify-center rounded-full bg-[#0f766e] text-white shadow-xl transition-all hover:bg-[#115e59] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#0f766e]/40"
         >
           <svg
             viewBox="0 0 24 24"
@@ -493,21 +493,21 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
         </button>
       )}
       {/* Legend */}
-      <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm rounded-xl md:rounded-lg shadow-md md:shadow-lg border border-gray-200/50 md:border-none z-[1000] w-[calc(100%-72px)] sm:w-64 md:max-w-xs md:w-auto md:bottom-6 md:left-6">
+      <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg z-[1000] w-52 sm:w-64 md:max-w-xs md:w-auto">
         {/* Mobile Toggle Button */}
         <button 
           onClick={() => setIsLegendExpanded(!isLegendExpanded)}
-          className={`w-full flex items-center justify-between px-3 h-[44px] md:hidden ${isLegendExpanded ? 'border-b border-gray-200/50' : ''}`}
+          className="w-full flex items-center justify-between p-2.5 md:hidden"
         >
           <div className="flex items-center gap-2">
-            <span className="text-[13px] font-semibold text-gray-800">Legend & Layers</span>
+            <span className="text-[12px] font-semibold text-gray-700">Legend & Layers</span>
           </div>
           <ChevronUp className={`w-4 h-4 text-gray-500 transition-transform ${isLegendExpanded ? 'rotate-180' : ''}`} />
         </button>
 
         {/* Collapsible Content */}
-        <div className={`${isLegendExpanded ? 'block' : 'hidden'} md:block p-3 md:p-3`}>
-          <div className="mb-3 pb-3 border-b border-gray-200/70">
+        <div className={`${isLegendExpanded ? 'block' : 'hidden'} md:block p-3 md:p-3 border-t border-gray-100 md:border-0`}>
+          <div className="mb-3 pb-3 border-b border-gray-200">
             <p className="mb-2 text-[13px] font-semibold text-gray-600">Score Legend</p>
             <div className="flex flex-col gap-1.5">
               {[

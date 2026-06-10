@@ -139,10 +139,12 @@ export function VillagesPage({ initialVillages, siteContent }: VillagesPageProps
           {/* Toggle Button for mobile/tablet */}
           <button
             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-            className="absolute top-4 left-16 z-[1000] lg:hidden bg-white/95 backdrop-blur-sm px-3 py-2.5 rounded-lg shadow-lg text-gray-700 hover:bg-gray-50 flex items-center gap-2 font-medium border border-gray-200/50"
+            className="absolute top-4 left-14 sm:left-16 z-[1000] lg:hidden bg-white/95 backdrop-blur-sm w-36 md:w-40 rounded-lg shadow-lg text-gray-700 hover:bg-gray-50 flex items-center justify-between px-3 py-2 border border-gray-200"
           >
-            <Menu className="w-5 h-5 text-[#0f766e]" />
-            <span className="text-[13px]">Village List</span>
+            <div className="flex items-center gap-1.5">
+              <Menu className="w-3.5 h-3.5 text-gray-600" />
+              <span className="text-[11px] font-semibold text-gray-700">Village List</span>
+            </div>
           </button>
 
           {galleryVillage ? (
