@@ -1,13 +1,15 @@
 import { fileURLToPath } from 'node:url';
-import { writeFile } from 'node:fs/promises';
+import { writeFile, readFile } from 'node:fs/promises';
 import xlsx from 'xlsx';
+import path from 'path';
+import fs from 'fs';
 
-import { readdir } from 'node:fs/promises';
-import path from 'node:path';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const rootDir = path.join(__dirname, '..');
 
-const phase2Dir = fileURLToPath(new URL('../village/Phase2', import.meta.url));
-const listWorkbookPath = fileURLToPath(new URL('../List of Microplan villages Phase I& II.xlsx', import.meta.url));
-const phase2DatabaseWorkbookPath = fileURLToPath(new URL('../Final microplan database Phase-2.xlsx', import.meta.url));
+const mainWorkbookPath = path.join(rootDir, 'Digital Microplanning.xlsx');
+const listWorkbookPath = path.join(rootDir, 'List of Microplan villages Phase I& II.xlsx');
+const phase2DatabaseWorkbookPath = path.join(rootDir, 'Final microplan database Phase-2.xlsx');
 
 const demoImages = [
   'https://images.unsplash.com/photo-1759738104613-5eafde92c12f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjBydXJhbCUyMHZpbGxhZ2UlMjByaXZlcmJhbmt8ZW58MXx8fHwxNzcyNDQ2MzU4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
@@ -15,47 +17,6 @@ const demoImages = [
   'https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
   'https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
 ];
-
-const categoryNameMap = {
-  'Community based institution': 'Community Based Institution',
-  'Liveliood and skill development': 'Livelihood and Skill Development',
-};
-
-const maxIndicatorScoreMap = {
-  'Self employed': 60,
-  Employment: 40,
-  'Constructed toilet %': 40,
-  'Toilet in use %': 40,
-  'If relevant community toilet': 20,
-  'Accessed by household village level': 70,
-  'If presence ghat? installed dustbin sufficient': 30,
-  'Collection of waste': 25,
-  Segregation: 20,
-  Dumping: 15,
-  Management: 40,
-  'Implementation of Scheme related to renewable energy': 50,
-  'Scale of household benefitted': 50,
-  'Meeting scheduled implemented scale': 100,
-  Participation: 20,
-  'Conservation Activity scale': 40,
-  'Land percent under organic farming': 60,
-  'Percent of used insecticides, fertilised, pesticides': 40,
-  'Land percent under inorganic farming': 40,
-  'Percent of non used insecticides, fertilised, pesticides': 30,
-  'Change in traditional crops': 30,
-  'Conservation friendly Source of fodder': 60,
-  'High productivity breed used': 40,
-  'Scale of proper Fishing gear': 40,
-  'Non dependence on fishing': 50,
-  'Use of pisciculture fish farming': 10,
-};
-
-const toNumber = (value) => {
-  const numeric = Number(value);
-  return Number.isFinite(numeric) ? numeric : 0;
-};
-
-const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 
 const slugify = (value) => String(value)
   .normalize('NFKD')
@@ -72,277 +33,291 @@ const normalizeName = (value) => String(value)
   .replace(/\s+/g, ' ')
   .trim();
 
+// Mapping dictionary from sheet names in Digital Microplanning.xlsx to correct metadata names
+const sheetToMetadataMap = {
+  'Deer Forest': 'Deer forest',
+  'Madanpur': 'Madanpur ',
+  'Chittupur': 'Chhitupur',
+  'Daranagar': 'Daranagar (Vidurkuti)',
+  'Dinkarpur': 'Dinkarpur',
+  'Khawaspur': 'Khawaspur',
+  'Molnapur': 'Molnapur',
+  'Nawwa Awwal': 'Nuawwawal',
+  'Niwadi Khadar': 'Niwari Khadar',
+  'Pathanpurwa': '(Sewada) Pathanpurva',
+  'Raghunathpur': 'Raghunathpur',
+  'Rajepur': 'Rajepur',
+  'Siswa': 'Siswa',
+  'Nawli': 'Nawli',
+  'Nayachar': 'Nayachar',
+  'Rampur Ghat': 'Rampur ghat',
+  'Tajewala': 'Tajewala',
+  'Rasalpur': 'Rasalpur',
+  'Domri': 'Domari',
+  'Ghat Jamni': 'Ghat Jamni',
+  'Maskaliya': 'Maskalaya',
+  'Rampur': 'Rampur',
+  'Shahjadpur': 'Sahjadpur',
+  'Udaygarhi': 'Udaigarhi',
+  'Dhaka': 'Dhaka',
+  'Mokimpur': 'Mokimpur',
+  'Rajghat': 'Rajghat',
+  'Tatepur': 'Tatepur',
+  'Siror': 'Siror',
+  'Teentanga': 'Tintanga Diyara (South)',
+  'Ashnahi Patti': 'Ashay',
+  'Beelpur': 'Beelpur',
+  'Beerbal': 'Beerbal',
+  'Betalbasan': 'Betalbasan',
+  'Saidpur': 'Saidpur',
+  'Sonbarsa': 'Sonbarsha'
+};
+
 const metadataAliases = new Map([
-  ['beerwal', 'beerbal'],
+  ['chittupur', 'chhitupur'],
+  ['madanpur', 'madanpur '],
   ['nawwa awwal', 'nuawwawal'],
   ['sonbarsa', 'sonbarsha'],
-  ['kunja rampur ghat', 'rampur ghat'],
-  ['pathanpurva', 'sewada pathanpurva'],
-  ['daranagar', 'daranagar vidurkuti'],
-  ['chhitupur', 'chitturpur'],
+  ['rampur ghat', 'rampur ghat'],
+  ['pathanpurwa', '(sewada) pathanpurva'],
+  ['daranagar', 'daranagar (vidurkuti)'],
   ['deer forest', 'deer forest'],
-  ['dinkarpur', 'dinkerpur'],
-  ['nawli', 'navli'],
-  ['niwari khadar', 'nivadi khadar'],
-  ['rajepur', 'rajapur'],
-  ['saidpur', 'saeedpur'],
-  ['siswa', 'sisva'],
+  ['dinkarpur', 'dinkarpur'],
+  ['nawli', 'nawli'],
+  ['niwadi khadar', 'niwari khadar'],
+  ['rajepur', 'rajepur'],
+  ['saidpur', 'saidpur'],
+  ['siswa', 'siswa'],
+  ['domri', 'domari'],
+  ['maskaliya', 'maskalaya'],
+  ['shahjadpur', 'sahjadpur'],
+  ['udaygarhi', 'udaigarhi'],
+  ['teentanga', 'tintanga diyara (south)'],
+  ['ashnahi patti', 'ashay']
 ]);
 
-const villageOverrides = new Map([
-  ['nawwa-awwal', {
-    population: 7300,
-    households: 1400,
-  }],
-]);
-
-function findMetadataForWorkbook(workbookVillageName, metadataByName) {
-  const normalized = normalizeName(workbookVillageName);
-  const alias = metadataAliases.get(normalized);
-
-  if (alias && metadataByName.has(alias)) {
-    return metadataByName.get(alias);
-  }
-
-  if (metadataByName.has(normalized)) {
-    return metadataByName.get(normalized);
-  }
-
-  for (const [candidateName, metadata] of metadataByName.entries()) {
-    if (candidateName.includes(normalized) || normalized.includes(candidateName)) {
-      return metadata;
-    }
-  }
-
-  return undefined;
-}
-
-function getCell(sheet, headerIndex, rowIndex, header) {
-  const columnIndex = headerIndex[header];
-  if (columnIndex == null) {
-    return undefined;
-  }
-
-  return sheet[xlsx.utils.encode_cell({ r: rowIndex, c: columnIndex })];
-}
-
-function getCellFormula(sheet, headerIndex, rowIndex, header) {
-  return getCell(sheet, headerIndex, rowIndex, header)?.f ?? '';
-}
-
-function parseVillageWorkbook(workbookPath) {
-  const workbook = xlsx.readFile(workbookPath, { cellFormula: true, cellNF: true, cellText: true });
-  const sheet = workbook.Sheets[workbook.SheetNames[0]];
-  const rows = xlsx.utils.sheet_to_json(sheet, { defval: '' });
-  const range = xlsx.utils.decode_range(sheet['!ref']);
-  const headers = [];
-
-  for (let column = range.s.c; column <= range.e.c; column += 1) {
-    const address = xlsx.utils.encode_cell({ r: 0, c: column });
-    headers[column] = String(sheet[address]?.v ?? '').trim();
-  }
-
-  const headerIndex = Object.fromEntries(headers.map((header, index) => [header, index]));
-  const normalizedRows = rows.map((row, index) => ({
-    rowNumber: index + 2,
-    category: String(row.Category ?? '').trim(),
-    subCategory: String(row['Sub Category'] ?? '').trim(),
-    score: toNumber(row.Score),
-    indicatorName: String(row['category (individual category per hundread unit)'] ?? '').trim(),
-    indicatorWeight: toNumber(row['Indivividual Score']),
-    userScore: toNumber(row['User Score']),
-    formulaValue: toNumber(row.Formula),
-    formulaExpression: getCellFormula(sheet, headerIndex, index + 1, 'Formula'),
-    output: String(row.Output ?? '').trim(),
-    categoryRanking: toNumber(row['Category Ranking']),
-    categoryRankingFormula: getCellFormula(sheet, headerIndex, index + 1, 'Category Ranking'),
-    modelVillageRanking: toNumber(row['Model Village Ranking']),
-  }));
-
-  const grouped = new Map();
-  let currentCategory = '';
-
-  for (const row of normalizedRows) {
-    if (row.category) {
-      currentCategory = row.category;
-    }
-
-    const rawCategory = currentCategory;
-    if (!rawCategory) {
-      continue;
-    }
-
-    const category = categoryNameMap[rawCategory] ?? rawCategory;
-    const categoryEntry = grouped.get(category) ?? {
-      category,
-      output: row.output || 'Medium',
-      scoreOnScale10: clamp(row.categoryRanking || row.modelVillageRanking || 0, 0, 10),
-      formulaTotal: 0,
-      rankingFormula: row.categoryRankingFormula || '',
-      subCategories: [],
-    };
-
-    if (row.output) {
-      categoryEntry.output = row.output;
-    }
-
-    if (row.categoryRanking) {
-      categoryEntry.scoreOnScale10 = clamp(row.categoryRanking, 0, 10);
-    }
-
-    if (!row.subCategory) {
-      const lastSubCategory = categoryEntry.subCategories.at(-1);
-      if (lastSubCategory && row.indicatorName) {
-        lastSubCategory.indicators.push({
-          name: row.indicatorName,
-          maxIndividualScore: row.indicatorWeight || (maxIndicatorScoreMap[row.indicatorName] ?? 100),
-          individualScore: row.userScore,
-        });
-      }
-
-      grouped.set(category, categoryEntry);
-      continue;
-    }
-
-    categoryEntry.subCategories.push({
-      subCategory: row.subCategory,
-      score: row.score,
-      maxScore: row.score,
-      individualScore: row.userScore,
-      formulaValue: row.formulaValue,
-      formulaExpression: row.formulaExpression || undefined,
-      indicators: row.indicatorName
-        ? [{
-            name: row.indicatorName,
-            maxIndividualScore: row.indicatorWeight || (maxIndicatorScoreMap[row.indicatorName] ?? 100),
-            individualScore: row.userScore,
-          }]
-        : [],
-    });
-
-    categoryEntry.formulaTotal += row.formulaValue;
-    grouped.set(category, categoryEntry);
-  }
-
-  const scores = Array.from(grouped.values());
-  const overallScore = scores.length
-    ? normalizedRows[0]?.modelVillageRanking || scores.reduce((sum, category) => sum + category.scoreOnScale10, 0) / scores.length
-    : 0;
-
-  return { scores, overallScore };
-}
+// Map theme names from sheet to categories in solutions.ts
+const categoryDefs = [
+  { name: 'Community Awareness', match: '1. Awareness' },
+  { name: 'Community Based Institution', match: '2. Community' },
+  { name: 'Hygiene and Sanitation', match: '3. Sanitation' },
+  { name: 'Livelihood and Skill Development', match: '4. Livelihood' },
+  { name: 'Renewable Energy', match: '5. Alternative' },
+  { name: 'Agriculture', match: '6. Agriculture' },
+  { name: 'Animal Husbandry', match: '7. Livestock' },
+  { name: 'Fishery', match: '8. Fisheries' },
+  { name: 'Biodiversity Conservation Plan', match: '9. Biodiversity' }
+];
 
 function parsePhaseListMetadata() {
   const workbook = xlsx.readFile(listWorkbookPath, { cellFormula: true, cellNF: true, cellText: true });
-  const sheet = workbook.Sheets['Phase 2'] ?? workbook.Sheets[workbook.SheetNames[0]];
-  const rows = xlsx.utils.sheet_to_json(sheet, { defval: '' });
-
-  return rows
+  
+  // Parse Phase 2
+  const sheet2 = workbook.Sheets['Phase 2'];
+  const rows2 = xlsx.utils.sheet_to_json(sheet2, { defval: '' });
+  const p2Data = rows2
     .filter((row) => typeof row['Phase II Microplan details'] === 'number' && row.__EMPTY_1)
     .map((row) => ({
-      serial: toNumber(row['Phase II Microplan details']),
-      river: String(row.__EMPTY ?? '').trim(),
       name: String(row.__EMPTY_1 ?? '').trim(),
       block: String(row.__EMPTY_2 ?? '').trim(),
       district: String(row.__EMPTY_3 ?? '').trim(),
       state: String(row.__EMPTY_4 ?? '').trim(),
-      lat: toNumber(row.__EMPTY_5),
-      lng: toNumber(row.__EMPTY_6),
-      status: String(row.__EMPTY_7 ?? '').trim(),
+      lat: Number(row.__EMPTY_5),
+      lng: Number(row.__EMPTY_6),
+      river: String(row.__EMPTY ?? '').trim(),
     }));
-}
 
-function parsePhase2DatabaseMetadata() {
-  const workbook = xlsx.readFile(phase2DatabaseWorkbookPath, { cellFormula: true, cellNF: true, cellText: true });
-  const sheet = workbook.Sheets.original ?? workbook.Sheets[workbook.SheetNames[0]];
-  const rows = xlsx.utils.sheet_to_json(sheet, { defval: '' });
-
-  return rows
-    .filter((row) => row['Name of Village'])
+  // Parse Phase 1
+  const sheet1 = workbook.Sheets['Phase 1'];
+  const rows1 = xlsx.utils.sheet_to_json(sheet1, { defval: '' });
+  const p1Data = rows1
+    .filter((row) => typeof row['List of Completed village level Microplans ( Phase -1)'] === 'number' && row.__EMPTY_1)
     .map((row) => ({
-      name: String(row['Name of Village'] ?? '').trim(),
-      district: String(row.District ?? '').trim(),
-      state: String(row.State ?? '').trim(),
-      population: toNumber(row['Total population']),
-      households: toNumber(row['Total no of Households']),
+      name: String(row.__EMPTY_1 ?? '').trim(),
+      block: String(row.__EMPTY_2 ?? '').trim(),
+      district: String(row.__EMPTY_3 ?? '').trim(),
+      state: String(row.__EMPTY_6 ?? '').trim(),
+      lat: Number(row.__EMPTY_4),
+      lng: Number(row.__EMPTY_5),
+      river: String(row.__EMPTY ?? '').trim(),
     }));
+
+  return [...p2Data, ...p1Data];
 }
 
-function findDatabaseMetadataForVillage(workbookVillageName, databaseMetadataByName) {
-  const normalized = normalizeName(workbookVillageName);
-  const alias = metadataAliases.get(normalized);
+function parsePhase2Demographics() {
+  const workbook = xlsx.readFile(phase2DatabaseWorkbookPath, { cellFormula: true, cellNF: true, cellText: true });
+  const rows = xlsx.utils.sheet_to_json(workbook.Sheets['original'], { defval: '' });
+  return rows.map((row) => ({
+    name: String(row['Name of Village'] ?? '').trim(),
+    population: Number(row['Total population'] || 0),
+    households: Number(row['Total no of Households'] || 0),
+  }));
+}
 
-  if (databaseMetadataByName.has(normalized)) {
-    return databaseMetadataByName.get(normalized);
-  }
+async function generateSeed() {
+  console.log('Loading metadata...');
+  const metadataList = parsePhaseListMetadata();
+  const demographicsList = parsePhase2Demographics();
 
-  if (alias && databaseMetadataByName.has(alias)) {
-    return databaseMetadataByName.get(alias);
-  }
+  console.log('Loading Digital Microplanning.xlsx...');
+  const wb = xlsx.readFile(mainWorkbookPath);
+  const sheets = wb.SheetNames.filter(s => s !== 'Indicators');
 
-  for (const [candidateName, metadata] of databaseMetadataByName.entries()) {
-    if (candidateName.includes(normalized) || normalized.includes(candidateName)) {
-      return metadata;
+  const villages = [];
+
+  for (const sheetName of sheets) {
+    try {
+      console.log(`Parsing sheet: ${sheetName}...`);
+      const sheet = wb.Sheets[sheetName];
+      const range = xlsx.utils.decode_range(sheet['!ref']);
+      
+      const rows = [];
+      for (let r = 0; r <= range.e.r; r++) {
+        const c0 = sheet[xlsx.utils.encode_cell({ r, c: 0 })]?.v || '';
+        const c1 = sheet[xlsx.utils.encode_cell({ r, c: 1 })]?.v || '';
+        const c2 = sheet[xlsx.utils.encode_cell({ r, c: 2 })]?.v || '';
+        rows.push({ r, c0, c1, c2 });
+      }
+
+      // Resolve metadata
+      const mappedName = sheetToMetadataMap[sheetName] || sheetName;
+      const normalizedMappedName = normalizeName(mappedName);
+
+      let metadata = metadataList.find(m => normalizeName(m.name) === normalizedMappedName);
+      if (!metadata) {
+        // Try alias lookup
+        const alias = metadataAliases.get(normalizedMappedName);
+        if (alias) {
+          metadata = metadataList.find(m => normalizeName(m.name) === normalizeName(alias));
+        }
+      }
+
+      if (!metadata) {
+        console.warn(`⚠️ Warning: Could not find location metadata for sheet "${sheetName}" (mapped as "${mappedName}")`);
+        continue;
+      }
+
+      // Resolve demographics
+      let demographics = demographicsList.find(d => normalizeName(d.name) === normalizedMappedName);
+      if (!demographics) {
+        const alias = metadataAliases.get(normalizedMappedName);
+        if (alias) {
+          demographics = demographicsList.find(d => normalizeName(d.name) === normalizeName(alias));
+        }
+      }
+
+      const population = demographics?.population || 2500;
+      const households = demographics?.households || 500;
+
+      // Extract Categories dynamically
+      const scores = [];
+      categoryDefs.forEach((def, index) => {
+        const startIdx = rows.findIndex(row => String(row.c0).includes(def.match) || String(row.c1).includes(def.match));
+        if (startIdx === -1) {
+          console.warn(`⚠️ Warning: Could not find category start for: ${def.name} in sheet ${sheetName}`);
+          return;
+        }
+
+        const nextDef = categoryDefs[index + 1];
+        const endIdx = nextDef 
+          ? rows.findIndex(row => String(row.c0).includes(nextDef.match) || String(row.c1).includes(nextDef.match)) 
+          : rows.findIndex(row => String(row.c0).includes('Final Theme-wise') || String(row.c0).includes('Overall Score'));
+
+        const indicators = [];
+        for (let i = startIdx + 1; i < endIdx; i++) {
+          const row = rows[i];
+          if (typeof row.c0 === 'number' || (typeof row.c0 === 'string' && /^\d+$/.test(row.c0.trim()))) {
+            indicators.push({ name: String(row.c1).trim(), score: Number(row.c2 || 0) });
+          }
+        }
+
+        const sum = indicators.reduce((s, ind) => s + ind.score, 0);
+        const rawThemeScore = indicators.length ? sum / indicators.length : 0;
+        const scoreOnScale10 = rawThemeScore * 2;
+        const formulaTotal = Math.round(rawThemeScore * 20);
+
+        let output = 'Medium';
+        if (rawThemeScore < 2.5) output = 'Low';
+        else if (rawThemeScore > 4.0) output = 'High';
+
+        const subCategories = indicators.map((ind) => ({
+          subCategory: ind.name,
+          score: 5,
+          maxScore: 5,
+          individualScore: ind.score,
+          formulaValue: ind.score,
+          indicators: [
+            {
+              name: ind.name,
+              maxIndividualScore: 5,
+              individualScore: ind.score
+            }
+          ]
+        }));
+
+        scores.push({
+          category: def.name,
+          output,
+          scoreOnScale10,
+          formulaTotal,
+          subCategories
+        });
+      });
+
+      // Calculate Overall Score dynamically from categories
+      const overallScore = (scores.reduce((s, c) => s + c.scoreOnScale10, 0) / scores.length);
+
+      villages.push({
+        id: slugify(sheetName),
+        name: metadata.name,
+        district: metadata.district,
+        state: metadata.state,
+        lat: metadata.lat,
+        lng: metadata.lng,
+        population,
+        households,
+        images: demoImages,
+        overallScore,
+        scores
+      });
+
+    } catch (error) {
+      console.error(`❌ Error parsing sheet "${sheetName}":`, error.message);
     }
   }
 
-  return undefined;
+  // Write files
+  console.log(`Writing seed files for ${villages.length} villages...`);
+
+  const escapeLiteral = (value) => String(value).replace(/'/g, "''");
+
+  const rowsSql = villages
+    .map((village) => {
+      const images = escapeLiteral(JSON.stringify(village.images));
+      const scoresJson = escapeLiteral(JSON.stringify(village.scores));
+
+      return `('${escapeLiteral(village.id)}', '${escapeLiteral(village.name)}', '${escapeLiteral(village.district)}', '${escapeLiteral(village.state)}', ${village.lat}, ${village.lng}, ${village.population}, ${village.households}, ${village.overallScore / 2}, '${images}'::jsonb, '${scoresJson}'::jsonb)`;
+    })
+    .join(',\n');
+
+  // TRUNCATE is included to completely delete old villages and load the new ones freshly!
+  const sql = `truncate table public.villages;\n\ninsert into public.villages (id, name, district, state, lat, lng, population, households, overall_score, images, scores)\nvalues\n${rowsSql}\non conflict (id) do update set\n  name = excluded.name,\n  district = excluded.district,\n  state = excluded.state,\n  lat = excluded.lat,\n  lng = excluded.lng,\n  population = excluded.population,\n  households = excluded.households,\n  overall_score = excluded.overall_score,\n  images = excluded.images,\n  scores = excluded.scores;\n`;
+
+  await writeFile(path.join(rootDir, 'supabase', 'villages.seed.sql'), sql, 'utf8');
+  await writeFile(path.join(rootDir, 'supabase', 'villages.seed.json'), JSON.stringify(villages, null, 2), 'utf8');
+
+  console.log('Re-generating bootstrap-all.sql...');
+  const schemaPath = path.join(rootDir, 'supabase', 'villages.schema.sql');
+  const contentSeedPath = path.join(rootDir, 'supabase', 'site-content.seed.sql');
+  
+  const schemaContent = await readFile(schemaPath, 'utf8');
+  const contentSeedContent = await readFile(contentSeedPath, 'utf8');
+  
+  const bootstrapAllContent = `${schemaContent.trim()}\n\n${sql.trim()}\n\n${contentSeedContent.trim()}\n`;
+  await writeFile(path.join(rootDir, 'supabase', 'bootstrap-all.sql'), bootstrapAllContent, 'utf8');
+
+  console.log(`✓ Successfully updated seed files and bootstrap-all.sql for all ${villages.length} villages.`);
 }
 
-const metadataRows = parsePhaseListMetadata();
-const metadataByName = new Map(metadataRows.map((row) => [normalizeName(row.name), row]));
-const databaseMetadataRows = parsePhase2DatabaseMetadata();
-const databaseMetadataByName = new Map(databaseMetadataRows.map((row) => [normalizeName(row.name), row]));
-const ignoredWorkbookNames = new Set([
-  'final individual scoring sheet.xlsx',
-]);
-
-const workbookFiles = (await readdir(phase2Dir))
-  .filter((fileName) => fileName.toLowerCase().endsWith('.xlsx'))
-  .filter((fileName) => !ignoredWorkbookNames.has(fileName.toLowerCase()))
-  .sort((left, right) => left.localeCompare(right));
-
-const villages = workbookFiles.map((fileName) => {
-  const workbookPath = path.join(phase2Dir, fileName);
-  const workbookVillageName = path.basename(fileName, path.extname(fileName)).trim();
-  const metadata = findMetadataForWorkbook(workbookVillageName, metadataByName);
-  const databaseMetadata = findDatabaseMetadataForVillage(workbookVillageName, databaseMetadataByName);
-
-  if (!metadata) {
-    throw new Error(`Missing Phase 2 metadata for workbook: ${fileName}`);
-  }
-
-  const { scores, overallScore } = parseVillageWorkbook(workbookPath);
-
-  return {
-    id: slugify(workbookVillageName),
-    name: metadata.name,
-    district: metadata.district,
-    state: metadata.state,
-    lat: metadata.lat,
-    lng: metadata.lng,
-    population: villageOverrides.get(slugify(workbookVillageName))?.population ?? databaseMetadata?.population ?? 0,
-    households: villageOverrides.get(slugify(workbookVillageName))?.households ?? databaseMetadata?.households ?? 0,
-    images: demoImages,
-    overallScore,
-    scores,
-  };
-});
-
-const escapeLiteral = (value) => String(value).replace(/'/g, "''");
-
-const rowsSql = villages
-  .map((village) => {
-    const images = escapeLiteral(JSON.stringify(village.images));
-    const scoresJson = escapeLiteral(JSON.stringify(village.scores));
-
-    return `('${escapeLiteral(village.id)}', '${escapeLiteral(village.name)}', '${escapeLiteral(village.district)}', '${escapeLiteral(village.state)}', ${village.lat}, ${village.lng}, ${village.population}, ${village.households}, ${village.overallScore}, '${images}'::jsonb, '${scoresJson}'::jsonb)`;
-  })
-  .join(',\n');
-
-const sql = `insert into public.villages (id, name, district, state, lat, lng, population, households, overall_score, images, scores)\nvalues\n${rowsSql}\non conflict (id) do update set\n  name = excluded.name,\n  district = excluded.district,\n  state = excluded.state,\n  lat = excluded.lat,\n  lng = excluded.lng,\n  population = excluded.population,\n  households = excluded.households,\n  overall_score = excluded.overall_score,\n  images = excluded.images,\n  scores = excluded.scores;\n`;
-
-await writeFile(new URL('../supabase/villages.seed.sql', import.meta.url), sql, 'utf8');
-await writeFile(new URL('../supabase/villages.seed.json', import.meta.url), JSON.stringify(villages, null, 2), 'utf8');
-
-console.log(`Generated seed files for ${villages.length} Phase 2 villages.`);
+generateSeed();

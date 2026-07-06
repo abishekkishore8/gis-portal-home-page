@@ -103,7 +103,7 @@ export function mapVillageToRow(village: Village): VillageInsert {
     lng: village.lng,
     population: village.population,
     households: village.households,
-    overall_score: village.overallScore,
+    overall_score: village.overallScore / 2,
     images: village.images,
     scores: toJson(village.scores),
   };
@@ -119,7 +119,7 @@ export function mapRowToVillage(row: VillageRow): Village {
     lng: Number(row.lng),
     population: Number(row.population),
     households: Number(row.households),
-    overallScore: Number(row.overall_score),
+    overallScore: Number(row.overall_score) * 2,
     images: Array.isArray(row.images) ? row.images : [],
     scores: normalizeScores(row.scores),
   };
@@ -168,7 +168,7 @@ export function mapFormValuesToInsert(values: VillageFormValues): VillageInsert 
     lng: values.lng,
     population: values.population,
     households: values.households,
-    overall_score: values.overallScore,
+    overall_score: values.overallScore / 2,
     images: values.images,
     scores: toJson(values.scores),
   };
