@@ -83,7 +83,7 @@ function SolutionsModal({
 }) {
   const solutionEntries = getSolutionsForCategory(siteContent, category.category);
   const level = getSolutionLevel(scoreOnScale10);
-  const levelLabel = level === "low" ? "Low (0-4)" : level === "medium" ? "Medium (4.01-7)" : "High (7.01-10)";
+  const levelLabel = level === "low" ? "Low (0-2.0)" : level === "medium" ? "Medium (2.01-3.5)" : "High (3.51-5.0)";
   const levelColor =
     level === "low"
       ? "text-red-600 bg-red-50"
