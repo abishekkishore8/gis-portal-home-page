@@ -14,12 +14,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.478306878306878,
+    "overallScore": 2.239153439153439,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Medium",
-        "scoreOnScale10": 5.142857142857143,
+        "scoreOnScale10": 2.5714285714285716,
         "formulaTotal": 51,
         "subCategories": [
           {
@@ -125,7 +125,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -203,7 +203,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.5,
+        "scoreOnScale10": 1.75,
         "formulaTotal": 35,
         "subCategories": [
           {
@@ -323,7 +323,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Low",
-        "scoreOnScale10": 4.571428571428571,
+        "scoreOnScale10": 2.2857142857142856,
         "formulaTotal": 46,
         "subCategories": [
           {
@@ -429,7 +429,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 5.333333333333333,
+        "scoreOnScale10": 2.6666666666666665,
         "formulaTotal": 53,
         "subCategories": [
           {
@@ -521,7 +521,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.857142857142857,
+        "scoreOnScale10": 1.4285714285714286,
         "formulaTotal": 29,
         "subCategories": [
           {
@@ -627,7 +627,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Low",
-        "scoreOnScale10": 4.8,
+        "scoreOnScale10": 2.4,
         "formulaTotal": 48,
         "subCategories": [
           {
@@ -705,7 +705,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 3.5,
+        "scoreOnScale10": 1.75,
         "formulaTotal": 35,
         "subCategories": [
           {
@@ -769,7 +769,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 4.2,
+        "scoreOnScale10": 2.1,
         "formulaTotal": 42,
         "subCategories": [
           {
@@ -931,12 +931,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.833333333333333,
+    "overallScore": 2.4166666666666665,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Medium",
-        "scoreOnScale10": 5.142857142857143,
+        "scoreOnScale10": 2.5714285714285716,
         "formulaTotal": 51,
         "subCategories": [
           {
@@ -1042,7 +1042,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -1120,7 +1120,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.5,
+        "scoreOnScale10": 1.75,
         "formulaTotal": 35,
         "subCategories": [
           {
@@ -1240,7 +1240,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 5.714285714285714,
+        "scoreOnScale10": 2.857142857142857,
         "formulaTotal": 57,
         "subCategories": [
           {
@@ -1346,7 +1346,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 5,
+        "scoreOnScale10": 2.5,
         "formulaTotal": 50,
         "subCategories": [
           {
@@ -1438,7 +1438,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 3.142857142857143,
+        "scoreOnScale10": 1.5714285714285714,
         "formulaTotal": 31,
         "subCategories": [
           {
@@ -1544,7 +1544,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 5.6,
+        "scoreOnScale10": 2.8,
         "formulaTotal": 56,
         "subCategories": [
           {
@@ -1622,7 +1622,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -1686,7 +1686,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Medium",
-        "scoreOnScale10": 5,
+        "scoreOnScale10": 2.5,
         "formulaTotal": 50,
         "subCategories": [
           {
@@ -1848,12 +1848,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.773809523809524,
+    "overallScore": 2.386904761904762,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Medium",
-        "scoreOnScale10": 5.142857142857143,
+        "scoreOnScale10": 2.5714285714285716,
         "formulaTotal": 51,
         "subCategories": [
           {
@@ -1959,7 +1959,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -2037,7 +2037,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.25,
+        "scoreOnScale10": 1.625,
         "formulaTotal": 33,
         "subCategories": [
           {
@@ -2157,7 +2157,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 6.285714285714286,
+        "scoreOnScale10": 3.142857142857143,
         "formulaTotal": 63,
         "subCategories": [
           {
@@ -2263,7 +2263,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -2355,7 +2355,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 4.285714285714286,
+        "scoreOnScale10": 2.142857142857143,
         "formulaTotal": 43,
         "subCategories": [
           {
@@ -2461,7 +2461,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 5.2,
+        "scoreOnScale10": 2.6,
         "formulaTotal": 52,
         "subCategories": [
           {
@@ -2539,7 +2539,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -2603,7 +2603,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 4.4,
+        "scoreOnScale10": 2.2,
         "formulaTotal": 44,
         "subCategories": [
           {
@@ -2765,12 +2765,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 5.064285714285714,
+    "overallScore": 2.532142857142857,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -2876,7 +2876,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -2954,7 +2954,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 4.75,
+        "scoreOnScale10": 2.375,
         "formulaTotal": 48,
         "subCategories": [
           {
@@ -3074,7 +3074,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 5.428571428571429,
+        "scoreOnScale10": 2.7142857142857144,
         "formulaTotal": 54,
         "subCategories": [
           {
@@ -3180,7 +3180,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -3272,7 +3272,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 3.142857142857143,
+        "scoreOnScale10": 1.5714285714285714,
         "formulaTotal": 31,
         "subCategories": [
           {
@@ -3378,7 +3378,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 5.2,
+        "scoreOnScale10": 2.6,
         "formulaTotal": 52,
         "subCategories": [
           {
@@ -3456,7 +3456,7 @@
       {
         "category": "Fishery",
         "output": "Medium",
-        "scoreOnScale10": 5,
+        "scoreOnScale10": 2.5,
         "formulaTotal": 50,
         "subCategories": [
           {
@@ -3520,7 +3520,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Medium",
-        "scoreOnScale10": 5.2,
+        "scoreOnScale10": 2.6,
         "formulaTotal": 52,
         "subCategories": [
           {
@@ -3682,12 +3682,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.482275132275132,
+    "overallScore": 2.241137566137566,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -3793,7 +3793,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -3871,7 +3871,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.75,
+        "scoreOnScale10": 1.875,
         "formulaTotal": 38,
         "subCategories": [
           {
@@ -3991,7 +3991,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -4097,7 +4097,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 3.3333333333333335,
+        "scoreOnScale10": 1.6666666666666667,
         "formulaTotal": 33,
         "subCategories": [
           {
@@ -4189,7 +4189,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 3.142857142857143,
+        "scoreOnScale10": 1.5714285714285714,
         "formulaTotal": 31,
         "subCategories": [
           {
@@ -4295,7 +4295,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 5.6,
+        "scoreOnScale10": 2.8,
         "formulaTotal": 56,
         "subCategories": [
           {
@@ -4373,7 +4373,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -4437,7 +4437,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 4.8,
+        "scoreOnScale10": 2.4,
         "formulaTotal": 48,
         "subCategories": [
           {
@@ -4599,12 +4599,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.752910052910052,
+    "overallScore": 2.376455026455026,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Medium",
-        "scoreOnScale10": 5.142857142857143,
+        "scoreOnScale10": 2.5714285714285716,
         "formulaTotal": 51,
         "subCategories": [
           {
@@ -4710,7 +4710,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -4788,7 +4788,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3,
+        "scoreOnScale10": 1.5,
         "formulaTotal": 30,
         "subCategories": [
           {
@@ -4908,7 +4908,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 5.142857142857143,
+        "scoreOnScale10": 2.5714285714285716,
         "formulaTotal": 51,
         "subCategories": [
           {
@@ -5014,7 +5014,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 5.333333333333333,
+        "scoreOnScale10": 2.6666666666666665,
         "formulaTotal": 53,
         "subCategories": [
           {
@@ -5106,7 +5106,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.857142857142857,
+        "scoreOnScale10": 1.4285714285714286,
         "formulaTotal": 29,
         "subCategories": [
           {
@@ -5212,7 +5212,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -5290,7 +5290,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4.5,
+        "scoreOnScale10": 2.25,
         "formulaTotal": 45,
         "subCategories": [
           {
@@ -5354,7 +5354,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 4.4,
+        "scoreOnScale10": 2.2,
         "formulaTotal": 44,
         "subCategories": [
           {
@@ -5516,12 +5516,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.780687830687831,
+    "overallScore": 2.3903439153439154,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Medium",
-        "scoreOnScale10": 5.428571428571429,
+        "scoreOnScale10": 2.7142857142857144,
         "formulaTotal": 54,
         "subCategories": [
           {
@@ -5627,7 +5627,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -5705,7 +5705,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Medium",
-        "scoreOnScale10": 5.25,
+        "scoreOnScale10": 2.625,
         "formulaTotal": 53,
         "subCategories": [
           {
@@ -5825,7 +5825,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -5931,7 +5931,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 4.333333333333333,
+        "scoreOnScale10": 2.1666666666666665,
         "formulaTotal": 43,
         "subCategories": [
           {
@@ -6023,7 +6023,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.857142857142857,
+        "scoreOnScale10": 1.4285714285714286,
         "formulaTotal": 29,
         "subCategories": [
           {
@@ -6129,7 +6129,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 5.6,
+        "scoreOnScale10": 2.8,
         "formulaTotal": 56,
         "subCategories": [
           {
@@ -6207,7 +6207,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4.5,
+        "scoreOnScale10": 2.25,
         "formulaTotal": 45,
         "subCategories": [
           {
@@ -6271,7 +6271,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 4.2,
+        "scoreOnScale10": 2.1,
         "formulaTotal": 42,
         "subCategories": [
           {
@@ -6433,12 +6433,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.648412698412699,
+    "overallScore": 2.3242063492063494,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -6544,7 +6544,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 5.2,
+        "scoreOnScale10": 2.6,
         "formulaTotal": 52,
         "subCategories": [
           {
@@ -6622,7 +6622,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.25,
+        "scoreOnScale10": 1.625,
         "formulaTotal": 33,
         "subCategories": [
           {
@@ -6742,7 +6742,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Low",
-        "scoreOnScale10": 4.571428571428571,
+        "scoreOnScale10": 2.2857142857142856,
         "formulaTotal": 46,
         "subCategories": [
           {
@@ -6848,7 +6848,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -6940,7 +6940,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.857142857142857,
+        "scoreOnScale10": 1.4285714285714286,
         "formulaTotal": 29,
         "subCategories": [
           {
@@ -7046,7 +7046,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -7124,7 +7124,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4.5,
+        "scoreOnScale10": 2.25,
         "formulaTotal": 45,
         "subCategories": [
           {
@@ -7188,7 +7188,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 4.2,
+        "scoreOnScale10": 2.1,
         "formulaTotal": 42,
         "subCategories": [
           {
@@ -7350,12 +7350,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.227513227513227,
+    "overallScore": 2.1137566137566135,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.571428571428571,
+        "scoreOnScale10": 2.2857142857142856,
         "formulaTotal": 46,
         "subCategories": [
           {
@@ -7461,7 +7461,7 @@
       {
         "category": "Community Based Institution",
         "output": "Low",
-        "scoreOnScale10": 3.6,
+        "scoreOnScale10": 1.8,
         "formulaTotal": 36,
         "subCategories": [
           {
@@ -7539,7 +7539,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.5,
+        "scoreOnScale10": 1.75,
         "formulaTotal": 35,
         "subCategories": [
           {
@@ -7659,7 +7659,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -7765,7 +7765,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 3.3333333333333335,
+        "scoreOnScale10": 1.6666666666666667,
         "formulaTotal": 33,
         "subCategories": [
           {
@@ -7857,7 +7857,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 3.142857142857143,
+        "scoreOnScale10": 1.5714285714285714,
         "formulaTotal": 31,
         "subCategories": [
           {
@@ -7963,7 +7963,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 7.6,
+        "scoreOnScale10": 3.8,
         "formulaTotal": 76,
         "subCategories": [
           {
@@ -8041,7 +8041,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4.5,
+        "scoreOnScale10": 2.25,
         "formulaTotal": 45,
         "subCategories": [
           {
@@ -8105,7 +8105,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 3.8,
+        "scoreOnScale10": 1.9,
         "formulaTotal": 38,
         "subCategories": [
           {
@@ -8267,12 +8267,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.415608465608465,
+    "overallScore": 2.2078042328042327,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -8378,7 +8378,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 5.2,
+        "scoreOnScale10": 2.6,
         "formulaTotal": 52,
         "subCategories": [
           {
@@ -8456,7 +8456,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.25,
+        "scoreOnScale10": 1.625,
         "formulaTotal": 33,
         "subCategories": [
           {
@@ -8576,7 +8576,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 5.142857142857143,
+        "scoreOnScale10": 2.5714285714285716,
         "formulaTotal": 51,
         "subCategories": [
           {
@@ -8682,7 +8682,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 3.3333333333333335,
+        "scoreOnScale10": 1.6666666666666667,
         "formulaTotal": 33,
         "subCategories": [
           {
@@ -8774,7 +8774,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.857142857142857,
+        "scoreOnScale10": 1.4285714285714286,
         "formulaTotal": 29,
         "subCategories": [
           {
@@ -8880,7 +8880,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.8,
+        "scoreOnScale10": 3.4,
         "formulaTotal": 68,
         "subCategories": [
           {
@@ -8958,7 +8958,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4.5,
+        "scoreOnScale10": 2.25,
         "formulaTotal": 45,
         "subCategories": [
           {
@@ -9022,7 +9022,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 3.8,
+        "scoreOnScale10": 1.9,
         "formulaTotal": 38,
         "subCategories": [
           {
@@ -9184,12 +9184,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 5.236243386243386,
+    "overallScore": 2.618121693121693,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Medium",
-        "scoreOnScale10": 5.428571428571429,
+        "scoreOnScale10": 2.7142857142857144,
         "formulaTotal": 54,
         "subCategories": [
           {
@@ -9295,7 +9295,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -9373,7 +9373,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Medium",
-        "scoreOnScale10": 7.25,
+        "scoreOnScale10": 3.625,
         "formulaTotal": 73,
         "subCategories": [
           {
@@ -9493,7 +9493,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 6.571428571428571,
+        "scoreOnScale10": 3.2857142857142856,
         "formulaTotal": 66,
         "subCategories": [
           {
@@ -9599,7 +9599,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 3.3333333333333335,
+        "scoreOnScale10": 1.6666666666666667,
         "formulaTotal": 33,
         "subCategories": [
           {
@@ -9691,7 +9691,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 3.142857142857143,
+        "scoreOnScale10": 1.5714285714285714,
         "formulaTotal": 31,
         "subCategories": [
           {
@@ -9797,7 +9797,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -9875,7 +9875,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -9939,7 +9939,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 4.6,
+        "scoreOnScale10": 2.3,
         "formulaTotal": 46,
         "subCategories": [
           {
@@ -10101,12 +10101,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.943915343915344,
+    "overallScore": 2.471957671957672,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -10212,7 +10212,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -10290,7 +10290,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 4.5,
+        "scoreOnScale10": 2.25,
         "formulaTotal": 45,
         "subCategories": [
           {
@@ -10410,7 +10410,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 5.142857142857143,
+        "scoreOnScale10": 2.5714285714285716,
         "formulaTotal": 51,
         "subCategories": [
           {
@@ -10516,7 +10516,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 5.666666666666667,
+        "scoreOnScale10": 2.8333333333333335,
         "formulaTotal": 57,
         "subCategories": [
           {
@@ -10608,7 +10608,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 3.4285714285714284,
+        "scoreOnScale10": 1.7142857142857142,
         "formulaTotal": 34,
         "subCategories": [
           {
@@ -10714,7 +10714,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -10792,7 +10792,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4.5,
+        "scoreOnScale10": 2.25,
         "formulaTotal": 45,
         "subCategories": [
           {
@@ -10856,7 +10856,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -11018,12 +11018,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.7404761904761905,
+    "overallScore": 2.3702380952380953,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Medium",
-        "scoreOnScale10": 5.142857142857143,
+        "scoreOnScale10": 2.5714285714285716,
         "formulaTotal": 51,
         "subCategories": [
           {
@@ -11129,7 +11129,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -11207,7 +11207,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.25,
+        "scoreOnScale10": 1.625,
         "formulaTotal": 33,
         "subCategories": [
           {
@@ -11327,7 +11327,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 5.428571428571429,
+        "scoreOnScale10": 2.7142857142857144,
         "formulaTotal": 54,
         "subCategories": [
           {
@@ -11433,7 +11433,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 5,
+        "scoreOnScale10": 2.5,
         "formulaTotal": 50,
         "subCategories": [
           {
@@ -11525,7 +11525,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 3.142857142857143,
+        "scoreOnScale10": 1.5714285714285714,
         "formulaTotal": 31,
         "subCategories": [
           {
@@ -11631,7 +11631,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -11709,7 +11709,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4.5,
+        "scoreOnScale10": 2.25,
         "formulaTotal": 45,
         "subCategories": [
           {
@@ -11773,7 +11773,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 3.8,
+        "scoreOnScale10": 1.9,
         "formulaTotal": 38,
         "subCategories": [
           {
@@ -11935,12 +11935,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.232010582010583,
+    "overallScore": 2.1160052910052913,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.571428571428571,
+        "scoreOnScale10": 2.2857142857142856,
         "formulaTotal": 46,
         "subCategories": [
           {
@@ -12046,7 +12046,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 5.6,
+        "scoreOnScale10": 2.8,
         "formulaTotal": 56,
         "subCategories": [
           {
@@ -12124,7 +12124,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.25,
+        "scoreOnScale10": 1.625,
         "formulaTotal": 33,
         "subCategories": [
           {
@@ -12244,7 +12244,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -12350,7 +12350,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 3.6666666666666665,
+        "scoreOnScale10": 1.8333333333333333,
         "formulaTotal": 37,
         "subCategories": [
           {
@@ -12442,7 +12442,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 3.142857142857143,
+        "scoreOnScale10": 1.5714285714285714,
         "formulaTotal": 31,
         "subCategories": [
           {
@@ -12548,7 +12548,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -12626,7 +12626,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 3,
+        "scoreOnScale10": 1.5,
         "formulaTotal": 30,
         "subCategories": [
           {
@@ -12690,7 +12690,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 3.6,
+        "scoreOnScale10": 1.8,
         "formulaTotal": 36,
         "subCategories": [
           {
@@ -12852,12 +12852,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.803439153439154,
+    "overallScore": 2.401719576719577,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Medium",
-        "scoreOnScale10": 5.428571428571429,
+        "scoreOnScale10": 2.7142857142857144,
         "formulaTotal": 54,
         "subCategories": [
           {
@@ -12963,7 +12963,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -13041,7 +13041,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.75,
+        "scoreOnScale10": 1.875,
         "formulaTotal": 38,
         "subCategories": [
           {
@@ -13161,7 +13161,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 5.428571428571429,
+        "scoreOnScale10": 2.7142857142857144,
         "formulaTotal": 54,
         "subCategories": [
           {
@@ -13267,7 +13267,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 5.666666666666667,
+        "scoreOnScale10": 2.8333333333333335,
         "formulaTotal": 57,
         "subCategories": [
           {
@@ -13359,7 +13359,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.857142857142857,
+        "scoreOnScale10": 1.4285714285714286,
         "formulaTotal": 29,
         "subCategories": [
           {
@@ -13465,7 +13465,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -13543,7 +13543,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 3.5,
+        "scoreOnScale10": 1.75,
         "formulaTotal": 35,
         "subCategories": [
           {
@@ -13607,7 +13607,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 3.8,
+        "scoreOnScale10": 1.9,
         "formulaTotal": 38,
         "subCategories": [
           {
@@ -13769,12 +13769,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 5.492328042328042,
+    "overallScore": 2.746164021164021,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Medium",
-        "scoreOnScale10": 5.714285714285714,
+        "scoreOnScale10": 2.857142857142857,
         "formulaTotal": 57,
         "subCategories": [
           {
@@ -13880,7 +13880,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 5.6,
+        "scoreOnScale10": 2.8,
         "formulaTotal": 56,
         "subCategories": [
           {
@@ -13958,7 +13958,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.75,
+        "scoreOnScale10": 1.875,
         "formulaTotal": 38,
         "subCategories": [
           {
@@ -14078,7 +14078,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -14184,7 +14184,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 6.666666666666667,
+        "scoreOnScale10": 3.3333333333333335,
         "formulaTotal": 67,
         "subCategories": [
           {
@@ -14276,7 +14276,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -14382,7 +14382,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.8,
+        "scoreOnScale10": 3.4,
         "formulaTotal": 68,
         "subCategories": [
           {
@@ -14460,7 +14460,7 @@
       {
         "category": "Fishery",
         "output": "Medium",
-        "scoreOnScale10": 5.5,
+        "scoreOnScale10": 2.75,
         "formulaTotal": 55,
         "subCategories": [
           {
@@ -14524,7 +14524,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Medium",
-        "scoreOnScale10": 5.4,
+        "scoreOnScale10": 2.7,
         "formulaTotal": 54,
         "subCategories": [
           {
@@ -14686,12 +14686,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 5.502380952380952,
+    "overallScore": 2.751190476190476,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Medium",
-        "scoreOnScale10": 5.714285714285714,
+        "scoreOnScale10": 2.857142857142857,
         "formulaTotal": 57,
         "subCategories": [
           {
@@ -14797,7 +14797,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -14875,7 +14875,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Medium",
-        "scoreOnScale10": 6.25,
+        "scoreOnScale10": 3.125,
         "formulaTotal": 63,
         "subCategories": [
           {
@@ -14995,7 +14995,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 5.714285714285714,
+        "scoreOnScale10": 2.857142857142857,
         "formulaTotal": 57,
         "subCategories": [
           {
@@ -15101,7 +15101,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -15193,7 +15193,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 3.142857142857143,
+        "scoreOnScale10": 1.5714285714285714,
         "formulaTotal": 31,
         "subCategories": [
           {
@@ -15299,7 +15299,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.8,
+        "scoreOnScale10": 3.4,
         "formulaTotal": 68,
         "subCategories": [
           {
@@ -15377,7 +15377,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4.5,
+        "scoreOnScale10": 2.25,
         "formulaTotal": 45,
         "subCategories": [
           {
@@ -15441,7 +15441,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Medium",
-        "scoreOnScale10": 5,
+        "scoreOnScale10": 2.5,
         "formulaTotal": 50,
         "subCategories": [
           {
@@ -15603,12 +15603,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 5.807936507936508,
+    "overallScore": 2.903968253968254,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -15714,7 +15714,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 7.2,
+        "scoreOnScale10": 3.6,
         "formulaTotal": 72,
         "subCategories": [
           {
@@ -15792,7 +15792,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 4.5,
+        "scoreOnScale10": 2.25,
         "formulaTotal": 45,
         "subCategories": [
           {
@@ -15912,7 +15912,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 6.857142857142857,
+        "scoreOnScale10": 3.4285714285714284,
         "formulaTotal": 69,
         "subCategories": [
           {
@@ -16018,7 +16018,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 8,
+        "scoreOnScale10": 4,
         "formulaTotal": 80,
         "subCategories": [
           {
@@ -16110,7 +16110,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 3.7142857142857144,
+        "scoreOnScale10": 1.8571428571428572,
         "formulaTotal": 37,
         "subCategories": [
           {
@@ -16216,7 +16216,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.8,
+        "scoreOnScale10": 3.4,
         "formulaTotal": 68,
         "subCategories": [
           {
@@ -16294,7 +16294,7 @@
       {
         "category": "Fishery",
         "output": "Medium",
-        "scoreOnScale10": 5,
+        "scoreOnScale10": 2.5,
         "formulaTotal": 50,
         "subCategories": [
           {
@@ -16358,7 +16358,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 4.2,
+        "scoreOnScale10": 2.1,
         "formulaTotal": 42,
         "subCategories": [
           {
@@ -16520,12 +16520,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 5.1037037037037045,
+    "overallScore": 2.5518518518518523,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Medium",
-        "scoreOnScale10": 5.428571428571429,
+        "scoreOnScale10": 2.7142857142857144,
         "formulaTotal": 54,
         "subCategories": [
           {
@@ -16631,7 +16631,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -16709,7 +16709,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3,
+        "scoreOnScale10": 1.5,
         "formulaTotal": 30,
         "subCategories": [
           {
@@ -16829,7 +16829,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 6.857142857142857,
+        "scoreOnScale10": 3.4285714285714284,
         "formulaTotal": 69,
         "subCategories": [
           {
@@ -16935,7 +16935,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 6.333333333333333,
+        "scoreOnScale10": 3.1666666666666665,
         "formulaTotal": 63,
         "subCategories": [
           {
@@ -17027,7 +17027,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 3.7142857142857144,
+        "scoreOnScale10": 1.8571428571428572,
         "formulaTotal": 37,
         "subCategories": [
           {
@@ -17133,7 +17133,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 5.6,
+        "scoreOnScale10": 2.8,
         "formulaTotal": 56,
         "subCategories": [
           {
@@ -17211,7 +17211,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -17275,7 +17275,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 4.6,
+        "scoreOnScale10": 2.3,
         "formulaTotal": 46,
         "subCategories": [
           {
@@ -17437,12 +17437,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 3.9738095238095243,
+    "overallScore": 1.9869047619047622,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.571428571428571,
+        "scoreOnScale10": 2.2857142857142856,
         "formulaTotal": 46,
         "subCategories": [
           {
@@ -17548,7 +17548,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 5.6,
+        "scoreOnScale10": 2.8,
         "formulaTotal": 56,
         "subCategories": [
           {
@@ -17626,7 +17626,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 2.25,
+        "scoreOnScale10": 1.125,
         "formulaTotal": 23,
         "subCategories": [
           {
@@ -17746,7 +17746,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Low",
-        "scoreOnScale10": 4.571428571428571,
+        "scoreOnScale10": 2.2857142857142856,
         "formulaTotal": 46,
         "subCategories": [
           {
@@ -17852,7 +17852,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 3,
+        "scoreOnScale10": 1.5,
         "formulaTotal": 30,
         "subCategories": [
           {
@@ -17944,7 +17944,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.5714285714285716,
+        "scoreOnScale10": 1.2857142857142858,
         "formulaTotal": 26,
         "subCategories": [
           {
@@ -18050,7 +18050,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -18128,7 +18128,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -18192,7 +18192,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 3.2,
+        "scoreOnScale10": 1.6,
         "formulaTotal": 32,
         "subCategories": [
           {
@@ -18354,12 +18354,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 3.932804232804233,
+    "overallScore": 1.9664021164021166,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.285714285714286,
+        "scoreOnScale10": 2.142857142857143,
         "formulaTotal": 43,
         "subCategories": [
           {
@@ -18465,7 +18465,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 5.6,
+        "scoreOnScale10": 2.8,
         "formulaTotal": 56,
         "subCategories": [
           {
@@ -18543,7 +18543,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 2.5,
+        "scoreOnScale10": 1.25,
         "formulaTotal": 25,
         "subCategories": [
           {
@@ -18663,7 +18663,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Low",
-        "scoreOnScale10": 4.571428571428571,
+        "scoreOnScale10": 2.2857142857142856,
         "formulaTotal": 46,
         "subCategories": [
           {
@@ -18769,7 +18769,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 2.6666666666666665,
+        "scoreOnScale10": 1.3333333333333333,
         "formulaTotal": 27,
         "subCategories": [
           {
@@ -18861,7 +18861,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.5714285714285716,
+        "scoreOnScale10": 1.2857142857142858,
         "formulaTotal": 26,
         "subCategories": [
           {
@@ -18967,7 +18967,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -19045,7 +19045,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -19109,7 +19109,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 3.2,
+        "scoreOnScale10": 1.6,
         "formulaTotal": 32,
         "subCategories": [
           {
@@ -19271,12 +19271,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.602645502645503,
+    "overallScore": 2.3013227513227514,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -19382,7 +19382,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -19460,7 +19460,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.5,
+        "scoreOnScale10": 1.75,
         "formulaTotal": 35,
         "subCategories": [
           {
@@ -19580,7 +19580,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -19686,7 +19686,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 5.666666666666667,
+        "scoreOnScale10": 2.8333333333333335,
         "formulaTotal": 57,
         "subCategories": [
           {
@@ -19778,7 +19778,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 3.142857142857143,
+        "scoreOnScale10": 1.5714285714285714,
         "formulaTotal": 31,
         "subCategories": [
           {
@@ -19884,7 +19884,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 5.6,
+        "scoreOnScale10": 2.8,
         "formulaTotal": 56,
         "subCategories": [
           {
@@ -19962,7 +19962,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -20026,7 +20026,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 3.8,
+        "scoreOnScale10": 1.9,
         "formulaTotal": 38,
         "subCategories": [
           {
@@ -20188,12 +20188,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.5965608465608465,
+    "overallScore": 2.2982804232804233,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -20299,7 +20299,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -20377,7 +20377,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.25,
+        "scoreOnScale10": 1.625,
         "formulaTotal": 33,
         "subCategories": [
           {
@@ -20497,7 +20497,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -20603,7 +20603,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 4.333333333333333,
+        "scoreOnScale10": 2.1666666666666665,
         "formulaTotal": 43,
         "subCategories": [
           {
@@ -20695,7 +20695,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.5714285714285716,
+        "scoreOnScale10": 1.2857142857142858,
         "formulaTotal": 26,
         "subCategories": [
           {
@@ -20801,7 +20801,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -20879,7 +20879,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4.5,
+        "scoreOnScale10": 2.25,
         "formulaTotal": 45,
         "subCategories": [
           {
@@ -20943,7 +20943,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 4.6,
+        "scoreOnScale10": 2.3,
         "formulaTotal": 46,
         "subCategories": [
           {
@@ -21105,12 +21105,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.173544973544974,
+    "overallScore": 2.086772486772487,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -21216,7 +21216,7 @@
       {
         "category": "Community Based Institution",
         "output": "Low",
-        "scoreOnScale10": 4.8,
+        "scoreOnScale10": 2.4,
         "formulaTotal": 48,
         "subCategories": [
           {
@@ -21294,7 +21294,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.5,
+        "scoreOnScale10": 1.75,
         "formulaTotal": 35,
         "subCategories": [
           {
@@ -21414,7 +21414,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -21520,7 +21520,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 4.333333333333333,
+        "scoreOnScale10": 2.1666666666666665,
         "formulaTotal": 43,
         "subCategories": [
           {
@@ -21612,7 +21612,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.5714285714285716,
+        "scoreOnScale10": 1.2857142857142858,
         "formulaTotal": 26,
         "subCategories": [
           {
@@ -21718,7 +21718,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -21796,7 +21796,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 3.5,
+        "scoreOnScale10": 1.75,
         "formulaTotal": 35,
         "subCategories": [
           {
@@ -21860,7 +21860,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -22022,12 +22022,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.5928571428571425,
+    "overallScore": 2.2964285714285713,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -22133,7 +22133,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -22211,7 +22211,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.25,
+        "scoreOnScale10": 1.625,
         "formulaTotal": 33,
         "subCategories": [
           {
@@ -22331,7 +22331,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Low",
-        "scoreOnScale10": 4.571428571428571,
+        "scoreOnScale10": 2.2857142857142856,
         "formulaTotal": 46,
         "subCategories": [
           {
@@ -22437,7 +22437,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 5,
+        "scoreOnScale10": 2.5,
         "formulaTotal": 50,
         "subCategories": [
           {
@@ -22529,7 +22529,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.857142857142857,
+        "scoreOnScale10": 1.4285714285714286,
         "formulaTotal": 29,
         "subCategories": [
           {
@@ -22635,7 +22635,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 5.6,
+        "scoreOnScale10": 2.8,
         "formulaTotal": 56,
         "subCategories": [
           {
@@ -22713,7 +22713,7 @@
       {
         "category": "Fishery",
         "output": "Medium",
-        "scoreOnScale10": 5,
+        "scoreOnScale10": 2.5,
         "formulaTotal": 50,
         "subCategories": [
           {
@@ -22777,7 +22777,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 3.8,
+        "scoreOnScale10": 1.9,
         "formulaTotal": 38,
         "subCategories": [
           {
@@ -22939,12 +22939,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.47037037037037,
+    "overallScore": 2.235185185185185,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.571428571428571,
+        "scoreOnScale10": 2.2857142857142856,
         "formulaTotal": 46,
         "subCategories": [
           {
@@ -23050,7 +23050,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6.8,
+        "scoreOnScale10": 3.4,
         "formulaTotal": 68,
         "subCategories": [
           {
@@ -23128,7 +23128,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.5,
+        "scoreOnScale10": 1.75,
         "formulaTotal": 35,
         "subCategories": [
           {
@@ -23248,7 +23248,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Low",
-        "scoreOnScale10": 4.571428571428571,
+        "scoreOnScale10": 2.2857142857142856,
         "formulaTotal": 46,
         "subCategories": [
           {
@@ -23354,7 +23354,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 3.3333333333333335,
+        "scoreOnScale10": 1.6666666666666667,
         "formulaTotal": 33,
         "subCategories": [
           {
@@ -23446,7 +23446,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.857142857142857,
+        "scoreOnScale10": 1.4285714285714286,
         "formulaTotal": 29,
         "subCategories": [
           {
@@ -23552,7 +23552,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.8,
+        "scoreOnScale10": 3.4,
         "formulaTotal": 68,
         "subCategories": [
           {
@@ -23630,7 +23630,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -23694,7 +23694,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 3.8,
+        "scoreOnScale10": 1.9,
         "formulaTotal": 38,
         "subCategories": [
           {
@@ -23856,12 +23856,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.411640211640212,
+    "overallScore": 2.205820105820106,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -23967,7 +23967,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 5.6,
+        "scoreOnScale10": 2.8,
         "formulaTotal": 56,
         "subCategories": [
           {
@@ -24045,7 +24045,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -24165,7 +24165,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -24271,7 +24271,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 3.3333333333333335,
+        "scoreOnScale10": 1.6666666666666667,
         "formulaTotal": 33,
         "subCategories": [
           {
@@ -24363,7 +24363,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.857142857142857,
+        "scoreOnScale10": 1.4285714285714286,
         "formulaTotal": 29,
         "subCategories": [
           {
@@ -24469,7 +24469,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -24547,7 +24547,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -24611,7 +24611,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 4.2,
+        "scoreOnScale10": 2.1,
         "formulaTotal": 42,
         "subCategories": [
           {
@@ -24773,12 +24773,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.308201058201059,
+    "overallScore": 2.1541005291005293,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.571428571428571,
+        "scoreOnScale10": 2.2857142857142856,
         "formulaTotal": 46,
         "subCategories": [
           {
@@ -24884,7 +24884,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -24962,7 +24962,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.25,
+        "scoreOnScale10": 1.625,
         "formulaTotal": 33,
         "subCategories": [
           {
@@ -25082,7 +25082,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -25188,7 +25188,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 4.666666666666667,
+        "scoreOnScale10": 2.3333333333333335,
         "formulaTotal": 47,
         "subCategories": [
           {
@@ -25280,7 +25280,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.2857142857142856,
+        "scoreOnScale10": 1.1428571428571428,
         "formulaTotal": 23,
         "subCategories": [
           {
@@ -25386,7 +25386,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -25464,7 +25464,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -25528,7 +25528,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 3.6,
+        "scoreOnScale10": 1.8,
         "formulaTotal": 36,
         "subCategories": [
           {
@@ -25690,12 +25690,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.624603174603174,
+    "overallScore": 2.312301587301587,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.571428571428571,
+        "scoreOnScale10": 2.2857142857142856,
         "formulaTotal": 46,
         "subCategories": [
           {
@@ -25801,7 +25801,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 5.6,
+        "scoreOnScale10": 2.8,
         "formulaTotal": 56,
         "subCategories": [
           {
@@ -25879,7 +25879,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 4.25,
+        "scoreOnScale10": 2.125,
         "formulaTotal": 43,
         "subCategories": [
           {
@@ -25999,7 +25999,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -26105,7 +26105,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -26197,7 +26197,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -26303,7 +26303,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -26381,7 +26381,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -26445,7 +26445,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 4.8,
+        "scoreOnScale10": 2.4,
         "formulaTotal": 48,
         "subCategories": [
           {
@@ -26607,12 +26607,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.727513227513228,
+    "overallScore": 2.363756613756614,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -26718,7 +26718,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -26796,7 +26796,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3,
+        "scoreOnScale10": 1.5,
         "formulaTotal": 30,
         "subCategories": [
           {
@@ -26916,7 +26916,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 5.714285714285714,
+        "scoreOnScale10": 2.857142857142857,
         "formulaTotal": 57,
         "subCategories": [
           {
@@ -27022,7 +27022,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 4.333333333333333,
+        "scoreOnScale10": 2.1666666666666665,
         "formulaTotal": 43,
         "subCategories": [
           {
@@ -27114,7 +27114,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 3.142857142857143,
+        "scoreOnScale10": 1.5714285714285714,
         "formulaTotal": 31,
         "subCategories": [
           {
@@ -27220,7 +27220,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -27298,7 +27298,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4.5,
+        "scoreOnScale10": 2.25,
         "formulaTotal": 45,
         "subCategories": [
           {
@@ -27362,7 +27362,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 4.2,
+        "scoreOnScale10": 2.1,
         "formulaTotal": 42,
         "subCategories": [
           {
@@ -27524,12 +27524,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.378306878306878,
+    "overallScore": 2.189153439153439,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -27635,7 +27635,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -27713,7 +27713,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -27833,7 +27833,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 5.142857142857143,
+        "scoreOnScale10": 2.5714285714285716,
         "formulaTotal": 51,
         "subCategories": [
           {
@@ -27939,7 +27939,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 3.3333333333333335,
+        "scoreOnScale10": 1.6666666666666667,
         "formulaTotal": 33,
         "subCategories": [
           {
@@ -28031,7 +28031,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.5714285714285716,
+        "scoreOnScale10": 1.2857142857142858,
         "formulaTotal": 26,
         "subCategories": [
           {
@@ -28137,7 +28137,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -28215,7 +28215,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 3.5,
+        "scoreOnScale10": 1.75,
         "formulaTotal": 35,
         "subCategories": [
           {
@@ -28279,7 +28279,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 3.6,
+        "scoreOnScale10": 1.8,
         "formulaTotal": 36,
         "subCategories": [
           {
@@ -28441,12 +28441,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 5.207142857142857,
+    "overallScore": 2.6035714285714286,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Medium",
-        "scoreOnScale10": 5.428571428571429,
+        "scoreOnScale10": 2.7142857142857144,
         "formulaTotal": 54,
         "subCategories": [
           {
@@ -28552,7 +28552,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -28630,7 +28630,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.75,
+        "scoreOnScale10": 1.875,
         "formulaTotal": 38,
         "subCategories": [
           {
@@ -28750,7 +28750,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 5.428571428571429,
+        "scoreOnScale10": 2.7142857142857144,
         "formulaTotal": 54,
         "subCategories": [
           {
@@ -28856,7 +28856,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 7,
+        "scoreOnScale10": 3.5,
         "formulaTotal": 70,
         "subCategories": [
           {
@@ -28948,7 +28948,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.857142857142857,
+        "scoreOnScale10": 1.4285714285714286,
         "formulaTotal": 29,
         "subCategories": [
           {
@@ -29054,7 +29054,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 7.6,
+        "scoreOnScale10": 3.8,
         "formulaTotal": 76,
         "subCategories": [
           {
@@ -29132,7 +29132,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -29196,7 +29196,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 4.8,
+        "scoreOnScale10": 2.4,
         "formulaTotal": 48,
         "subCategories": [
           {
@@ -29358,12 +29358,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.89047619047619,
+    "overallScore": 2.445238095238095,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.571428571428571,
+        "scoreOnScale10": 2.2857142857142856,
         "formulaTotal": 46,
         "subCategories": [
           {
@@ -29469,7 +29469,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -29547,7 +29547,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 4.5,
+        "scoreOnScale10": 2.25,
         "formulaTotal": 45,
         "subCategories": [
           {
@@ -29667,7 +29667,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 5.714285714285714,
+        "scoreOnScale10": 2.857142857142857,
         "formulaTotal": 57,
         "subCategories": [
           {
@@ -29773,7 +29773,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 7,
+        "scoreOnScale10": 3.5,
         "formulaTotal": 70,
         "subCategories": [
           {
@@ -29865,7 +29865,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 3.4285714285714284,
+        "scoreOnScale10": 1.7142857142857142,
         "formulaTotal": 34,
         "subCategories": [
           {
@@ -29971,7 +29971,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 5.6,
+        "scoreOnScale10": 2.8,
         "formulaTotal": 56,
         "subCategories": [
           {
@@ -30049,7 +30049,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -30113,7 +30113,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 3.2,
+        "scoreOnScale10": 1.6,
         "formulaTotal": 32,
         "subCategories": [
           {
@@ -30275,12 +30275,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.9219576719576725,
+    "overallScore": 2.4609788359788363,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.857142857142857,
+        "scoreOnScale10": 2.4285714285714284,
         "formulaTotal": 49,
         "subCategories": [
           {
@@ -30386,7 +30386,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -30464,7 +30464,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.75,
+        "scoreOnScale10": 1.875,
         "formulaTotal": 38,
         "subCategories": [
           {
@@ -30584,7 +30584,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 6.857142857142857,
+        "scoreOnScale10": 3.4285714285714284,
         "formulaTotal": 69,
         "subCategories": [
           {
@@ -30690,7 +30690,7 @@
       {
         "category": "Renewable Energy",
         "output": "Medium",
-        "scoreOnScale10": 5.333333333333333,
+        "scoreOnScale10": 2.6666666666666665,
         "formulaTotal": 53,
         "subCategories": [
           {
@@ -30782,7 +30782,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 4,
+        "scoreOnScale10": 2,
         "formulaTotal": 40,
         "subCategories": [
           {
@@ -30888,7 +30888,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.4,
+        "scoreOnScale10": 3.2,
         "formulaTotal": 64,
         "subCategories": [
           {
@@ -30966,7 +30966,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 3.5,
+        "scoreOnScale10": 1.75,
         "formulaTotal": 35,
         "subCategories": [
           {
@@ -31030,7 +31030,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 3.6,
+        "scoreOnScale10": 1.8,
         "formulaTotal": 36,
         "subCategories": [
           {
@@ -31192,12 +31192,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.482275132275132,
+    "overallScore": 2.241137566137566,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.285714285714286,
+        "scoreOnScale10": 2.142857142857143,
         "formulaTotal": 43,
         "subCategories": [
           {
@@ -31303,7 +31303,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -31381,7 +31381,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3.25,
+        "scoreOnScale10": 1.625,
         "formulaTotal": 33,
         "subCategories": [
           {
@@ -31501,7 +31501,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -31607,7 +31607,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 4.333333333333333,
+        "scoreOnScale10": 2.1666666666666665,
         "formulaTotal": 43,
         "subCategories": [
           {
@@ -31699,7 +31699,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 2.5714285714285716,
+        "scoreOnScale10": 1.2857142857142858,
         "formulaTotal": 26,
         "subCategories": [
           {
@@ -31805,7 +31805,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6.8,
+        "scoreOnScale10": 3.4,
         "formulaTotal": 68,
         "subCategories": [
           {
@@ -31883,7 +31883,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 3.5,
+        "scoreOnScale10": 1.75,
         "formulaTotal": 35,
         "subCategories": [
           {
@@ -31947,7 +31947,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 3.6,
+        "scoreOnScale10": 1.8,
         "formulaTotal": 36,
         "subCategories": [
           {
@@ -32109,12 +32109,12 @@
       "https://images.unsplash.com/photo-1708593343442-7595427ddf7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB2aWxsYWdlJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzI0NDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       "https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ],
-    "overallScore": 4.46084656084656,
+    "overallScore": 2.23042328042328,
     "scores": [
       {
         "category": "Community Awareness",
         "output": "Low",
-        "scoreOnScale10": 4.285714285714286,
+        "scoreOnScale10": 2.142857142857143,
         "formulaTotal": 43,
         "subCategories": [
           {
@@ -32220,7 +32220,7 @@
       {
         "category": "Community Based Institution",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -32298,7 +32298,7 @@
       {
         "category": "Hygiene and Sanitation",
         "output": "Low",
-        "scoreOnScale10": 3,
+        "scoreOnScale10": 1.5,
         "formulaTotal": 30,
         "subCategories": [
           {
@@ -32418,7 +32418,7 @@
       {
         "category": "Livelihood and Skill Development",
         "output": "Medium",
-        "scoreOnScale10": 6.285714285714286,
+        "scoreOnScale10": 3.142857142857143,
         "formulaTotal": 63,
         "subCategories": [
           {
@@ -32524,7 +32524,7 @@
       {
         "category": "Renewable Energy",
         "output": "Low",
-        "scoreOnScale10": 4.333333333333333,
+        "scoreOnScale10": 2.1666666666666665,
         "formulaTotal": 43,
         "subCategories": [
           {
@@ -32616,7 +32616,7 @@
       {
         "category": "Agriculture",
         "output": "Low",
-        "scoreOnScale10": 3.142857142857143,
+        "scoreOnScale10": 1.5714285714285714,
         "formulaTotal": 31,
         "subCategories": [
           {
@@ -32722,7 +32722,7 @@
       {
         "category": "Animal Husbandry",
         "output": "Medium",
-        "scoreOnScale10": 6,
+        "scoreOnScale10": 3,
         "formulaTotal": 60,
         "subCategories": [
           {
@@ -32800,7 +32800,7 @@
       {
         "category": "Fishery",
         "output": "Low",
-        "scoreOnScale10": 3.5,
+        "scoreOnScale10": 1.75,
         "formulaTotal": 35,
         "subCategories": [
           {
@@ -32864,7 +32864,7 @@
       {
         "category": "Biodiversity Conservation Plan",
         "output": "Low",
-        "scoreOnScale10": 3.6,
+        "scoreOnScale10": 1.8,
         "formulaTotal": 36,
         "subCategories": [
           {

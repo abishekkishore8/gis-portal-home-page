@@ -102,7 +102,7 @@ function SolutionsModal({
               Solutions - {category.category}
             </h3>
             <div className="flex items-center gap-2 mt-1.5">
-              <span className="text-[13px] text-gray-500">Village Score: {formatScore(scoreOnScale10)}/10</span>
+              <span className="text-[13px] text-gray-500">Village Score: {formatScore(scoreOnScale10)}/5</span>
               <span className={`px-2 py-0.5 rounded-full text-[11px] ${levelColor}`}>
                 Level: {levelLabel}
               </span>
@@ -214,7 +214,7 @@ export function VillageDetail({ village, siteContent, onBack, onShowImages }: Vi
           <div className="inline-flex items-center gap-2 rounded-full bg-white/16 px-3 py-2 text-sm text-blue-50">
             <TrendingUp className="w-4 h-4 shrink-0" />
             <span className="text-blue-100">Overall:</span>
-            <span className="text-white">{formatScore(village.overallScore)}/10</span>
+            <span className="text-white">{formatScore(village.overallScore)}/5</span>
           </div>
 
           {onShowImages && (
@@ -263,12 +263,12 @@ export function VillageDetail({ village, siteContent, onBack, onShowImages }: Vi
                         {catScore.output}
                       </span>
                       <span className="text-[12px] text-gray-500 whitespace-nowrap">
-                        Score: {formatScore(catScore.scoreOnScale10)}/10
+                        Score: {formatScore(catScore.scoreOnScale10)}/5
                       </span>
                       <div className="w-16 h-1.5 bg-gray-200 rounded-full overflow-hidden shrink-0">
                         <div
-                          className={`h-full rounded-full ${getScoreBg(catScore.scoreOnScale10, 10)}`}
-                          style={{ width: `${(catScore.scoreOnScale10 / 10) * 100}%` }}
+                          className={`h-full rounded-full ${getScoreBg(catScore.scoreOnScale10, 5)}`}
+                          style={{ width: `${(catScore.scoreOnScale10 / 5) * 100}%` }}
                         />
                       </div>
                     </div>

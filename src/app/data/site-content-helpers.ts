@@ -5,11 +5,11 @@ export function getSolutionsForCategory(siteContent: SiteContent, categoryName: 
 }
 
 export function getSolutionLevel(scoreOnScale10: number): 'low' | 'medium' | 'high' {
-  if (scoreOnScale10 <= 4) {
+  if (scoreOnScale10 <= 2.0) {
     return 'low';
   }
 
-  if (scoreOnScale10 <= 7) {
+  if (scoreOnScale10 <= 3.5) {
     return 'medium';
   }
 

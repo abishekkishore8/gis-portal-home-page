@@ -194,7 +194,7 @@ export function HomePage({ initialVillages, siteContent }: HomePageProps) {
               <BarChart3 className="w-5 h-5 text-purple-600" />
             </div>
             <div>
-              <p className="text-[22px] text-purple-800">{avgScore}/10</p>
+              <p className="text-[22px] text-purple-800">{avgScore}/5</p>
               <p className="text-[12px] text-gray-500">Avg. Village Score</p>
             </div>
           </div>
@@ -308,12 +308,12 @@ export function HomePage({ initialVillages, siteContent }: HomePageProps) {
                     <div className="flex-1 h-1.5 bg-gray-200 rounded-full overflow-hidden">
                       <div
                         className={`h-full rounded-full ${
-                          village.overallScore > 7 ? "bg-green-500" : village.overallScore > 4 ? "bg-yellow-500" : "bg-red-500"
+                          village.overallScore > 3.5 ? "bg-green-500" : village.overallScore > 2.0 ? "bg-yellow-500" : "bg-red-500"
                         }`}
-                        style={{ width: `${(village.overallScore / 10) * 100}%` }}
+                        style={{ width: `${(village.overallScore / 5) * 100}%` }}
                       />
                     </div>
-                    <span className="text-[12px] text-gray-600">{village.overallScore.toFixed(2)}/10</span>
+                    <span className="text-[12px] text-gray-600">{village.overallScore.toFixed(2)}/5</span>
                   </div>
                 </div>
               ))}

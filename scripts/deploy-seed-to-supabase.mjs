@@ -62,7 +62,7 @@ async function deploy() {
       lng: v.lng,
       population: v.population,
       households: v.households,
-      overall_score: v.overallScore / 2,
+      overall_score: v.overallScore,
       images: v.images,
       scores: v.scores
     }));

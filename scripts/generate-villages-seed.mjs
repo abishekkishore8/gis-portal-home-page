@@ -238,7 +238,7 @@ async function generateSeed() {
 
         const sum = indicators.reduce((s, ind) => s + ind.score, 0);
         const rawThemeScore = indicators.length ? sum / indicators.length : 0;
-        const scoreOnScale10 = rawThemeScore * 2;
+        const scoreOnScale10 = rawThemeScore;
         const formulaTotal = Math.round(rawThemeScore * 20);
 
         let output = 'Medium';
@@ -301,7 +301,7 @@ async function generateSeed() {
       const images = escapeLiteral(JSON.stringify(village.images));
       const scoresJson = escapeLiteral(JSON.stringify(village.scores));
 
-      return `('${escapeLiteral(village.id)}', '${escapeLiteral(village.name)}', '${escapeLiteral(village.district)}', '${escapeLiteral(village.state)}', ${village.lat}, ${village.lng}, ${village.population}, ${village.households}, ${village.overallScore / 2}, '${images}'::jsonb, '${scoresJson}'::jsonb)`;
+      return `('${escapeLiteral(village.id)}', '${escapeLiteral(village.name)}', '${escapeLiteral(village.district)}', '${escapeLiteral(village.state)}', ${village.lat}, ${village.lng}, ${village.population}, ${village.households}, ${village.overallScore}, '${images}'::jsonb, '${scoresJson}'::jsonb)`;
     })
     .join(',\n');
 

@@ -12,8 +12,8 @@ interface MapViewProps {
 
 const getMarkerColor = (score: number, isSelected: boolean) => {
   if (isSelected) return "#f59e0b";
-  if (score <= 4) return "#ef4444";
-  if (score <= 7) return "#eab308";
+  if (score <= 2.0) return "#ef4444";
+  if (score <= 3.5) return "#eab308";
   return "#10b981";
 };
 
@@ -180,7 +180,7 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
             <strong style="font-size: 14px; color: #1f2937;">${village.name}</strong><br/>
             <span style="color:#6b7280; font-size: 12px;">${village.district}, ${village.state}</span><br/>
             <div style="margin-top: 4px; padding-top: 4px; border-top: 1px solid #e5e7eb;">
-              <span style="font-size: 12px; font-weight: 500; color: #4b5563;">Score: ${formatScore(village.overallScore)}/10</span>
+              <span style="font-size: 12px; font-weight: 500; color: #4b5563;">Score: ${formatScore(village.overallScore)}/5</span>
             </div>
           </div>`,
           { offset: [0, -10], closeButton: false }
@@ -511,9 +511,9 @@ export function MapView({ villages, selectedVillageId, onVillageClick }: MapView
             <p className="mb-2 text-[13px] font-semibold text-gray-600">Score Legend</p>
             <div className="flex flex-col gap-1.5">
               {[
-                { color: "#ef4444", label: "Needs Attention (0-4)" },
-                { color: "#eab308", label: "Improvement Needed (4.01-7)" },
-                { color: "#10b981", label: "Well Performing (7.01-10)" },
+                { color: "#ef4444", label: "Needs Attention (0-2)" },
+                { color: "#eab308", label: "Improvement Needed (2.01-3.5)" },
+                { color: "#10b981", label: "Well Performing (3.51-5)" },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-2">
                   <div

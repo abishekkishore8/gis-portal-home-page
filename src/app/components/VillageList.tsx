@@ -14,14 +14,14 @@ interface VillageListProps {
 }
 
 const getScoreColor = (score: number) => {
-  if (score <= 4) return "bg-red-100 text-red-700 border-red-200";
-  if (score <= 7) return "bg-yellow-100 text-yellow-700 border-yellow-200";
+  if (score <= 2.0) return "bg-red-100 text-red-700 border-red-200";
+  if (score <= 3.5) return "bg-yellow-100 text-yellow-700 border-yellow-200";
   return "bg-emerald-100 text-emerald-700 border-emerald-200";
 };
 
 const getScoreLabel = (score: number) => {
-  if (score <= 4) return "Needs Attention";
-  if (score <= 7) return "Improvement Needed";
+  if (score <= 2.0) return "Needs Attention";
+  if (score <= 3.5) return "Improvement Needed";
   return "Well Performing";
 };
 
@@ -138,7 +138,7 @@ export function VillageList({ villages, selectedVillageId, onSelectVillage, onVi
                       village.overallScore
                     )}`}
                   >
-                    {getScoreLabel(village.overallScore)} ({formatScore(village.overallScore)}/10)
+                    {getScoreLabel(village.overallScore)} ({formatScore(village.overallScore)}/5)
                   </span>
                 </div>
 
