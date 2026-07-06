@@ -227,7 +227,11 @@ async function generateSeed() {
         const indicators = [];
         for (let i = startIdx + 1; i < endIdx; i++) {
           const row = rows[i];
-          if (typeof row.c0 === 'number' || (typeof row.c0 === 'string' && /^\d+$/.test(row.c0.trim()))) {
+          // Ensure we don't accidentally parse row cells that are part of the 'Interpretation' legend table
+          const isLegendRow = String(row.c1).includes('Good') || String(row.c1).includes('Moderate') || String(row.c1).includes('Poor') || String(row.c1).includes('Very');
+          const hasNumericIndex = typeof row.c0 === 'number' || (typeof row.c0 === 'string' && /^\d+$/.test(row.c0.trim()));
+          
+          if (hasNumericIndex && !isLegendRow) {
             indicators.push({ name: String(row.c1).trim(), score: Number(row.c2 || 0) });
           }
         }
