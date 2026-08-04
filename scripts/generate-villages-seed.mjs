@@ -18,6 +18,66 @@ const demoImages = [
   'https://images.unsplash.com/photo-1765635550191-a2a2ba9c07ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGVudmlyb25tZW50JTIwY29uc2VydmF0aW9uJTIwZ3JlZW58ZW58MXx8fHwxNzcyNDQ2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
 ];
 
+const photosSourceDir = path.join(rootDir, 'village', 'Photos for Ashish');
+const photosDestBaseDir = path.join(rootDir, 'public', 'village-photos');
+
+// Ensure destination base folder exists
+if (!fs.existsSync(photosDestBaseDir)) {
+  fs.mkdirSync(photosDestBaseDir, { recursive: true });
+}
+
+// Read all subfolders in Photos for Ashish
+let photoFolders = [];
+if (fs.existsSync(photosSourceDir)) {
+  photoFolders = fs.readdirSync(photosSourceDir).filter(f => fs.statSync(path.join(photosSourceDir, f)).isDirectory());
+}
+
+// Function to find a matching photo folder for a village
+function getVillageImages(sheetName, slug) {
+  const normSheet = normalizeName(sheetName);
+  const normSlug = slug;
+  
+  // Find a folder whose normalized name contains or is contained in our normalized sheet name
+  const matchedFolder = photoFolders.find(folder => {
+    const normFolder = normalizeName(folder).replace('photos', '').trim();
+    // Special spelling aliases
+    if (normFolder === 'nawali' && normSheet === 'nawli') return true;
+    if (normFolder === 'pathanpurva' && normSheet === 'pathanpurwa') return true;
+    if (normFolder === 'niwari khadar' && normSheet === 'niwadi khadar') return true;
+    
+    return normSheet.includes(normFolder) || normFolder.includes(normSheet);
+  });
+
+  if (matchedFolder) {
+    const srcDir = path.join(photosSourceDir, matchedFolder);
+    const destDir = path.join(photosDestBaseDir, normSlug);
+    
+    if (!fs.existsSync(destDir)) {
+      fs.mkdirSync(destDir, { recursive: true });
+    }
+    
+    const files = fs.readdirSync(srcDir).filter(file => {
+      const ext = path.extname(file).toLowerCase();
+      return ['.jpg', '.jpeg', '.png', '.webp'].includes(ext);
+    });
+
+    if (files.length > 0) {
+      const copiedImages = [];
+      files.forEach(file => {
+        const srcPath = path.join(srcDir, file);
+        const destPath = path.join(destDir, file);
+        // Copy file
+        fs.copyFileSync(srcPath, destPath);
+        copiedImages.push(`/village-photos/${normSlug}/${file}`);
+      });
+      console.log(`✓ Copied ${copiedImages.length} real photos for ${sheetName} to public/village-photos/${normSlug}`);
+      return copiedImages;
+    }
+  }
+
+  return demoImages;
+}
+
 const slugify = (value) => String(value)
   .normalize('NFKD')
   .replace(/[^\w\s-]/g, '')
@@ -281,7 +341,7 @@ async function generateSeed() {
         lng: metadata.lng,
         population,
         households,
-        images: demoImages,
+        images: getVillageImages(sheetName, slugify(sheetName)),
         overallScore,
         scores
       });
