@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en"><Esri><CreaDate>20260804</CreaDate><CreaTime>17354100</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.8\ArcToolbox\Toolboxes\Data Management Tools.tbx\DeleteField" Date="20260804" Time="173541">DeleteField Ganga_Basin Basin_Code;Average_An;Average_00;Utilisable;No_of_Hydr;Storage_Co;Storage_Un;Storage_00;Area_in_Sq;STATE;Total_Live;st_area_sh;st_length_</Process></lineage></DataProperties></Esri></metadata>

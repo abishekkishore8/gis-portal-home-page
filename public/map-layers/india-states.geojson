@@ -4,9 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jammu & Kashmir",
-        "ST_ID": "IN-JK",
-        "ID": "JK"
+        "ST_NM": "Jammu & Kashmir"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -833,9 +831,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -884,9 +880,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -923,9 +917,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -962,9 +954,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -997,9 +987,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1052,9 +1040,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1095,9 +1081,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1154,9 +1138,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1197,9 +1179,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1232,9 +1212,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1279,9 +1257,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1334,9 +1310,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1369,9 +1343,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1412,9 +1384,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1443,9 +1413,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1514,9 +1482,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1553,9 +1519,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1592,9 +1556,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1647,9 +1609,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1690,9 +1650,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1729,9 +1687,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1812,9 +1768,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1847,9 +1801,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1882,9 +1834,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1957,9 +1907,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -1992,9 +1940,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -2031,9 +1977,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -2094,9 +2038,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -2273,9 +2215,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -2364,9 +2304,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -2439,9 +2377,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -2526,9 +2462,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -2573,9 +2507,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -2668,9 +2600,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -2759,9 +2689,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -2858,9 +2786,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -3085,9 +3011,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Gujarat",
-        "ST_ID": "IN-GJ",
-        "ID": "GJ"
+        "ST_NM": "Gujarat"
       },
       "geometry": {
         "type": "Polygon",
@@ -10442,9 +10366,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Tamil Nadu",
-        "ST_ID": "IN-TN",
-        "ID": "TN"
+        "ST_NM": "Tamil Nadu"
       },
       "geometry": {
         "type": "Polygon",
@@ -10477,9 +10399,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Tamil Nadu",
-        "ST_ID": "IN-TN",
-        "ID": "TN"
+        "ST_NM": "Tamil Nadu"
       },
       "geometry": {
         "type": "Polygon",
@@ -10516,9 +10436,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Tamil Nadu",
-        "ST_ID": "IN-TN",
-        "ID": "TN"
+        "ST_NM": "Tamil Nadu"
       },
       "geometry": {
         "type": "Polygon",
@@ -10627,9 +10545,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Tamil Nadu",
-        "ST_ID": "IN-TN",
-        "ID": "TN"
+        "ST_NM": "Tamil Nadu"
       },
       "geometry": {
         "type": "Polygon",
@@ -10686,9 +10602,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Tamil Nadu",
-        "ST_ID": "IN-TN",
-        "ID": "TN"
+        "ST_NM": "Tamil Nadu"
       },
       "geometry": {
         "type": "Polygon",
@@ -15923,9 +15837,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -16058,9 +15970,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -16205,9 +16115,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -16284,9 +16192,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -16347,9 +16253,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -16390,9 +16294,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -16509,9 +16411,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -16548,9 +16448,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -16623,9 +16521,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -16726,9 +16622,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -16761,9 +16655,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -16896,9 +16788,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -16931,9 +16821,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -16966,9 +16854,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17005,9 +16891,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17040,9 +16924,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17123,9 +17005,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17174,9 +17054,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17225,9 +17103,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17268,9 +17144,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17303,9 +17177,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17410,9 +17282,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17477,9 +17347,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17512,9 +17380,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17559,9 +17425,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17630,9 +17494,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17713,9 +17575,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17748,9 +17608,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17807,9 +17665,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17862,9 +17718,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17913,9 +17767,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17948,9 +17800,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -17983,9 +17833,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18026,9 +17874,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18073,9 +17919,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18144,9 +17988,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18191,9 +18033,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18258,9 +18098,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18293,9 +18131,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18360,9 +18196,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18395,9 +18229,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18434,9 +18266,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18469,9 +18299,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18596,9 +18424,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18663,9 +18489,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18706,9 +18530,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18737,9 +18559,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18772,9 +18592,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18811,9 +18629,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18854,9 +18670,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -18917,9 +18731,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andhra Pradesh",
-        "ST_ID": "IN-AP",
-        "ID": "AP"
+        "ST_NM": "Andhra Pradesh"
       },
       "geometry": {
         "type": "Polygon",
@@ -18992,9 +18804,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Daman & Diu",
-        "ST_ID": "IN-DD",
-        "ID": "DD"
+        "ST_NM": "Daman & Diu"
       },
       "geometry": {
         "type": "Polygon",
@@ -19095,9 +18905,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Daman & Diu",
-        "ST_ID": "IN-DD",
-        "ID": "DD"
+        "ST_NM": "Daman & Diu"
       },
       "geometry": {
         "type": "Polygon",
@@ -19174,9 +18982,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Daman & Diu",
-        "ST_ID": "IN-DD",
-        "ID": "DD"
+        "ST_NM": "Daman & Diu"
       },
       "geometry": {
         "type": "Polygon",
@@ -19205,9 +19011,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Bihar",
-        "ST_ID": "IN-BR",
-        "ID": "BR"
+        "ST_NM": "Bihar"
       },
       "geometry": {
         "type": "Polygon",
@@ -19240,9 +19044,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Lakshadweep",
-        "ST_ID": "IN-LD",
-        "ID": "LD"
+        "ST_NM": "Lakshadweep"
       },
       "geometry": {
         "type": "Polygon",
@@ -19339,9 +19141,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Lakshadweep",
-        "ST_ID": "IN-LD",
-        "ID": "LD"
+        "ST_NM": "Lakshadweep"
       },
       "geometry": {
         "type": "Polygon",
@@ -19430,9 +19230,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Lakshadweep",
-        "ST_ID": "IN-LD",
-        "ID": "LD"
+        "ST_NM": "Lakshadweep"
       },
       "geometry": {
         "type": "Polygon",
@@ -19509,9 +19307,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Lakshadweep",
-        "ST_ID": "IN-LD",
-        "ID": "LD"
+        "ST_NM": "Lakshadweep"
       },
       "geometry": {
         "type": "Polygon",
@@ -19576,9 +19372,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Lakshadweep",
-        "ST_ID": "IN-LD",
-        "ID": "LD"
+        "ST_NM": "Lakshadweep"
       },
       "geometry": {
         "type": "Polygon",
@@ -19643,9 +19437,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Lakshadweep",
-        "ST_ID": "IN-LD",
-        "ID": "LD"
+        "ST_NM": "Lakshadweep"
       },
       "geometry": {
         "type": "Polygon",
@@ -19714,9 +19506,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Lakshadweep",
-        "ST_ID": "IN-LD",
-        "ID": "LD"
+        "ST_NM": "Lakshadweep"
       },
       "geometry": {
         "type": "Polygon",
@@ -19781,9 +19571,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Lakshadweep",
-        "ST_ID": "IN-LD",
-        "ID": "LD"
+        "ST_NM": "Lakshadweep"
       },
       "geometry": {
         "type": "Polygon",
@@ -19844,9 +19632,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Lakshadweep",
-        "ST_ID": "IN-LD",
-        "ID": "LD"
+        "ST_NM": "Lakshadweep"
       },
       "geometry": {
         "type": "Polygon",
@@ -19883,9 +19669,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Lakshadweep",
-        "ST_ID": "IN-LD",
-        "ID": "LD"
+        "ST_NM": "Lakshadweep"
       },
       "geometry": {
         "type": "Polygon",
@@ -19926,9 +19710,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Lakshadweep",
-        "ST_ID": "IN-LD",
-        "ID": "LD"
+        "ST_NM": "Lakshadweep"
       },
       "geometry": {
         "type": "Polygon",
@@ -19965,9 +19747,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Lakshadweep",
-        "ST_ID": "IN-LD",
-        "ID": "LD"
+        "ST_NM": "Lakshadweep"
       },
       "geometry": {
         "type": "Polygon",
@@ -20000,9 +19780,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Lakshadweep",
-        "ST_ID": "IN-LD",
-        "ID": "LD"
+        "ST_NM": "Lakshadweep"
       },
       "geometry": {
         "type": "Polygon",
@@ -20035,9 +19813,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Madhya Pradesh",
-        "ST_ID": "IN-MP",
-        "ID": "MP"
+        "ST_NM": "Madhya Pradesh"
       },
       "geometry": {
         "type": "Polygon",
@@ -20070,9 +19846,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Karnataka",
-        "ST_ID": "IN-KA",
-        "ID": "KA"
+        "ST_NM": "Karnataka"
       },
       "geometry": {
         "type": "Polygon",
@@ -20113,9 +19887,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Karnataka",
-        "ST_ID": "IN-KA",
-        "ID": "KA"
+        "ST_NM": "Karnataka"
       },
       "geometry": {
         "type": "Polygon",
@@ -20164,9 +19936,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Puducherry",
-        "ST_ID": "IN-PY",
-        "ID": "PY"
+        "ST_NM": "Puducherry"
       },
       "geometry": {
         "type": "Polygon",
@@ -20199,9 +19969,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Puducherry",
-        "ST_ID": "IN-PY",
-        "ID": "PY"
+        "ST_NM": "Puducherry"
       },
       "geometry": {
         "type": "Polygon",
@@ -20350,9 +20118,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Puducherry",
-        "ST_ID": "IN-PY",
-        "ID": "PY"
+        "ST_NM": "Puducherry"
       },
       "geometry": {
         "type": "Polygon",
@@ -20397,9 +20163,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Puducherry",
-        "ST_ID": "IN-PY",
-        "ID": "PY"
+        "ST_NM": "Puducherry"
       },
       "geometry": {
         "type": "Polygon",
@@ -20468,9 +20232,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Puducherry",
-        "ST_ID": "IN-PY",
-        "ID": "PY"
+        "ST_NM": "Puducherry"
       },
       "geometry": {
         "type": "Polygon",
@@ -20511,9 +20273,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Puducherry",
-        "ST_ID": "IN-PY",
-        "ID": "PY"
+        "ST_NM": "Puducherry"
       },
       "geometry": {
         "type": "Polygon",
@@ -20630,9 +20390,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Puducherry",
-        "ST_ID": "IN-PY",
-        "ID": "PY"
+        "ST_NM": "Puducherry"
       },
       "geometry": {
         "type": "Polygon",
@@ -20677,9 +20435,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Puducherry",
-        "ST_ID": "IN-PY",
-        "ID": "PY"
+        "ST_NM": "Puducherry"
       },
       "geometry": {
         "type": "Polygon",
@@ -20768,9 +20524,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Uttar Pradesh",
-        "ST_ID": "IN-UP",
-        "ID": "UP"
+        "ST_NM": "Uttar Pradesh"
       },
       "geometry": {
         "type": "Polygon",
@@ -20863,9 +20617,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Uttar Pradesh",
-        "ST_ID": "IN-UP",
-        "ID": "UP"
+        "ST_NM": "Uttar Pradesh"
       },
       "geometry": {
         "type": "Polygon",
@@ -20898,9 +20650,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -20953,9 +20703,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -20996,9 +20744,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -21055,9 +20801,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -21114,9 +20858,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -21185,9 +20927,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -21272,9 +21012,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -21343,9 +21081,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -21406,9 +21142,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -21445,9 +21179,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -21548,9 +21280,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -21615,9 +21345,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -21682,9 +21410,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -21733,9 +21459,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -21776,9 +21500,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -21851,9 +21573,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -21930,9 +21650,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -21997,9 +21715,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -22084,9 +21800,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -22155,9 +21869,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -22258,9 +21970,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -22401,9 +22111,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -22464,9 +22172,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -22535,9 +22241,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -22582,9 +22286,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -22697,9 +22399,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -22744,9 +22444,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -22779,9 +22477,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -22838,9 +22534,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -22889,9 +22583,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -22980,9 +22672,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -23043,9 +22733,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -23082,9 +22770,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -23165,9 +22851,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -23284,9 +22968,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -23367,9 +23049,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -23442,9 +23122,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -23477,9 +23155,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -23528,9 +23204,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -23591,9 +23265,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -23678,9 +23350,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -23761,9 +23431,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -23812,9 +23480,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -23919,9 +23585,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -23978,9 +23642,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -24097,9 +23759,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -24204,9 +23864,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -24299,9 +23957,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -24386,9 +24042,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -24493,9 +24147,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -24596,9 +24248,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -24647,9 +24297,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -24714,9 +24362,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -24813,9 +24459,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -24916,9 +24560,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -24959,9 +24601,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -25014,9 +24654,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -25053,9 +24691,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -25192,9 +24828,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -25311,9 +24945,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -25390,9 +25022,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -25465,9 +25095,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -25544,9 +25172,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -25675,9 +25301,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -25726,9 +25350,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -25769,9 +25391,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -25880,9 +25500,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -25947,9 +25565,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -26026,9 +25642,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -26073,9 +25687,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -26164,9 +25776,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -26235,9 +25845,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -26318,9 +25926,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -26433,9 +26039,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -26592,9 +26196,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -26655,9 +26257,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -26710,9 +26310,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -26773,9 +26371,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -26916,9 +26512,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -26955,9 +26549,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -27046,9 +26638,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -27101,9 +26691,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -27136,9 +26724,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -27175,9 +26761,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Odisha",
-        "ST_ID": "IN-OR",
-        "ID": "OR"
+        "ST_NM": "Odisha"
       },
       "geometry": {
         "type": "Polygon",
@@ -27218,9 +26802,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Odisha",
-        "ST_ID": "IN-OR",
-        "ID": "OR"
+        "ST_NM": "Odisha"
       },
       "geometry": {
         "type": "Polygon",
@@ -27253,9 +26835,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Odisha",
-        "ST_ID": "IN-OR",
-        "ID": "OR"
+        "ST_NM": "Odisha"
       },
       "geometry": {
         "type": "Polygon",
@@ -27304,9 +26884,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Odisha",
-        "ST_ID": "IN-OR",
-        "ID": "OR"
+        "ST_NM": "Odisha"
       },
       "geometry": {
         "type": "Polygon",
@@ -27347,9 +26925,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Chandigarh",
-        "ST_ID": "IN-CH",
-        "ID": "CH"
+        "ST_NM": "Chandigarh"
       },
       "geometry": {
         "type": "Polygon",
@@ -27490,9 +27066,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Haryana",
-        "ST_ID": "IN-HR",
-        "ID": "HR"
+        "ST_NM": "Haryana"
       },
       "geometry": {
         "type": "Polygon",
@@ -31637,9 +31211,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Himachal Pradesh",
-        "ST_ID": "IN-HP",
-        "ID": "HP"
+        "ST_NM": "Himachal Pradesh"
       },
       "geometry": {
         "type": "Polygon",
@@ -34256,18 +33828,14 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jammu & Kashmir",
-        "ST_ID": "IN-JK",
-        "ID": "JK"
+        "ST_NM": "Jammu & Kashmir"
       },
       "geometry": null
     },
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jammu & Kashmir",
-        "ST_ID": "IN-JK",
-        "ID": "JK"
+        "ST_NM": "Jammu & Kashmir"
       },
       "geometry": {
         "type": "Polygon",
@@ -34296,27 +33864,21 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jammu & Kashmir",
-        "ST_ID": "IN-JK",
-        "ID": "JK"
+        "ST_NM": "Jammu & Kashmir"
       },
       "geometry": null
     },
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jammu & Kashmir",
-        "ST_ID": "IN-JK",
-        "ID": "JK"
+        "ST_NM": "Jammu & Kashmir"
       },
       "geometry": null
     },
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jammu & Kashmir",
-        "ST_ID": "IN-JK",
-        "ID": "JK"
+        "ST_NM": "Jammu & Kashmir"
       },
       "geometry": {
         "type": "Polygon",
@@ -34345,9 +33907,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jammu & Kashmir",
-        "ST_ID": "IN-JK",
-        "ID": "JK"
+        "ST_NM": "Jammu & Kashmir"
       },
       "geometry": {
         "type": "Polygon",
@@ -34376,18 +33936,14 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jammu & Kashmir",
-        "ST_ID": "IN-JK",
-        "ID": "JK"
+        "ST_NM": "Jammu & Kashmir"
       },
       "geometry": null
     },
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jammu & Kashmir",
-        "ST_ID": "IN-JK",
-        "ID": "JK"
+        "ST_NM": "Jammu & Kashmir"
       },
       "geometry": {
         "type": "Polygon",
@@ -34420,9 +33976,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jammu & Kashmir",
-        "ST_ID": "IN-JK",
-        "ID": "JK"
+        "ST_NM": "Jammu & Kashmir"
       },
       "geometry": {
         "type": "Polygon",
@@ -34451,9 +34005,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jammu & Kashmir",
-        "ST_ID": "IN-JK",
-        "ID": "JK"
+        "ST_NM": "Jammu & Kashmir"
       },
       "geometry": {
         "type": "Polygon",
@@ -34486,18 +34038,14 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jammu & Kashmir",
-        "ST_ID": "IN-JK",
-        "ID": "JK"
+        "ST_NM": "Jammu & Kashmir"
       },
       "geometry": null
     },
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jammu & Kashmir",
-        "ST_ID": "IN-JK",
-        "ID": "JK"
+        "ST_NM": "Jammu & Kashmir"
       },
       "geometry": {
         "type": "Polygon",
@@ -34530,9 +34078,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jammu & Kashmir",
-        "ST_ID": "IN-JK",
-        "ID": "JK"
+        "ST_NM": "Jammu & Kashmir"
       },
       "geometry": {
         "type": "Polygon",
@@ -34561,18 +34107,14 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jammu & Kashmir",
-        "ST_ID": "IN-JK",
-        "ID": "JK"
+        "ST_NM": "Jammu & Kashmir"
       },
       "geometry": null
     },
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jammu & Kashmir",
-        "ST_ID": "IN-JK",
-        "ID": "JK"
+        "ST_NM": "Jammu & Kashmir"
       },
       "geometry": {
         "type": "Polygon",
@@ -34601,9 +34143,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Arunachal Pradesh",
-        "ST_ID": "IN-AR",
-        "ID": "AR"
+        "ST_NM": "Arunachal Pradesh"
       },
       "geometry": {
         "type": "Polygon",
@@ -38648,9 +38188,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Nagaland",
-        "ST_ID": "IN-NL",
-        "ID": "NL"
+        "ST_NM": "Nagaland"
       },
       "geometry": {
         "type": "Polygon",
@@ -40203,9 +39741,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Puducherry",
-        "ST_ID": "IN-PY",
-        "ID": "PY"
+        "ST_NM": "Puducherry"
       },
       "geometry": {
         "type": "Polygon",
@@ -40234,9 +39770,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Kerala",
-        "ST_ID": "IN-KL",
-        "ID": "KL"
+        "ST_NM": "Kerala"
       },
       "geometry": {
         "type": "Polygon",
@@ -43127,9 +42661,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Punjab",
-        "ST_ID": "IN-PB",
-        "ID": "PB"
+        "ST_NM": "Punjab"
       },
       "geometry": {
         "type": "Polygon",
@@ -46122,9 +45654,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Assam",
-        "ST_ID": "IN-AS",
-        "ID": "AS"
+        "ST_NM": "Assam"
       },
       "geometry": {
         "type": "Polygon",
@@ -50775,9 +50305,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Tripura",
-        "ST_ID": "IN-TR",
-        "ID": "TR"
+        "ST_NM": "Tripura"
       },
       "geometry": {
         "type": "Polygon",
@@ -52066,9 +51594,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Uttar Pradesh",
-        "ST_ID": "IN-UP",
-        "ID": "UP"
+        "ST_NM": "Uttar Pradesh"
       },
       "geometry": {
         "type": "Polygon",
@@ -61809,9 +61335,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -62212,9 +61736,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -62383,9 +61905,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -62638,9 +62158,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -63221,9 +62739,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -63424,9 +62940,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -63899,9 +63413,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andaman & Nicobar Island",
-        "ST_ID": "IN-AN",
-        "ID": "AN"
+        "ST_NM": "Andaman & Nicobar Island"
       },
       "geometry": {
         "type": "Polygon",
@@ -64570,9 +64082,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Andhra Pradesh",
-        "ST_ID": "IN-AP",
-        "ID": "AP"
+        "ST_NM": "Andhra Pradesh"
       },
       "geometry": {
         "type": "Polygon",
@@ -72667,9 +72177,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Bihar",
-        "ST_ID": "IN-BR",
-        "ID": "BR"
+        "ST_NM": "Bihar"
       },
       "geometry": {
         "type": "Polygon",
@@ -77354,9 +76862,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Dadara & Nagar Havelli",
-        "ST_ID": "IN-DN",
-        "ID": "DN"
+        "ST_NM": "Dadara & Nagar Havelli"
       },
       "geometry": {
         "type": "Polygon",
@@ -77685,9 +77191,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Goa",
-        "ST_ID": "IN-GA",
-        "ID": "GA"
+        "ST_NM": "Goa"
       },
       "geometry": {
         "type": "Polygon",
@@ -78508,9 +78012,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Ladakh",
-        "ST_ID": "IN-LA",
-        "ID": "LA"
+        "ST_NM": "Ladakh"
       },
       "geometry": {
         "type": "Polygon",
@@ -82847,9 +82349,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Karnataka",
-        "ST_ID": "IN-KA",
-        "ID": "KA"
+        "ST_NM": "Karnataka"
       },
       "geometry": {
         "type": "Polygon",
@@ -90766,9 +90266,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Madhya Pradesh",
-        "ST_ID": "IN-MP",
-        "ID": "MP"
+        "ST_NM": "Madhya Pradesh"
       },
       "geometry": {
         "type": "Polygon",
@@ -102877,9 +102375,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Chhattisgarh",
-        "ST_ID": "IN-CT",
-        "ID": "CT"
+        "ST_NM": "Chhattisgarh"
       },
       "geometry": {
         "type": "Polygon",
@@ -108320,9 +107816,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Maharashtra",
-        "ST_ID": "IN-MH",
-        "ID": "MH"
+        "ST_NM": "Maharashtra"
       },
       "geometry": {
         "type": "Polygon",
@@ -117147,9 +116641,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Manipur",
-        "ST_ID": "IN-MN",
-        "ID": "MN"
+        "ST_NM": "Manipur"
       },
       "geometry": {
         "type": "Polygon",
@@ -118626,9 +118118,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Meghalaya",
-        "ST_ID": "IN-ML",
-        "ID": "ML"
+        "ST_NM": "Meghalaya"
       },
       "geometry": {
         "type": "Polygon",
@@ -120517,9 +120007,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Mizoram",
-        "ST_ID": "IN-MZ",
-        "ID": "MZ"
+        "ST_NM": "Mizoram"
       },
       "geometry": {
         "type": "Polygon",
@@ -122276,9 +121764,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Puducherry",
-        "ST_ID": "IN-PY",
-        "ID": "PY"
+        "ST_NM": "Puducherry"
       },
       "geometry": {
         "type": "Polygon",
@@ -122515,9 +122001,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Puducherry",
-        "ST_ID": "IN-PY",
-        "ID": "PY"
+        "ST_NM": "Puducherry"
       },
       "geometry": {
         "type": "Polygon",
@@ -122876,9 +122360,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Rajasthan",
-        "ST_ID": "IN-RJ",
-        "ID": "RJ"
+        "ST_NM": "Rajasthan"
       },
       "geometry": {
         "type": "Polygon",
@@ -131187,9 +130669,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Sikkim",
-        "ST_ID": "IN-SK",
-        "ID": "SK"
+        "ST_NM": "Sikkim"
       },
       "geometry": {
         "type": "Polygon",
@@ -131970,9 +131450,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Uttarakhand",
-        "ST_ID": "IN-UT",
-        "ID": "UT"
+        "ST_NM": "Uttarakhand"
       },
       "geometry": {
         "type": "Polygon",
@@ -134677,9 +134155,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -134912,9 +134388,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -135051,9 +134525,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -135234,9 +134706,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -135409,9 +134879,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "West Bengal",
-        "ST_ID": "IN-WB",
-        "ID": "WB"
+        "ST_NM": "West Bengal"
       },
       "geometry": {
         "type": "Polygon",
@@ -142696,9 +142164,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Odisha",
-        "ST_ID": "IN-OR",
-        "ID": "OR"
+        "ST_NM": "Odisha"
       },
       "geometry": {
         "type": "Polygon",
@@ -148395,9 +147861,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Jharkhand",
-        "ST_ID": "IN-JH",
-        "ID": "JH"
+        "ST_NM": "Jharkhand"
       },
       "geometry": {
         "type": "Polygon",
@@ -153376,9 +152840,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "NCT of Delhi",
-        "ST_ID": "IN-DL",
-        "ID": "DL"
+        "ST_NM": "NCT of Delhi"
       },
       "geometry": {
         "type": "Polygon",
@@ -153843,9 +153305,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Telangana",
-        "ST_ID": "IN-TG",
-        "ID": "TG"
+        "ST_NM": "Telangana"
       },
       "geometry": {
         "type": "Polygon",
@@ -157894,9 +157354,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ST_NM": "Puducherry",
-        "ST_ID": "IN-PY",
-        "ID": "PY"
+        "ST_NM": "Puducherry"
       },
       "geometry": {
         "type": "Polygon",

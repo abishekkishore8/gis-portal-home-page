@@ -4,20 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Basin_Code": "2A",
-        "Average_An": 525.02,
-        "Average_00": 525.02,
-        "Utilisable": 250,
-        "No_of_Hydr": 291,
-        "Storage_Co": 48.748,
-        "Storage_Un": 7.703,
-        "Storage_00": 30.593,
-        "Area_in_Sq": 861452,
-        "STATE": "Uttaranchal, Uttar Pradesh, Madhya Pradesh, Chhattisgarh, Bihar, Jharkhand, Rajasthan, West Bengal, Haryana, Himachal Pradesh,Union Territory of Delhi",
-        "Basin_Name": "Ganga",
-        "Total_Live": 56.451,
-        "st_area_sh": 808336725421,
-        "st_length_": 12052226.328
+        "Basin_Name": "Ganga"
       },
       "geometry": {
         "type": "MultiPolygon",

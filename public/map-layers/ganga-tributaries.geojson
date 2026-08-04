@@ -4,18 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 1,
-        "OBJECTID": 2,
-        "River_Name": "Sharda",
-        "Length": 455,
-        "Shape_Leng": 455000.000535,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 455000.000535
+        "River_Name": "Sharda"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5266,18 +5255,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 2,
-        "OBJECTID": 3,
-        "River_Name": "Rapti",
-        "Length": 506.477,
-        "Shape_Leng": 506476.673535,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 506476.673535
+        "River_Name": "Rapti"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -24144,18 +24122,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 3,
-        "OBJECTID": 8,
-        "River_Name": "Mahananda",
-        "Length": 281.354,
-        "Shape_Leng": 281354.045735,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 281354.045735
+        "River_Name": "Mahananda"
       },
       "geometry": {
         "type": "LineString",
@@ -38450,18 +38417,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 4,
-        "OBJECTID": 9,
-        "River_Name": "Girwa",
-        "Length": 52.3315,
-        "Shape_Leng": 52331.5361711,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 52331.5361711
+        "River_Name": "Girwa"
       },
       "geometry": {
         "type": "LineString",
@@ -40048,18 +40004,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 5,
-        "OBJECTID": 10,
-        "River_Name": "Bagmati",
-        "Length": 305.923,
-        "Shape_Leng": 305923.080126,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 305923.080126
+        "River_Name": "Bagmati"
       },
       "geometry": {
         "type": "LineString",
@@ -44298,18 +44243,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 6,
-        "OBJECTID": 11,
-        "River_Name": "Babai",
-        "Length": 84.173,
-        "Shape_Leng": 84173.0219294,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 84173.0219294
+        "River_Name": "Babai"
       },
       "geometry": {
         "type": "LineString",
@@ -45532,18 +45466,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 7,
-        "OBJECTID": 12,
-        "River_Name": "Ajay",
-        "Length": 298.519,
-        "Shape_Leng": 298519.14636,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 298519.14636
+        "River_Name": "Ajay"
       },
       "geometry": {
         "type": "LineString",
@@ -51722,18 +51645,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 8,
-        "OBJECTID": 13,
-        "River_Name": "Chambal",
-        "Length": 921.356,
-        "Shape_Leng": 921356.42023,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 921356.42023
+        "River_Name": "Chambal"
       },
       "geometry": {
         "type": "LineString",
@@ -60084,18 +59996,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 9,
-        "OBJECTID": 14,
-        "River_Name": "Damodar",
-        "Length": 563.918,
-        "Shape_Leng": 563918.114416,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 563918.114416
+        "River_Name": "Damodar"
       },
       "geometry": {
         "type": "LineString",
@@ -87198,18 +87099,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 10,
-        "OBJECTID": 15,
-        "River_Name": "Gandak",
-        "Length": 291.973,
-        "Shape_Leng": 291973.387367,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 291973.387367
+        "River_Name": "Gandak"
       },
       "geometry": {
         "type": "LineString",
@@ -93680,18 +93570,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 11,
-        "OBJECTID": 16,
-        "River_Name": "Ghaghra",
-        "Length": 610.735,
-        "Shape_Leng": 610734.794345,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 610734.794345
+        "River_Name": "Ghaghra"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -110126,18 +110005,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 12,
-        "OBJECTID": 17,
-        "River_Name": "Gomti River",
-        "Length": 928.777,
-        "Shape_Leng": 928777.405207,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 928777.405207
+        "River_Name": "Gomti River"
       },
       "geometry": {
         "type": "LineString",
@@ -204868,18 +204736,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 13,
-        "OBJECTID": 18,
-        "River_Name": "Kosi",
-        "Length": 231.085,
-        "Shape_Leng": 231085.472609,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 231085.472609
+        "River_Name": "Kosi"
       },
       "geometry": {
         "type": "LineString",
@@ -221130,18 +220987,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 14,
-        "OBJECTID": 19,
-        "River_Name": "Ramganga",
-        "Length": 676.669,
-        "Shape_Leng": 676669.480903,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 676669.480903
+        "River_Name": "Ramganga"
       },
       "geometry": {
         "type": "LineString",
@@ -257272,18 +257118,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 15,
-        "OBJECTID": 20,
-        "River_Name": "Rupnarayan",
-        "Length": 285.975,
-        "Shape_Leng": 285974.76943,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 285974.76943
+        "River_Name": "Rupnarayan"
       },
       "geometry": {
         "type": "LineString",
@@ -265034,18 +264869,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 16,
-        "OBJECTID": 21,
-        "River_Name": "Son",
-        "Length": 806.448,
-        "Shape_Leng": 806448.230451,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 806448.230451
+        "River_Name": "Son"
       },
       "geometry": {
         "type": "LineString",
@@ -286468,18 +286292,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 17,
-        "OBJECTID": 22,
-        "River_Name": "Yamuna",
-        "Length": 1430.02,
-        "Shape_Leng": 1430016.86923,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 1430016.86923
+        "River_Name": "Yamuna"
       },
       "geometry": {
         "type": "LineString",
@@ -317862,18 +317675,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 18,
-        "OBJECTID": 23,
-        "River_Name": "Ganga",
-        "Length": 2434.02,
-        "Shape_Leng": 2434020.90544,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 2434020.90544
+        "River_Name": "Ganga"
       },
       "geometry": {
         "type": "LineString",
@@ -373912,18 +373714,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 19,
-        "OBJECTID": 25,
-        "River_Name": "Bindal",
-        "Length": 23.1911,
-        "Shape_Leng": 23191.0945308,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 23191.0945308
+        "River_Name": "Bindal"
       },
       "geometry": {
         "type": "LineString",
@@ -376634,18 +376425,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 20,
-        "OBJECTID": 26,
-        "River_Name": "Rispana",
-        "Length": 20.4729,
-        "Shape_Leng": 20472.8511393,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 20472.8511393
+        "River_Name": "Rispana"
       },
       "geometry": {
         "type": "LineString",
@@ -377376,18 +377156,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 21,
-        "OBJECTID": 27,
-        "River_Name": "Suswa",
-        "Length": 21.2983,
-        "Shape_Leng": 21298.2849074,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 21298.2849074
+        "River_Name": "Suswa"
       },
       "geometry": {
         "type": "LineString",
@@ -377734,18 +377503,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 22,
-        "OBJECTID": 28,
-        "River_Name": "Song",
-        "Length": 77.0334,
-        "Shape_Leng": 77033.3599624,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 77033.3599624
+        "River_Name": "Song"
       },
       "geometry": {
         "type": "LineString",
@@ -380312,18 +380070,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 23,
-        "OBJECTID": 29,
-        "River_Name": "Solani",
-        "Length": 143.395,
-        "Shape_Leng": 143395.035292,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 143395.035292
+        "River_Name": "Solani"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -385478,18 +385225,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 24,
-        "OBJECTID": 30,
-        "River_Name": "Kali",
-        "Length": 604.012,
-        "Shape_Leng": 604011.959515,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 604011.959515
+        "River_Name": "Kali"
       },
       "geometry": {
         "type": "LineString",
@@ -408256,18 +407992,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 25,
-        "OBJECTID": 31,
-        "River_Name": "Garra",
-        "Length": 432.984,
-        "Shape_Leng": 432984.232127,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 432984.232127
+        "River_Name": "Garra"
       },
       "geometry": {
         "type": "LineString",
@@ -418374,18 +418099,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 26,
-        "OBJECTID": 32,
-        "River_Name": "Chandrabhagga",
-        "Length": 23.6769,
-        "Shape_Leng": 23676.8767666,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 23676.8767666
+        "River_Name": "Chandrabhagga"
       },
       "geometry": {
         "type": "LineString",
@@ -420004,18 +419718,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 27,
-        "OBJECTID": 33,
-        "River_Name": "Chandan",
-        "Length": 144.866,
-        "Shape_Leng": 144865.748333,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 144865.748333
+        "River_Name": "Chandan"
       },
       "geometry": {
         "type": "LineString",
@@ -423758,18 +423461,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 28,
-        "OBJECTID": 34,
-        "River_Name": "Tons(Asan)",
-        "Length": 29.2411,
-        "Shape_Leng": 29241.0588721,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 29241.0588721
+        "River_Name": "Tons(Asan)"
       },
       "geometry": {
         "type": "LineString",
@@ -424840,18 +424532,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 29,
-        "OBJECTID": 35,
-        "River_Name": "Asan",
-        "Length": 42.0208,
-        "Shape_Leng": 42020.7634969,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 42020.7634969
+        "River_Name": "Asan"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -426502,18 +426183,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 30,
-        "OBJECTID": 37,
-        "River_Name": "Kauriala",
-        "Length": 53.1407,
-        "Shape_Leng": 53140.6959426,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 53140.6959426
+        "River_Name": "Kauriala"
       },
       "geometry": {
         "type": "LineString",
@@ -428532,18 +428202,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 32,
-        "OBJECTID": 166,
-        "River_Name": "Sind",
-        "Length": 0,
-        "Shape_Leng": 4.99999991517,
-        "OBJECTID_2": 284,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": "Sind-1",
-        "Length_km": 5,
-        "Shape_Le_1": 480.200799064,
-        "Shape_Le_2": 480200.799064
+        "River_Name": "Sind"
       },
       "geometry": {
         "type": "LineString",
@@ -436650,18 +436309,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 33,
-        "OBJECTID": 263,
-        "River_Name": "Betwa",
-        "Length": 0,
-        "Shape_Leng": 585.189499101,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": "Betwa-1",
-        "Length_km": 5,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 585189.499107
+        "River_Name": "Betwa"
       },
       "geometry": {
         "type": "LineString",
@@ -444684,18 +444332,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 34,
-        "OBJECTID": 0,
-        "River_Name": "Ken",
-        "Length": 0,
-        "Shape_Leng": 0,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 369.708374212,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 369708.37422
+        "River_Name": "Ken"
       },
       "geometry": {
         "type": "LineString",
@@ -450374,18 +450011,7 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID_1": 0,
-        "OBJECTID": 0,
-        "River_Name": "Alaknanda",
-        "Length": 0,
-        "Shape_Leng": 0,
-        "OBJECTID_2": 0,
-        "ET_ID": 0,
-        "BEU_ID": 0,
-        "River_ID": null,
-        "Length_km": 0,
-        "Shape_Le_1": 0,
-        "Shape_Le_2": 0
+        "River_Name": "Alaknanda"
       },
       "geometry": {
         "type": "LineString",
