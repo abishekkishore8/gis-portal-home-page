@@ -105,9 +105,11 @@ function SolutionsModal({
           <div>
             <h3 className="text-gray-800 flex items-center gap-2 text-lg font-bold">
               <Lightbulb className="w-5.5 h-5.5 text-amber-500 fill-amber-100" />
-              Solutions - {category.category}
+              Proposed Activities and Suggested Implementing Agencies
             </h3>
             <div className="flex items-center gap-2 mt-1.5">
+              <span className="text-[13px] text-gray-500">Theme: {category.category}</span>
+              <span className="text-gray-300">|</span>
               <span className="text-[13px] text-gray-500">Village Score: {formatScore(scoreOnScale10)}/5</span>
               <span className={`px-2.5 py-0.5 rounded-full text-[11px] font-semibold ${levelColor}`}>
                 Level: {levelLabel}
@@ -122,42 +124,18 @@ function SolutionsModal({
           </button>
         </div>
 
-        {/* Custom Tabs Bar if custom activities exist */}
-        {hasCustomActivities && (
-          <div className="flex border-b border-gray-200 bg-gray-50 px-5 pt-2">
-            <button
-              onClick={() => setActiveTab("custom")}
-              className={`pb-2.5 px-4 text-sm font-semibold border-b-2 transition-all relative ${
-                activeTab === "custom"
-                  ? "border-blue-600 text-blue-600"
-                  : "border-transparent text-gray-500 hover:text-gray-700"
-              }`}
-            >
-              📋 Village-Specific Microplan ({category.activities?.length || 0})
-            </button>
-            <button
-              onClick={() => setActiveTab("standard")}
-              className={`pb-2.5 px-4 text-sm font-semibold border-b-2 transition-all relative ${
-                activeTab === "standard"
-                  ? "border-blue-600 text-blue-600"
-                  : "border-transparent text-gray-500 hover:text-gray-700"
-              }`}
-            >
-              💡 Standard Recommendations
-            </button>
-          </div>
-        )}
+        {/* Custom Tabs Bar if custom activities exist (Standard removed as requested, keeping Custom/Standard state logic if needed, but standard is completely removed from tab selection/rendering) */}
 
         {/* Solutions Content */}
         <div className="flex-1 overflow-y-auto p-5 bg-gray-50/30">
-          {activeTab === "custom" && category.activities && (
+          {category.activities && category.activities.length > 0 ? (
             <div className="space-y-4">
               <div className="bg-blue-50/60 border border-blue-100 rounded-xl p-4 flex items-start gap-3.5">
                 <Lightbulb className="w-5 h-5 text-blue-500 mt-0.5 shrink-0" />
                 <div>
-                  <p className="text-[13px] text-blue-800 font-bold">Custom Village-Level Microplan Actions</p>
+                  <p className="text-[13px] text-blue-800 font-bold">Village-Specific Microplan</p>
                   <p className="text-[12px] text-blue-600 mt-0.5">
-                    The following actions have been proposed based on the local field surveys and are paired with specific implementing line departments.
+                    The following activities have been proposed specifically based on the local village assessments and field surveys.
                   </p>
                 </div>
               </div>
@@ -189,59 +167,10 @@ function SolutionsModal({
                 ))}
               </div>
             </div>
-          )}
-
-          {activeTab === "standard" && (
-            <div>
-              {solutionEntries.length === 0 ? (
-                <div className="text-center py-12 text-gray-400">
-                  <AlertTriangle className="w-10 h-10 mx-auto mb-3" />
-                  <p>No solutions available for this category.</p>
-                </div>
-              ) : (
-                <div className="space-y-5">
-                  {solutionEntries.map((entry, idx) => {
-                    const activeSolutions =
-                      level === "low"
-                        ? entry.solutionsLow
-                        : level === "medium"
-                        ? entry.solutionsMedium
-                        : entry.solutionsHigh;
-
-                    return (
-                      <div key={idx} className="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
-                        <div className="bg-gray-50/80 px-4 py-3 border-b border-gray-200">
-                          <div className="flex items-center justify-between">
-                            <div>
-                              <span className="text-[11px] text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full border border-blue-100/50 font-semibold">
-                                {entry.subIndicatorCode}
-                              </span>
-                              <h4 className="text-[14px] text-gray-800 mt-1 font-semibold">{entry.subIndicator}</h4>
-                            </div>
-                            <span className="text-[12px] text-gray-500 font-mono font-medium">{entry.indicatorCode}</span>
-                          </div>
-                        </div>
-                        <div className="p-4">
-                          <p className="text-[12px] text-gray-500 mb-2 font-medium">
-                            Recommended Actions ({levelLabel}):
-                          </p>
-                          <div className="space-y-2">
-                            {activeSolutions.map((solution, sIdx) => (
-                              <div
-                                key={sIdx}
-                                className="flex items-start gap-2.5 p-2.5 rounded-lg bg-blue-50/30 border border-blue-100/50 hover:bg-blue-50/50 transition-colors"
-                              >
-                                <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 shrink-0" />
-                                <span className="text-[13px] text-gray-700 leading-relaxed">{solution}</span>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
+          ) : (
+            <div className="text-center py-12 text-gray-400">
+              <AlertTriangle className="w-10 h-10 mx-auto mb-3" />
+              <p>No specific proposed activities available for this category in this village.</p>
             </div>
           )}
         </div>
