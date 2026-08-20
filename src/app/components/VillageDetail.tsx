@@ -5,7 +5,7 @@ import { createPortal } from "react-dom";
 import { formatIndianWholeNumber } from "../data/number-format";
 import type { Village, CategoryScore } from "../data/village-types";
 import type { SiteContent } from "../data/site-content";
-import { getSolutionsForCategory, getSolutionLevel } from "../data/site-content-helpers";
+import { getSolutionsForCategory, getSolutionLevel, getCategoryIcon } from "../data/site-content-helpers";
 import {
   ArrowLeft,
   MapPin,
@@ -55,21 +55,6 @@ const formatScore = (value: number, maxFractionDigits = 2) =>
     minimumFractionDigits: Math.min(2, maxFractionDigits),
     maximumFractionDigits: maxFractionDigits,
   }).format(value);
-
-const getCategoryIcon = (category: string) => {
-  const icons: Record<string, string> = {
-    "Community Awareness": "🌿",
-    "Community Based Institution": "🏛️",
-    "Livelihood and Skill Development": "💼",
-    "Hygiene and Sanitation": "🧹",
-    "Renewable Energy": "⚡",
-    "Biodiversity Conservation Plan": "🦋",
-    "Agriculture": "🌾",
-    "Animal Husbandry": "🐄",
-    "Fishery": "🐟",
-  };
-  return icons[category] || "📋";
-};
 
 function SolutionsModal({
   category,

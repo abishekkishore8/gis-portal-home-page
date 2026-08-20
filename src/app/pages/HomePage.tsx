@@ -5,45 +5,24 @@ import { useRouter } from "next/navigation";
 import {
   ArrowRight,
   BarChart3,
-  Droplets,
   Globe,
   Home,
-  Leaf,
   List,
   Map,
   MapPin,
-  Target,
-  TreePine,
   Users,
-  Wheat,
-  Factory,
-  Waves,
-  GraduationCap,
-  Fish,
-  Dog,
 } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { MapView } from "../components/MapView";
 import { formatIndianWholeNumber } from "../data/number-format";
 import type { SiteContent } from "../data/site-content";
 import type { Village } from "../data/village-types";
+import { getCategoryIcon } from "../data/site-content-helpers";
 
 type HomePageProps = {
   initialVillages: Village[];
   siteContent: SiteContent;
 };
-
-const focusAreaIcons = {
-  "Community Awareness": Leaf,
-  "Community Based Institution": Users,
-  "Hygiene and Sanitation": Droplets,
-  "Livelihood and Skill Development": GraduationCap,
-  "Renewable Energy": Target,
-  "Agriculture": Wheat,
-  "Animal Husbandry": Dog,
-  "Fishery": Fish,
-  "Biodiversity Conservation Plan": TreePine,
-} as const;
 
 export function HomePage({ initialVillages, siteContent }: HomePageProps) {
   const router = useRouter();
@@ -64,41 +43,39 @@ export function HomePage({ initialVillages, siteContent }: HomePageProps) {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
-      <header className="sticky top-0 z-20 bg-gradient-to-r from-blue-800 to-blue-700 text-white shadow-lg">
-        <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 px-4 md:px-6 py-3">
+      <header className="sticky top-0 z-10 border-b border-gray-200 bg-gray-100/95 text-gray-800 shadow-sm backdrop-blur-sm">
+        <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-6 py-3">
           <div className="w-full md:w-auto flex items-center justify-between">
-            <div className="flex items-center gap-2 md:gap-3">
-              <div className="w-9 h-9 bg-white/20 rounded-lg flex items-center justify-center shrink-0">
-                <Globe className="w-5 h-5 text-white" />
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-lg bg-white flex items-center justify-center border border-gray-200 shadow-sm">
+                <Globe className="w-5 h-5 text-blue-700" />
               </div>
               <div>
-                <h1 className="text-[15px] sm:text-[16px] md:text-[18px] text-white leading-tight font-semibold">Digital Village Microplan Portal</h1>
-                <p className="text-[10.5px] md:text-[11px] text-blue-200">Ganga River Basin Village Assessment</p>
+                <h1 className="text-[16px] md:text-[18px] text-gray-800 leading-tight">Digital Village Microplan Portal</h1>
+                <p className="text-[10px] md:text-[11px] text-gray-500">Ganga River Basin Village Assessment</p>
               </div>
             </div>
             
-            <nav className="flex md:hidden items-center gap-1 shrink-0 ml-2">
-              <button className="flex items-center justify-center px-3 py-1.5 rounded-lg bg-white/20 text-white text-[12px] font-medium shadow-sm">
-                <Map className="w-3.5 h-3.5 mr-1" />
-                Home
+            <nav className="flex md:hidden items-center gap-1 rounded-full bg-white/70 p-1 border border-gray-200 shadow-sm ml-2 shrink-0">
+              <button className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white shadow-sm">
+                <Map className="w-4 h-4" />
               </button>
               <button
-                className="flex items-center justify-center px-3 py-1.5 rounded-lg text-blue-200 hover:bg-white/10 text-[12px] transition-colors"
+                className="flex items-center justify-center w-8 h-8 rounded-full text-gray-700 hover:bg-gray-100 transition-colors"
                 onClick={() => router.push("/villages")}
               >
-                <List className="w-3.5 h-3.5 mr-1" />
-                All Villages
+                <List className="w-4 h-4" />
               </button>
             </nav>
           </div>
 
-          <nav className="hidden md:flex items-center gap-1.5 shrink-0">
-            <button className="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white/20 text-white text-[13px] font-medium shadow-sm">
+          <nav className="hidden md:flex items-center gap-1 rounded-full bg-white/70 p-1 border border-gray-200 shadow-sm">
+            <button className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-blue-600 text-white text-[13px] shadow-sm">
               <Map className="w-4 h-4" />
               Home
             </button>
             <button
-              className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-blue-200 hover:bg-white/10 text-[13px] transition-colors"
+              className="flex items-center gap-1.5 px-4 py-2 rounded-full text-gray-700 hover:bg-gray-100 text-[13px] transition-colors"
               onClick={() => router.push("/villages")}
             >
               <List className="w-4 h-4" />
@@ -106,16 +83,16 @@ export function HomePage({ initialVillages, siteContent }: HomePageProps) {
             </button>
           </nav>
 
-          <div className="hidden lg:flex items-center justify-end gap-2.5 shrink-0">
+          <div className="flex items-center justify-center flex-wrap gap-2 md:gap-3 shrink-0 w-full md:w-auto">
             {siteContent.partnerLogos.map((logo) => (
               <div
                 key={logo.alt}
-                className="h-9 w-20 md:w-24 rounded-lg bg-white/95 backdrop-blur-sm flex items-center justify-center px-2 py-1 shadow-sm border border-white/20 hover:bg-white transition-colors"
+                className="h-8 w-16 md:h-11 md:w-24 rounded-md bg-transparent flex items-center justify-center overflow-hidden"
               >
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="max-h-7 w-full object-contain"
+                  className="max-h-8 md:max-h-10 w-full object-contain opacity-95 mix-blend-multiply"
                   loading="eager"
                 />
               </div>
@@ -219,21 +196,17 @@ export function HomePage({ initialVillages, siteContent }: HomePageProps) {
           <h3 className="text-gray-800 text-[18px] mb-3">{siteContent.focusTitle}</h3>
           <p className="text-[14px] text-gray-600 mb-4">{siteContent.focusBlurb}</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {siteContent.focusAreas.map((area) => {
-              const Icon = focusAreaIcons[area.label as keyof typeof focusAreaIcons] ?? Target;
-
-              return (
-                <div
-                  key={area.label}
-                  className="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-gray-200 hover:shadow-md transition-shadow"
-                >
-                  <div className={`w-9 h-9 rounded-lg flex items-center justify-center ${area.color}`}>
-                    <Icon className="w-4 h-4" />
-                  </div>
-                  <span className="text-[13px] text-gray-700">{area.label}</span>
+            {siteContent.focusAreas.map((area) => (
+              <div
+                key={area.label}
+                className="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-gray-200 hover:shadow-md transition-shadow"
+              >
+                <div className={`w-9 h-9 rounded-lg flex items-center justify-center text-lg ${area.color}`}>
+                  {getCategoryIcon(area.label)}
                 </div>
-              );
-            })}
+                <span className="text-[13px] text-gray-700 font-medium">{area.label}</span>
+              </div>
+            ))}
           </div>
           <div className="mt-4 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100">
             <p className="text-[13px] text-blue-700">
@@ -327,16 +300,16 @@ export function HomePage({ initialVillages, siteContent }: HomePageProps) {
 
       <footer className="border-t border-gray-300 bg-gray-200/95 text-gray-700 py-6 backdrop-blur-sm">
         <div className="max-w-screen-2xl mx-auto px-6 space-y-4">
-          <div className="flex flex-wrap items-center justify-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-5">
             {siteContent.partnerLogos.map((logo) => (
               <div
                 key={logo.alt}
-                className="h-11 w-28 md:w-32 rounded-lg bg-white/95 backdrop-blur-sm flex items-center justify-center px-3 py-1.5 shadow-sm border border-gray-300/80"
+                className="h-12 w-28 md:w-32 rounded-md bg-transparent flex items-center justify-center px-2"
               >
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="max-h-8 w-full object-contain"
+                  className="max-h-10 w-full object-contain opacity-90 mix-blend-multiply"
                   loading="eager"
                 />
               </div>

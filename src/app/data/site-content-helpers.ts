@@ -1,5 +1,21 @@
 import type { SiteContent } from './site-content';
 
+export const categoryIcons: Record<string, string> = {
+  "Community Awareness": "🌿",
+  "Community Based Institution": "🏛️",
+  "Hygiene and Sanitation": "🧹",
+  "Livelihood and Skill Development": "💼",
+  "Renewable Energy": "⚡",
+  "Agriculture": "🌾",
+  "Animal Husbandry": "🐄",
+  "Fishery": "🐟",
+  "Biodiversity Conservation Plan": "🦋",
+};
+
+export function getCategoryIcon(category: string): string {
+  return categoryIcons[category] || "📋";
+}
+
 export function getSolutionsForCategory(siteContent: SiteContent, categoryName: string) {
   return siteContent.solutions.filter((solution) => solution.indicator === categoryName);
 }
