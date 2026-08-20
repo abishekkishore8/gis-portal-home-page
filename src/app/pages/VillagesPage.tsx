@@ -61,17 +61,17 @@ export function VillagesPage({ initialVillages, siteContent }: VillagesPageProps
     <div className="flex flex-col h-screen bg-gray-100">
       {/* Top Nav */}
       <header className="bg-gradient-to-r from-blue-800 to-blue-700 text-white shadow-lg z-10">
-        <div className="max-w-screen-2xl mx-auto flex items-center justify-between px-4 md:px-6 py-3">
+        <div className="max-w-screen-2xl mx-auto flex items-center justify-between gap-3 px-4 md:px-6 py-3">
           <div className="flex items-center gap-2 md:gap-3">
-            <div className="hidden sm:flex w-9 h-9 bg-white/20 rounded-lg items-center justify-center shrink-0">
-              <Globe className="w-4 h-4 md:w-5 md:h-5" />
+            <div className="w-9 h-9 bg-white/20 rounded-lg flex items-center justify-center shrink-0">
+              <Globe className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h1 className="text-[14px] sm:text-[16px] md:text-[18px] text-white leading-tight">Digital Village Microplan Portal</h1>
-              <p className="text-[10px] md:text-[11px] text-blue-200 hidden sm:block">Ganga River Basin Village Assessment</p>
+              <h1 className="text-[15px] sm:text-[16px] md:text-[18px] text-white leading-tight font-semibold">Digital Village Microplan Portal</h1>
+              <p className="text-[10.5px] md:text-[11px] text-blue-200 hidden sm:block">Ganga River Basin Village Assessment</p>
             </div>
           </div>
-          <nav className="flex items-center gap-1 shrink-0">
+          <nav className="flex items-center gap-1.5 shrink-0">
             <button
               className="flex items-center gap-1.5 px-3 md:px-4 py-2 rounded-lg text-blue-200 hover:bg-white/10 text-[12px] md:text-[13px] transition-colors"
               onClick={() => router.push("/")}
@@ -81,12 +81,28 @@ export function VillagesPage({ initialVillages, siteContent }: VillagesPageProps
             </button>
             <button 
               onClick={() => setIsSidebarOpen(true)}
-              className="flex items-center gap-1.5 px-3 md:px-4 py-2 rounded-lg bg-white/20 text-white text-[12px] md:text-[13px] lg:pointer-events-none"
+              className="flex items-center gap-1.5 px-3 md:px-4 py-2 rounded-lg bg-white/20 text-white text-[12px] md:text-[13px] font-medium lg:pointer-events-none"
             >
               <List className="w-4 h-4" />
               <span className="hidden sm:inline">All Villages</span>
             </button>
           </nav>
+
+          <div className="hidden lg:flex items-center justify-end gap-2.5 shrink-0">
+            {siteContent.partnerLogos.map((logo) => (
+              <div
+                key={logo.alt}
+                className="h-9 w-20 md:w-24 rounded-lg bg-white/95 backdrop-blur-sm flex items-center justify-center px-2 py-1 shadow-sm border border-white/20 hover:bg-white transition-colors"
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="max-h-7 w-full object-contain"
+                  loading="eager"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </header>
 
