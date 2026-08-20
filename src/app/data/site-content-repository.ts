@@ -1,4 +1,5 @@
 import { createSupabaseServerClient } from '../../lib/supabase-server';
+import { fetchSupabaseRest } from '../../lib/supabase-rest';
 import type { SiteContent } from './site-content';
 
 type SiteContentRow = {
@@ -7,18 +8,13 @@ type SiteContentRow = {
 };
 
 export async function getSiteContentServer(): Promise<SiteContent> {
-  const supabase = await createSupabaseServerClient();
-  const { data, error } = await supabase
-    .from('site_content')
-    .select('key, content')
-    .eq('key', 'homepage')
-    .maybeSingle();
-
-  if (error) {
-    throw new Error(`Failed to load site content: ${error.message}`);
+  const res = await fetchSupabaseRest('site_content?select=key,content&key=eq.homepage&limit=1');
+  if (!res.ok) {
+    throw new Error(`Failed to load site content: ${res.status} ${await res.text()}`);
   }
 
-  const row = data as SiteContentRow | null;
+  const rows = (await res.json()) as SiteContentRow[];
+  const row = rows[0] ?? null;
 
   if (!row?.content) {
     throw new Error('Missing homepage site content in Supabase.');

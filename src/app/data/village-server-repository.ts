@@ -1,5 +1,6 @@
 import { createSupabaseAdminClient } from '../../lib/supabase-admin';
 import { createSupabaseServerClient } from '../../lib/supabase-server';
+import { fetchSupabaseRest } from '../../lib/supabase-rest';
 import { mapFormValuesToInsert, mapRowToVillage, parseVillageFormData, validateVillageFormValues, type VillageRow, type VillageUpdate } from './village-db';
 import type { Village } from './village-types';
 
@@ -7,25 +8,8 @@ const VILLAGES_SELECT =
   'id, name, district, state, lat, lng, population, households, overall_score, images, scores, created_at, updated_at';
 
 export async function listVillagesServer(): Promise<Village[]> {
-  // Use Supabase REST endpoint directly to avoid occasional schema-cache errors
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
-
-  if (!supabaseUrl || !supabaseKey) {
-    throw new Error('Missing Supabase environment variables for server read.');
-  }
-
-  const url = new URL(`${supabaseUrl}/rest/v1/villages`);
-  url.searchParams.set('select', VILLAGES_SELECT);
-  url.searchParams.set('order', 'name.asc');
-
-  const res = await fetch(url.toString(), {
-    headers: {
-      apikey: supabaseKey,
-      Authorization: `Bearer ${supabaseKey}`,
-      Accept: 'application/json',
-    },
-  });
+  const params = new URLSearchParams({ select: VILLAGES_SELECT, order: 'name.asc' });
+  const res = await fetchSupabaseRest(`villages?${params.toString()}`);
 
   if (!res.ok) {
     const text = await res.text();

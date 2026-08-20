@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { VillageCrudPanel } from '../../src/app/components/VillageCrudPanel';
 import { getSiteContentServer } from '../../src/app/data/site-content-repository';
 import { listVillagesServer } from '../../src/app/data/village-server-repository';
@@ -8,7 +9,9 @@ export default async function Page() {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <VillagesPage initialVillages={villages} siteContent={siteContent} />
+      <Suspense fallback={<div className="min-h-screen bg-gray-100" />}>
+        <VillagesPage initialVillages={villages} siteContent={siteContent} />
+      </Suspense>
     </div>
   );
 }
