@@ -18,7 +18,9 @@ import {
   Wheat,
   Factory,
   Waves,
-  GraduationCap
+  GraduationCap,
+  Fish,
+  Dog,
 } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { MapView } from "../components/MapView";
@@ -33,14 +35,14 @@ type HomePageProps = {
 
 const focusAreaIcons = {
   "Community Awareness": Leaf,
-  "Hygiene & Sanitation": Droplets,
-  "Biodiversity": TreePine,
-  "Renewable Energy": Target,
-  "Agriculture/organic farming practice": Wheat,
-  "Pollution reduction mechanism": Factory,
-  "River flow/river structure": Waves,
   "Community Based Institution": Users,
-  "Skill development in area": GraduationCap,
+  "Hygiene and Sanitation": Droplets,
+  "Livelihood and Skill Development": GraduationCap,
+  "Renewable Energy": Target,
+  "Agriculture": Wheat,
+  "Animal Husbandry": Dog,
+  "Fishery": Fish,
+  "Biodiversity Conservation Plan": TreePine,
 } as const;
 
 export function HomePage({ initialVillages, siteContent }: HomePageProps) {
