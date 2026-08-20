@@ -81,6 +81,16 @@ function normalizeScores(scores: unknown): Village['scores'] {
       toFiniteNumber(categoryValue.scoreOnScale5, formulaTotal / 10)
     );
 
+    const activities = Array.isArray(categoryValue.activities)
+      ? categoryValue.activities.map((act) => {
+          const actValue = act as Record<string, unknown>;
+          return {
+            activity: String(actValue.activity ?? ''),
+            agency: String(actValue.agency ?? ''),
+          };
+        })
+      : undefined;
+
     return {
       category: String(categoryValue.category ?? ''),
       output: String(categoryValue.output ?? 'Medium'),
@@ -89,6 +99,7 @@ function normalizeScores(scores: unknown): Village['scores'] {
       rankingFormula:
         typeof categoryValue.rankingFormula === 'string' ? categoryValue.rankingFormula : undefined,
       subCategories,
+      activities,
     };
   });
 }

@@ -19,6 +19,7 @@ import {
   CheckCircle,
   X,
   Images,
+  Building2,
 } from "lucide-react";
 
 interface VillageDetailProps {
@@ -81,90 +82,166 @@ function SolutionsModal({
   scoreOnScale10: number;
   onClose: () => void;
 }) {
+  const hasCustomActivities = category.activities && category.activities.length > 0;
+  const [activeTab, setActiveTab] = useState<"custom" | "standard">(
+    hasCustomActivities ? "custom" : "standard"
+  );
+
   const solutionEntries = getSolutionsForCategory(siteContent, category.category);
   const level = getSolutionLevel(scoreOnScale10);
   const levelLabel = level === "low" ? "Low (0-2.0)" : level === "medium" ? "Medium (2.01-3.5)" : "High (3.51-5.0)";
   const levelColor =
     level === "low"
-      ? "text-red-600 bg-red-50"
+      ? "text-red-600 bg-red-50 animate-pulse"
       : level === "medium"
       ? "text-yellow-600 bg-yellow-50"
       : "text-green-600 bg-green-50";
 
   return (
-    <div className="fixed inset-0 bg-black/50 z-[9999] flex items-center justify-center p-4">
-      <div className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[85vh] flex flex-col">
+    <div className="fixed inset-0 bg-black/60 z-[9999] flex items-center justify-center p-4 backdrop-blur-sm transition-opacity">
+      <div className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[85vh] flex flex-col overflow-hidden animate-in fade-in zoom-in duration-250">
         {/* Header */}
-        <div className="p-5 border-b border-gray-200 flex items-center justify-between">
+        <div className="p-5 border-b border-gray-200 flex items-center justify-between bg-gray-50/50">
           <div>
-            <h3 className="text-gray-800 flex items-center gap-2">
-              <Lightbulb className="w-5 h-5 text-amber-500" />
+            <h3 className="text-gray-800 flex items-center gap-2 text-lg font-bold">
+              <Lightbulb className="w-5.5 h-5.5 text-amber-500 fill-amber-100" />
               Solutions - {category.category}
             </h3>
             <div className="flex items-center gap-2 mt-1.5">
               <span className="text-[13px] text-gray-500">Village Score: {formatScore(scoreOnScale10)}/5</span>
-              <span className={`px-2 py-0.5 rounded-full text-[11px] ${levelColor}`}>
+              <span className={`px-2.5 py-0.5 rounded-full text-[11px] font-semibold ${levelColor}`}>
                 Level: {levelLabel}
               </span>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="p-2 rounded-lg hover:bg-gray-100 text-gray-500 transition-colors"
+            className="p-2 rounded-lg hover:bg-gray-200 text-gray-500 transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        {/* Solutions Content */}
-        <div className="flex-1 overflow-y-auto p-5">
-          {solutionEntries.length === 0 ? (
-            <div className="text-center py-12 text-gray-400">
-              <AlertTriangle className="w-10 h-10 mx-auto mb-3" />
-              <p>No solutions available for this category.</p>
-            </div>
-          ) : (
-            <div className="space-y-5">
-              {solutionEntries.map((entry, idx) => {
-                const activeSolutions =
-                  level === "low"
-                    ? entry.solutionsLow
-                    : level === "medium"
-                    ? entry.solutionsMedium
-                    : entry.solutionsHigh;
+        {/* Custom Tabs Bar if custom activities exist */}
+        {hasCustomActivities && (
+          <div className="flex border-b border-gray-200 bg-gray-50 px-5 pt-2">
+            <button
+              onClick={() => setActiveTab("custom")}
+              className={`pb-2.5 px-4 text-sm font-semibold border-b-2 transition-all relative ${
+                activeTab === "custom"
+                  ? "border-blue-600 text-blue-600"
+                  : "border-transparent text-gray-500 hover:text-gray-700"
+              }`}
+            >
+              📋 Village-Specific Microplan ({category.activities?.length || 0})
+            </button>
+            <button
+              onClick={() => setActiveTab("standard")}
+              className={`pb-2.5 px-4 text-sm font-semibold border-b-2 transition-all relative ${
+                activeTab === "standard"
+                  ? "border-blue-600 text-blue-600"
+                  : "border-transparent text-gray-500 hover:text-gray-700"
+              }`}
+            >
+              💡 Standard Recommendations
+            </button>
+          </div>
+        )}
 
-                return (
-                  <div key={idx} className="border border-gray-200 rounded-xl overflow-hidden">
-                    <div className="bg-gray-50 px-4 py-3 border-b border-gray-200">
-                      <div className="flex items-center justify-between">
-                        <div>
-                          <span className="text-[11px] text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">
-                            {entry.subIndicatorCode}
-                          </span>
-                          <h4 className="text-[14px] text-gray-800 mt-1">{entry.subIndicator}</h4>
-                        </div>
-                        <span className="text-[12px] text-gray-500">{entry.indicatorCode}</span>
+        {/* Solutions Content */}
+        <div className="flex-1 overflow-y-auto p-5 bg-gray-50/30">
+          {activeTab === "custom" && category.activities && (
+            <div className="space-y-4">
+              <div className="bg-blue-50/60 border border-blue-100 rounded-xl p-4 flex items-start gap-3.5">
+                <Lightbulb className="w-5 h-5 text-blue-500 mt-0.5 shrink-0" />
+                <div>
+                  <p className="text-[13px] text-blue-800 font-bold">Custom Village-Level Microplan Actions</p>
+                  <p className="text-[12px] text-blue-600 mt-0.5">
+                    The following actions have been proposed based on the local field surveys and are paired with specific implementing line departments.
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-3.5">
+                {category.activities.map((act, idx) => (
+                  <div
+                    key={idx}
+                    className="border border-gray-200 rounded-xl overflow-hidden shadow-sm bg-white hover:border-blue-200 hover:shadow-md transition-all duration-200"
+                  >
+                    <div className="p-4">
+                      <div className="flex items-start gap-3">
+                        <span className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-50 text-blue-600 font-bold text-[12px] shrink-0 mt-0.5 border border-blue-100">
+                          {idx + 1}
+                        </span>
+                        <p className="text-[14px] text-gray-800 leading-relaxed font-semibold">
+                          {act.activity}
+                        </p>
                       </div>
                     </div>
-                    <div className="p-4">
-                      <p className="text-[12px] text-gray-500 mb-2">
-                        Recommended Actions ({levelLabel}):
-                      </p>
-                      <div className="space-y-2">
-                        {activeSolutions.map((solution, sIdx) => (
-                          <div
-                            key={sIdx}
-                            className="flex items-start gap-2.5 p-2.5 rounded-lg bg-blue-50/50 border border-blue-100"
-                          >
-                            <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 shrink-0" />
-                            <span className="text-[13px] text-gray-700">{solution}</span>
-                          </div>
-                        ))}
-                      </div>
+                    <div className="bg-gray-50/80 px-4 py-2.5 border-t border-gray-100 flex flex-wrap items-center gap-2 text-[12.5px] text-gray-600">
+                      <Building2 className="w-4 h-4 text-blue-500 shrink-0" />
+                      <span className="font-semibold text-gray-500">Suggested Implementing Agency:</span>
+                      <span className="text-blue-700 bg-blue-50 border border-blue-100/50 px-2 py-0.5 rounded text-[11.5px] font-bold">
+                        {act.agency}
+                      </span>
                     </div>
                   </div>
-                );
-              })}
+                ))}
+              </div>
+            </div>
+          )}
+
+          {activeTab === "standard" && (
+            <div>
+              {solutionEntries.length === 0 ? (
+                <div className="text-center py-12 text-gray-400">
+                  <AlertTriangle className="w-10 h-10 mx-auto mb-3" />
+                  <p>No solutions available for this category.</p>
+                </div>
+              ) : (
+                <div className="space-y-5">
+                  {solutionEntries.map((entry, idx) => {
+                    const activeSolutions =
+                      level === "low"
+                        ? entry.solutionsLow
+                        : level === "medium"
+                        ? entry.solutionsMedium
+                        : entry.solutionsHigh;
+
+                    return (
+                      <div key={idx} className="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+                        <div className="bg-gray-50/80 px-4 py-3 border-b border-gray-200">
+                          <div className="flex items-center justify-between">
+                            <div>
+                              <span className="text-[11px] text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full border border-blue-100/50 font-semibold">
+                                {entry.subIndicatorCode}
+                              </span>
+                              <h4 className="text-[14px] text-gray-800 mt-1 font-semibold">{entry.subIndicator}</h4>
+                            </div>
+                            <span className="text-[12px] text-gray-500 font-mono font-medium">{entry.indicatorCode}</span>
+                          </div>
+                        </div>
+                        <div className="p-4">
+                          <p className="text-[12px] text-gray-500 mb-2 font-medium">
+                            Recommended Actions ({levelLabel}):
+                          </p>
+                          <div className="space-y-2">
+                            {activeSolutions.map((solution, sIdx) => (
+                              <div
+                                key={sIdx}
+                                className="flex items-start gap-2.5 p-2.5 rounded-lg bg-blue-50/30 border border-blue-100/50 hover:bg-blue-50/50 transition-colors"
+                              >
+                                <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 shrink-0" />
+                                <span className="text-[13px] text-gray-700 leading-relaxed">{solution}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           )}
         </div>

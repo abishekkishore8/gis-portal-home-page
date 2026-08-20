@@ -12,6 +12,11 @@ export interface Village {
   images: string[];
 }
 
+export interface CategoryActivity {
+  activity: string;
+  agency: string;
+}
+
 export interface CategoryScore {
   category: string;
   output: string;
@@ -19,6 +24,7 @@ export interface CategoryScore {
   formulaTotal: number;
   rankingFormula?: string;
   subCategories: SubCategoryScore[];
+  activities?: CategoryActivity[];
 }
 
 export interface SubCategoryScore {

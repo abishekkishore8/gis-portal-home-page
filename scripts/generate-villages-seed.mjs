@@ -215,10 +215,135 @@ function parsePhase2Demographics() {
   }));
 }
 
+const sheetToVillageIdMap = {
+  // Phase 1
+  'Domri Varanasi': 'domri',
+  'Ghat Jamni, Jharkhand': 'ghat-jamni',
+  'Maskaliya, Sahibganj': 'maskaliya',
+  'Rampur,': 'rampur',
+  'Shahjadpur': 'shahjadpur',
+  'Udaygarhi, Bulandshahar': 'udaygarhi',
+  'Dhaka, Varanasi': 'dhaka',
+  'Mukimpur, Jharkhand': 'mokimpur',
+  'Rajghat, Bulandshahar': 'rajghat',
+  'Siror Uttarkashi': 'siror',
+  'Tatepur, Varanasi': 'tatepur',
+  'Teentanga, Bihar': 'teentanga',
+
+  // Phase 2
+  'Beerbal, Prayagraj': 'beerbal',
+  'Deer Forest, WB': 'deer-forest',
+  'Madanpur, Bihar': 'madanpur',
+  'Chhitupur, Varanasi': 'chittupur',
+  'Daranagar, Bijnor': 'daranagar',
+  'Dinkarpur, Ayodhya': 'dinkarpur',
+  'Khawaspur, Bhagalpur': 'khawaspur',
+  'Molnapur, Varanasi': 'molnapur',
+  'Pathanpurva, Kaushambi': 'pathanpurwa',
+  'Raghunathpur, Shahjahnpur': 'raghunathpur',
+  'Rajepur, Jaunpur': 'rajepur',
+  'Siswa, Bihar': 'siswa',
+  'Nawali, MAU': 'nawli',
+  'Nayachar, WB': 'nayachar',
+  'Rasalpur, Bihar': 'rasalpur',
+  'Saidpur Jharkhand': 'saidpur',
+  'Sonbarsa, Chandauli': 'sonbarsa',
+  'Beelpur MP': 'beelpur',
+  'Nawwaawal, Gorakhpur ': 'nawwa-awwal',
+  'Niwadikhadar, Bulandshahr': 'niwadi-khadar',
+  'Ashnahi Patti': 'ashnahi-patti',
+  'Betalbasan': 'betalbasan',
+};
+
+function mapExcelHeadingToCategory(heading) {
+  const h = heading.toLowerCase().replace(/\s+/g, ' ').trim();
+  if (h.includes('awareness')) return 'Community Awareness';
+  if (h.includes('community based') || h.includes('community-based') || h.includes('community organization') || h.includes('community institutions') || h.includes('community-based organizations')) return 'Community Based Institution';
+  if (h.includes('sanitation') || h.includes('cleanliness')) return 'Hygiene and Sanitation';
+  if (h.includes('livelihood') || h.includes('skill')) return 'Livelihood and Skill Development';
+  if (h.includes('solar') || h.includes('renewable') || h.includes('energy')) return 'Renewable Energy';
+  if (h.includes('agriculture')) return 'Agriculture';
+  if (h.includes('animal') || h.includes('husbandry') || h.includes('livestock')) return 'Animal Husbandry';
+  if (h.includes('fisheries') || h.includes('fishries') || h.includes('fishery')) return 'Fishery';
+  if (h.includes('biodiversity') || h.includes('habitat')) return 'Biodiversity Conservation Plan';
+  return null;
+}
+
+function loadAllImplementingAgencies() {
+  const map = {}; // villageId -> category -> [{ activity, agency }]
+  
+  const files = [
+    { path: path.join(rootDir, 'Implimenting agencies', 'Microplan Activities and suggested impl. deptt. phase 1.xlsx'), name: 'Phase 1' },
+    { path: path.join(rootDir, 'Implimenting agencies', 'Phase II suggested  activities and suggested implementing agencies.xlsx'), name: 'Phase 2' }
+  ];
+
+  for (const file of files) {
+    if (!fs.existsSync(file.path)) {
+      console.warn(`⚠️ Warning: Excel file not found at ${file.path}`);
+      continue;
+    }
+    const wb = xlsx.readFile(file.path);
+    for (const sheetName of wb.SheetNames) {
+      if (sheetName === 'Sheet 1' || sheetName === 'Sheet2') continue;
+      const villageId = sheetToVillageIdMap[sheetName.trim()];
+      if (!villageId) {
+        // Try without trailing space/comma
+        const cleanName = sheetName.replace(/,\s*$/, '').trim();
+        const fallbackId = sheetToVillageIdMap[cleanName];
+        if (!fallbackId) {
+          continue;
+        }
+      }
+
+      const id = villageId || sheetToVillageIdMap[sheetName.replace(/,\s*$/, '').trim()];
+      if (!map[id]) {
+        map[id] = {};
+      }
+
+      const sheet = wb.Sheets[sheetName];
+      const rows = xlsx.utils.sheet_to_json(sheet);
+      let currentCategory = null;
+
+      rows.forEach(row => {
+        const sn = String(row['S.N.'] || row['S.N'] || row['S. S.'] || row['S. S. '] || row['S. No.'] || row['S.No.'] || row['S.No'] || row['S.No. '] || '').trim();
+        const activity = String(row['Proposed activities in Village'] || row['Proposed activities in Village '] || '').trim();
+        const agency = String(row['Suggested Impementing agency '] || row['Suggested Impementing agency'] || row['Suggested Implementing agency'] || row['Suggested Implementing agency '] || '').trim();
+
+        if (activity && activity.length > 3) {
+          const isHeading = !sn || isNaN(Number(sn)) || ['A','B','C','D','E','F','G','H','I','J'].includes(sn);
+          
+          if (isHeading) {
+            const cat = mapExcelHeadingToCategory(activity);
+            if (cat) {
+              currentCategory = cat;
+              if (!map[id][currentCategory]) {
+                map[id][currentCategory] = [];
+              }
+            } else {
+              currentCategory = null;
+            }
+          } else if (currentCategory) {
+            const cleanAgency = agency && agency !== 'undefined' && agency !== '' ? agency : 'Line Departments';
+            map[id][currentCategory].push({
+              activity,
+              agency: cleanAgency
+            });
+          }
+        }
+      });
+    }
+  }
+
+  return map;
+}
+
 async function generateSeed() {
   console.log('Loading metadata...');
   const metadataList = parsePhaseListMetadata();
   const demographicsList = parsePhase2Demographics();
+
+  console.log('Loading Implementing Agencies...');
+  const villageActivitiesMap = loadAllImplementingAgencies();
 
   console.log('Loading Digital Microplanning.xlsx...');
   const wb = xlsx.readFile(mainWorkbookPath);
@@ -320,12 +445,16 @@ async function generateSeed() {
           ]
         }));
 
+        const villageId = slugify(sheetName);
+        const categoryActivities = (villageActivitiesMap[villageId] && villageActivitiesMap[villageId][def.name]) || [];
+
         scores.push({
           category: def.name,
           output,
           scoreOnScale10,
           formulaTotal,
-          subCategories
+          subCategories,
+          activities: categoryActivities
         });
       });
 
